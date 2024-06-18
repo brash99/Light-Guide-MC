@@ -56,6 +56,8 @@ class RunAction : public G4UserRunAction
   
   void AddCount (G4int count);
   void AddCount_mid (G4int count_mid);
+  void AddCount_LG_NT (G4int count);
+  void AddCount_PMT_NT (G4int count);
 
  private:
   Run* fRun;
@@ -63,6 +65,8 @@ class RunAction : public G4UserRunAction
   PrimaryGeneratorAction* fPrimary;
   G4Accumulable<G4int> fCounter = 0;
   G4Accumulable<G4int> fCounter_mid = 0;
+  G4Accumulable<G4int> fCounter_LG_NT = 0;
+  G4Accumulable<G4int> fCounter_PMT_NT = 0;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

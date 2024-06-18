@@ -43,6 +43,8 @@ TrackInformation::TrackInformation()
   : G4VUserTrackInformation()
 {
   fFirstTankX = true;
+  fBouncesOut = 0;
+  fBouncesIn = 0;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -50,6 +52,8 @@ TrackInformation::TrackInformation(const G4Track*)
   : G4VUserTrackInformation()
 {
   fFirstTankX = true;
+  fBouncesOut = 0;
+  fBouncesIn = 0;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -57,6 +61,8 @@ TrackInformation::TrackInformation(const TrackInformation* aTrackInfo)
   : G4VUserTrackInformation()
 {
   fFirstTankX = aTrackInfo->fFirstTankX;
+  fBouncesOut = aTrackInfo->fBouncesOut;
+  fBouncesIn = aTrackInfo->fBouncesIn;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -67,6 +73,8 @@ TrackInformation& TrackInformation::operator=(
   const TrackInformation& aTrackInfo)
 {
   fFirstTankX = aTrackInfo.fFirstTankX;
+  fBouncesOut = aTrackInfo.fBouncesOut;
+  fBouncesIn = aTrackInfo.fBouncesIn;
 
   return *this;
 }
@@ -75,12 +83,16 @@ TrackInformation& TrackInformation::operator=(
 void TrackInformation::SetSourceTrackInformation(const G4Track*)
 {
   fFirstTankX = true;
+  fBouncesOut = 0;
+  fBouncesIn = 0;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 void TrackInformation::Print() const
 {
   G4cout << "first time track incident on X: " << fFirstTankX << G4endl;
+  G4cout << "Number of bounces in is: " << fBouncesIn << G4endl;
+  G4cout << "Number of bounces in is: " << fBouncesOut << G4endl;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

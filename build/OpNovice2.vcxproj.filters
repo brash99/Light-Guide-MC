@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\OpNovice2.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\ActionInitialization.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\DetectorConstruction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\DetectorMessenger.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\EventAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\HistoManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\PrimaryGeneratorAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\PrimaryGeneratorMessenger.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\Run.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\RunAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\SteppingAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\TrackInformation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\src\TrackingAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\ActionInitialization.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\DetectorConstruction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\DetectorMessenger.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\EventAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\G4AnalysisManager.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\G4VisAttributes.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\HistoManager.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\PrimaryGeneratorAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\PrimaryGeneratorMessenger.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\Run.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\RunAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\SteppingAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\TrackInformation.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\include\TrackingAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\alrev\Masters\Geant4-MC-main\Other Simulations\bend_test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{577E021D-A3F6-398F-BF64-BE01AE05A5A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{00797666-3423-3073-9446-FE76845EC0F8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

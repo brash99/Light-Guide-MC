@@ -60,7 +60,7 @@ DetectorConstruction::DetectorConstruction()
   : G4VUserDetectorConstruction()
   , fDetectorMessenger(nullptr)
 {
-  fExpHall_x = fExpHall_y = fExpHall_z = 70.0 * cm;
+  fExpHall_x = fExpHall_y = fExpHall_z = 900.0 * cm;
   fTank_x = fTank_y = fTank_z = 1.0 * cm;
 
   fTank = nullptr;
@@ -120,12 +120,16 @@ DetectorConstruction::DetectorConstruction()
   rec_box_LV = nullptr;
 
 
-  bend_ang = 1*rad;
-  bend_rad = 24.75*cm;
+  bend_ang = 0.001*rad;
+  bend_rad = 200000*cm;
+
+  // [1.   0.5  0.2  0.1  0.05]
+  // [49.75 24.75  9.75  4.75  2.25  0.25]
   
 
   fTankMaterial  = G4NistManager::Instance()->FindOrBuildMaterial("G4_GLASS_PLATE");
   fWorldMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_AIR");
+  // fWorldMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_Galactic");
   fScintMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_Pyrex_Glass");
 
   fDetectorMessenger = new DetectorMessenger(this);
@@ -154,7 +158,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   fWorldMaterial->SetMaterialPropertiesTable(fWorldMPT);
 
   G4double thick = 0.25*cm;
-  G4double len = thick * 20;
+  G4double len = 5*cm;
 
   // ------------- Volumes --------------
   // The experimental Hall
@@ -185,8 +189,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   // //G4PVPlacement* photo_PV = new G4PVPlacement(0, G4ThreeVector(0, 0, -19.9*cm), photo_LV, "Photo", fWorld_LV, false, 0);
 
 
-  G4Tubs* rect_mid_curve = new G4Tubs("rect_mid1", bend_rad, bend_rad + (thick * 2), 2.49*cm, 0.*deg, bend_ang);
-  G4Box* rect_mid_straight = new G4Box("rect_mid2", 2.49*fTank_x, thick, len);
+  G4Tubs* rect_mid_curve = new G4Tubs("rect_mid1", bend_rad, bend_rad + (thick * 2), 2.5*cm, 0.*deg, bend_ang);
+  G4Box* rect_mid_straight = new G4Box("rect_mid2", 2.5*cm, thick, len);
   G4UnionSolid* rect_mid = new G4UnionSolid("rect_mid", rect_mid_curve, rect_mid_straight, Rot, G4ThreeVector((bend_rad + thick)*std::cos(bend_ang) - len*std::cos(90*deg - bend_ang), (bend_rad + thick)*std::sin(bend_ang) + len*std::sin(90*deg - bend_ang), 0));
 
   rect_mid_LV = new G4LogicalVolume(rect_mid, fTankMaterial, "rect_mid", 0, 0, 0);
@@ -214,7 +218,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
 
   // scintillator
-  G4Box* scint = new G4Box("Scint", 2.49*cm, thick, 5*cm);
+  G4Box* scint = new G4Box("Scint", 2.5*cm, thick, 5*cm);
   G4LogicalVolume* scint_LV = new G4LogicalVolume(scint, fTankMaterial, "Scint", 0, 0, 0);
   scint_PV = new G4PVPlacement(0, G4ThreeVector(0, 0, 5*cm), scint_LV, "Scint", fWorld_LV, false, 0);
 

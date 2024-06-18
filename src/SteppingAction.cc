@@ -82,13 +82,11 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   G4Track* track          = step->GetTrack();
   G4StepPoint* endPoint   = step->GetPostStepPoint();
   G4StepPoint* startPoint = step->GetPreStepPoint();
-
-
-
-
-
+  
 
   //new
+
+  G4ThreeVector start_pos = startPoint->GetPosition();
 
   auto PreVolume = step->GetPreStepPoint()->GetPhysicalVolume();
   auto PostVolume = step->GetPostStepPoint()->GetPhysicalVolume();
@@ -99,6 +97,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   auto detVolume = detConstruction->GetScoringVolume();
   auto detVolume_mid = detConstruction->GetMidVolume();
   auto scint_volume = detConstruction->GetScintVolume();
+  auto tank = detConstruction->GetTankVolume();
   //G4bool condition = step->IsFirstStepInVolume();
 
   G4int counter_step = 0;
@@ -111,18 +110,55 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 
   G4double angle_time = startPoint->GetMomentumDirection().getTheta();
   G4double azim_time = startPoint->GetMomentumDirection().getPhi();
+  G4bool in = false;
+  G4ThreeVector mom = startPoint->GetMomentumDirection();
+  G4ThreeVector initialMomentum = track->GetVertexMomentumDirection();
+  G4double initialTheta = initialMomentum.theta();
+   if (initialTheta > CLHEP::pi - 0.7297 && initialTheta < CLHEP::pi + 0.7297) {
+      in = true;
+   }
+
+  TrackInformation* trackInfo = (TrackInformation*) (track->GetUserInformation());
+  const G4DynamicParticle* theParticle = track->GetDynamicParticle();
+  const G4ParticleDefinition* particleDef = theParticle->GetParticleDefinition();
+
+  if (PostVolume != detVolume_mid && PostVolume != detVolume && PostVolume != scint_volume && PreVolume != detVolume_mid && PreVolume != detVolume && PreVolume != scint_volume){
+    analysisMan->FillNtupleDColumn(0, 0, initialMomentum[0]); 
+    analysisMan->FillNtupleDColumn(0, 1, initialMomentum[1]); 
+    analysisMan->FillNtupleDColumn(0, 2, initialMomentum[2]); 
+    analysisMan->AddNtupleRow(0);
+    analysisMan->FillH1(33, initialMomentum[0]);
+    analysisMan->FillH1(34, initialMomentum[1]);
+    analysisMan->FillH1(35, initialMomentum[2]);
+    track->SetTrackStatus(fStopAndKill);
+  }
+
+ if(PostVolume == tank)
+  {
+    track->SetTrackStatus(fStopAndKill);
+  }
 
   if(PreVolume == detVolume_mid && PostVolume == detVolume)
   {
+    analysisMan->FillNtupleDColumn(2, 0, mom[0]); 
+    analysisMan->FillNtupleDColumn(2, 1, mom[1]); 
+    analysisMan->FillNtupleDColumn(2, 2, mom[2]); 
+    analysisMan->AddNtupleRow(2);
+    analysisMan->FillNtupleDColumn(4, 0, initialMomentum[0]); 
+    analysisMan->FillNtupleDColumn(4, 1, initialMomentum[1]); 
+    analysisMan->FillNtupleDColumn(4, 2, initialMomentum[2]); 
+    analysisMan->AddNtupleRow(4);
+    analysisMan->FillH1(39, mom[0]);
+    analysisMan->FillH1(40, mom[1]);
+    analysisMan->FillH1(41, mom[2]);
     counter_step += 1;
-    time = step->GetPreStepPoint()->GetGlobalTime();
-    analysisMan->FillH1(26, time * ns);
+    // time = step->GetPreStepPoint()->GetGlobalTime();
 
-    if(time_min <= (time * ns) && (time * ns) <= time_max)
-    {
-      analysisMan->FillH1(29, angle_time / deg);
-      analysisMan->FillH1(30, azim_time / deg);
-    }
+    // if(time_min <= (time * ns) && (time * ns) <= time_max)
+    // {
+    //   analysisMan->FillH1(29, angle_time / deg);
+    //   analysisMan->FillH1(30, azim_time / deg);
+    // }
 
     //sLength = step->GetStepLength();
     //analysisMan->FillH1(27, sLength / m);
@@ -133,36 +169,68 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     //     G4Trajectory* trajectory = new G4Trajectory(track);
     //     trajectory->ShowTrajectory();
     // }
+    G4int boIn = trackInfo->getBouncesIn();
+    G4int boOut = trackInfo->getBouncesOut();
+    run->addBounceIn(boIn);
+    run->addBounceOut(boOut);
+    if (in){
+      run->addParticleIn();
+      analysisMan->FillH1(26, time * ns);
+    }
+    else {
+      run->addParticleOut();
+      analysisMan->FillH1(27, time * ns);
+    }
+    analysisMan->FillNtupleDColumn(0, 0, initialMomentum[0]); 
+    analysisMan->FillNtupleDColumn(0, 1, initialMomentum[1]); 
+    analysisMan->FillNtupleDColumn(0, 2, initialMomentum[2]); 
+    analysisMan->AddNtupleRow(0);
+    analysisMan->FillH1(33, initialMomentum[0]);
+    analysisMan->FillH1(34, initialMomentum[1]);
+    analysisMan->FillH1(35, initialMomentum[2]);
     track->SetTrackStatus(fStopAndKill);
   }
   fEventAction->AddCount(counter_step);
-
+  if (!in) {
+      fEventAction->AddCount_PMT_NT(counter_step);
+  }
   
-
   G4int counter_step4 = 0;
   if(PreVolume == scint_volume && PostVolume == detVolume_mid)
   {
+    analysisMan->FillNtupleDColumn(1, 0, mom[0]); 
+    analysisMan->FillNtupleDColumn(1, 1, mom[1]); 
+    analysisMan->FillNtupleDColumn(1, 2, mom[2]); 
+    analysisMan->AddNtupleRow(1);
+    analysisMan->FillNtupleDColumn(3, 0, initialMomentum[0]); 
+    analysisMan->FillNtupleDColumn(3, 1, initialMomentum[1]); 
+    analysisMan->FillNtupleDColumn(3, 2, initialMomentum[2]); 
+    analysisMan->AddNtupleRow(3);
+    analysisMan->FillH1(36, mom[0]);
+    analysisMan->FillH1(37, mom[1]);
+    analysisMan->FillH1(38, mom[2]);
     counter_step4 += 1;
   }
   fEventAction->AddCount_mid(counter_step4);
+  if (!in) {
+      fEventAction->AddCount_LG_NT(counter_step4);
+  }
 
   if(PostVolume == scint_volume && PreVolume == detVolume_mid)
   {
+    analysisMan->FillNtupleDColumn(0, 0, initialMomentum[0]); 
+    analysisMan->FillNtupleDColumn(0, 1, initialMomentum[1]); 
+    analysisMan->FillNtupleDColumn(0, 2, initialMomentum[2]); 
+    analysisMan->AddNtupleRow(0);
+  //   analysisMan->FillH1(33, initialMomentum[0]);
+  //   analysisMan->FillH1(34, initialMomentum[1]);
+  //   analysisMan->FillH1(35, initialMomentum[2]);
     track->SetTrackStatus(fStopAndKill);
   }
 
 
-
-  const G4DynamicParticle* theParticle = track->GetDynamicParticle();
-  const G4ParticleDefinition* particleDef =
-    theParticle->GetParticleDefinition();
-
-  TrackInformation* trackInfo =
-    (TrackInformation*) (track->GetUserInformation());
-
   if(particleDef == opticalphoton)
   {
-
     const G4VProcess* pds = endPoint->GetProcessDefinedStep();
     G4String procname     = pds->GetProcessName();
 
@@ -230,7 +298,11 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
         OpManager->GetPostStepProcessVector(typeDoIt);
       G4int n_proc = postStepDoItVector->entries();
 
-      if(trackInfo->GetIsFirstTankX())
+      if (true) //(trackInfo->GetIsFirstTankX())
+      if (PostVolume == tank)
+      {
+        
+      }
       {
         G4ThreeVector momdir = endPoint->GetMomentumDirection();
         G4double px1         = momdir.x();
@@ -274,12 +346,23 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 
             theStatus      = opProc->GetStatus();
             analysisMan->FillH1(10, theStatus);
+            analysisMan->FillNtupleIColumn(6, 0, theStatus);
+            analysisMan->AddNtupleRow(6);
+            G4ThreeVector trkPos = track->GetPosition();
+
             switch(theStatus)
             {
               case Transmission:
                 run->AddTransmission();
                 break;
               case FresnelRefraction:
+                if(PreVolume == detVolume_mid)// && (PostVolume != detVolume && PostVolume != detVolume_mid && PostVolume != scint_volume))
+                {
+                  analysisMan->FillNtupleDColumn(5, 0, start_pos.x()); 
+                  analysisMan->FillNtupleDColumn(5, 1, start_pos.y()); 
+                  analysisMan->FillNtupleDColumn(5, 2, start_pos.z()); 
+                  analysisMan->AddNtupleRow(5);
+                }
                 run->AddFresnelRefraction();
                 analysisMan->FillH1(17, px1);
                 analysisMan->FillH1(18, py1);
@@ -291,6 +374,13 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
                 analysisMan->FillH1(23, azim / deg);
                 analysisMan->FillH1(25, azim / deg);
                 analysisMan->FillH1(32, angle / deg);
+                if (in) {
+                  trackInfo->addBounceIn();
+                }
+                else {
+                  trackInfo->addBounceOut();
+                }
+                track->SetTrackStatus(fStopAndKill);
                 break;
               case FresnelReflection:
                 run->AddFresnelReflection();
@@ -299,6 +389,12 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
                 analysisMan->FillH1(24, azim / deg);
                 analysisMan->FillH1(25, azim / deg);
                 analysisMan->FillH1(31, angle / deg);
+                if (in) {
+                  trackInfo->addBounceIn();
+                }
+                else {
+                  trackInfo->addBounceOut();
+                }
                 break;
               case TotalInternalReflection:
                 run->AddTotalInternalReflection();
@@ -307,18 +403,48 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
                 analysisMan->FillH1(24, azim / deg);
                 analysisMan->FillH1(25, azim / deg);
                 analysisMan->FillH1(31, angle / deg);
+                if (in) {
+                  trackInfo->addBounceIn();
+                }
+                else {
+                  trackInfo->addBounceOut();
+                }
                 break;
               case LambertianReflection:
                 run->AddLambertianReflection();
+                if (in) {
+                  trackInfo->addBounceIn();
+                }
+                else {
+                  trackInfo->addBounceOut();
+                }
                 break;
               case LobeReflection:
                 run->AddLobeReflection();
+                if (in) {
+                  trackInfo->addBounceIn();
+                }
+                else {
+                  trackInfo->addBounceOut();
+                }
                 break;
               case SpikeReflection:
                 run->AddSpikeReflection();
+                if (in) {
+                  trackInfo->addBounceIn();
+                }
+                else {
+                  trackInfo->addBounceOut();
+                }
                 break;
               case BackScattering:
                 run->AddBackScattering();
+                if (in) {
+                  trackInfo->addBounceIn();
+                }
+                else {
+                  trackInfo->addBounceOut();
+                }
                 break;
               case Absorption:
                 run->AddAbsorption();

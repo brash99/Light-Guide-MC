@@ -55,6 +55,7 @@ class DetectorConstruction : public G4VUserDetectorConstruction
   G4VPhysicalVolume* GetScoringVolume() const { return cone_PV; }
   G4VPhysicalVolume* GetMidVolume() const { return rect_mid_PV; }
   G4VPhysicalVolume* GetScintVolume() const { return scint_PV; }
+  G4VPhysicalVolume* GetTankVolume() const { return fTank; }
 
   G4OpticalSurface* GetSurface(void) { return fSurface; }
 
