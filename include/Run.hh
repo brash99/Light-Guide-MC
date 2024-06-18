@@ -187,6 +187,39 @@ class Run : public G4Run
   {
     fBoundaryProcs[GroundVM2000GlueReflection] += 1;
   }
+  void addBounceIn(G4int n)
+  {
+    bounceIn += n;
+  }
+  G4int getBounceIn() 
+  {
+    return bounceIn;
+  }
+  void addBounceOut(G4int n)
+  {
+    bounceOut += n;
+  }
+  G4int getBounceOut() 
+  {
+    return bounceOut;
+  }
+
+  void addParticleIn()
+  {
+    ParticleIn += 1;
+  }
+  G4int getParticleIn() 
+  {
+    return ParticleIn;
+  }
+  void addParticleOut()
+  {
+    ParticleOut += 1;
+  }
+  G4int getParticleOut() 
+  {
+    return ParticleOut;
+  }
 
   void AddDichroic(void) { fBoundaryProcs[Dichroic] += 1; }
 
@@ -228,6 +261,11 @@ class Run : public G4Run
   std::vector<G4int> fBoundaryProcs;
 
   G4int fTotalSurface;
+
+  G4int bounceOut;
+  G4int bounceIn;
+  G4int ParticleOut;
+  G4int ParticleIn;
 };
 
 #endif /* Run_h */

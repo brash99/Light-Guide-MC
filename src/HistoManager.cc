@@ -142,8 +142,75 @@ void HistoManager::Book()
   //32
   analysisMan->CreateH1("Transmitted_NF", "Transmitted photons", n, xmn, xmx);
 
+  //33
+  analysisMan->CreateH1("momi_x", "momi_x", n, xmn, xmx);
+  //34
+  analysisMan->CreateH1("momi_y", "momi_y", n, xmn, xmx);
+  //35
+  analysisMan->CreateH1("momi_z", "momi_z", n, xmn, xmx);
+
+  //36
+  analysisMan->CreateH1("momb_x", "momb_x", n, xmn, xmx);
+  //37
+  analysisMan->CreateH1("momb_y", "momb_y", n, xmn, xmx);
+  //38
+  analysisMan->CreateH1("momb_z", "momb_z", n, xmn, xmx);
+
+  //39
+  analysisMan->CreateH1("mompmt_x", "mompmt_x", n, xmn, xmx);
+  //40
+  analysisMan->CreateH1("mompmt_y", "mompmt_y", n, xmn, xmx);
+  //41
+  analysisMan->CreateH1("mompmt_z", "mompmt_z", n, xmn, xmx);
+
+
+
   for(G4int i = 0; i < analysisMan->GetNofH1s(); ++i)
   {
     analysisMan->SetH1Activation(i, false);
   }
+  
+  analysisMan->SetFirstNtupleId(0);
+  analysisMan->SetNtupleMerging( 1 ); 
+
+  analysisMan->CreateNtuple("momi", "momi");
+  analysisMan->CreateNtupleDColumn("x");
+  analysisMan->CreateNtupleDColumn("y");
+  analysisMan->CreateNtupleDColumn("z");
+  analysisMan->FinishNtuple(); 
+
+  analysisMan->CreateNtuple("momb", "momb");
+  analysisMan->CreateNtupleDColumn("x");
+  analysisMan->CreateNtupleDColumn("y");
+  analysisMan->CreateNtupleDColumn("z");
+  analysisMan->FinishNtuple(); 
+
+  analysisMan->CreateNtuple("mompmt", "mompmt");
+  analysisMan->CreateNtupleDColumn("x");
+  analysisMan->CreateNtupleDColumn("y");
+  analysisMan->CreateNtupleDColumn("z");
+  analysisMan->FinishNtuple(); 
+
+  analysisMan->CreateNtuple("mombi", "mombi");
+  analysisMan->CreateNtupleDColumn("x");
+  analysisMan->CreateNtupleDColumn("y");
+  analysisMan->CreateNtupleDColumn("z");
+  analysisMan->FinishNtuple(); 
+
+  analysisMan->CreateNtuple("mompmti", "mompmti");
+  analysisMan->CreateNtupleDColumn("x");
+  analysisMan->CreateNtupleDColumn("y");
+  analysisMan->CreateNtupleDColumn("z");
+  analysisMan->FinishNtuple(); 
+
+  analysisMan->CreateNtuple("pos_esc", "pos_esc");
+  analysisMan->CreateNtupleDColumn("x");
+  analysisMan->CreateNtupleDColumn("y");
+  analysisMan->CreateNtupleDColumn("z");
+  analysisMan->FinishNtuple(); 
+
+  analysisMan->CreateNtuple("bound", "bound");
+  analysisMan->CreateNtupleIColumn("code");
+  analysisMan->FinishNtuple(); 
+
 }

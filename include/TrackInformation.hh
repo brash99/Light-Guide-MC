@@ -57,9 +57,15 @@ class TrackInformation : public G4VUserTrackInformation
  public:
   inline G4bool GetIsFirstTankX() const { return fFirstTankX; }
   inline void SetIsFirstTankX(G4bool b) { fFirstTankX = b; }
+  inline void addBounceOut() { fBouncesOut += 1;}
+  inline G4int getBouncesOut() { return fBouncesOut; }
+  inline void addBounceIn() { fBouncesIn += 1;}
+  inline G4int getBouncesIn() { return fBouncesIn; }
 
  private:
   G4bool fFirstTankX;
+  G4int fBouncesIn;
+  G4int fBouncesOut;
 };
 
 extern G4ThreadLocal G4Allocator<TrackInformation>* aTrackInformationAllocator;

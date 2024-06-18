@@ -54,6 +54,8 @@ RunAction::RunAction(PrimaryGeneratorAction* prim)
   G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
   accumulableManager->RegisterAccumulable(fCounter);
   accumulableManager->RegisterAccumulable(fCounter_mid);
+  accumulableManager->RegisterAccumulable(fCounter_LG_NT);
+  accumulableManager->RegisterAccumulable(fCounter_PMT_NT);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -273,6 +275,8 @@ void RunAction::EndOfRunAction(const G4Run*)
 
   G4int count = fCounter.GetValue();
   G4int count_mid = fCounter_mid.GetValue();
+  G4int LG_NT = fCounter_LG_NT.GetValue();
+  G4int PMT_NT = fCounter_PMT_NT.GetValue();
 
   G4cout << G4endl;
   G4cout << "Photons that reached the end: " << count << G4endl;
@@ -280,6 +284,11 @@ void RunAction::EndOfRunAction(const G4Run*)
   G4cout << G4endl;
   G4cout << "Photons in middle: " << count_mid << G4endl;
   G4cout << G4endl;
+
+  G4cout << std::setprecision(4) << "Efficiency: " << double (count) / double (count_mid) << G4endl;
+
+  G4cout << std::setprecision(4) << "Efficiency for Not Trapped: " << double (PMT_NT) / double (LG_NT) << G4endl;
+
 
 }
 
@@ -292,5 +301,15 @@ void RunAction::AddCount(G4int count)
 void RunAction::AddCount_mid(G4int count_mid)
 {
   fCounter_mid += count_mid;
+}
+
+void RunAction::AddCount_LG_NT(G4int count)
+{
+  fCounter_LG_NT += count;
+}
+
+void RunAction::AddCount_PMT_NT(G4int count)
+{
+  fCounter_PMT_NT += count;
 }
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

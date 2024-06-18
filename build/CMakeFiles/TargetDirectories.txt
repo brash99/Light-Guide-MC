@@ -1,0 +1,4 @@
+C:/Users/alrev/Masters/Geant4-MC-main/Other Simulations/bend_test/build/CMakeFiles/OpNovice2.dir
+C:/Users/alrev/Masters/Geant4-MC-main/Other Simulations/bend_test/build/CMakeFiles/INSTALL.dir
+C:/Users/alrev/Masters/Geant4-MC-main/Other Simulations/bend_test/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/alrev/Masters/Geant4-MC-main/Other Simulations/bend_test/build/CMakeFiles/ZERO_CHECK.dir

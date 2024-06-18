@@ -70,6 +70,11 @@ Run::Run()
 
   fTotalSurface = 0;
 
+  bounceIn = 0;
+  bounceOut = 0;
+  ParticleIn = 0;
+  ParticleOut = 0;
+
   fBoundaryProcs.clear();
   fBoundaryProcs.resize(40);
   for(G4int i = 0; i < 40; ++i)
@@ -122,6 +127,11 @@ void Run::Merge(const G4Run* run)
   fOpAbsorption += localRun->fOpAbsorption;
   fOpAbsorptionPrior += localRun->fOpAbsorptionPrior;
 
+  bounceIn += localRun->bounceIn;
+  bounceOut += localRun->bounceOut;
+  ParticleIn += localRun->ParticleIn;
+  ParticleOut += localRun->ParticleOut;
+
   for(size_t i = 0; i < fBoundaryProcs.size(); ++i)
   {
     fBoundaryProcs[i] += localRun->fBoundaryProcs[i];
@@ -134,11 +144,12 @@ void Run::Merge(const G4Run* run)
 void Run::EndOfRun()
 {
   if(numberOfEvent == 0)
-    return;
+    {G4cout << "no events" << G4endl;
+    return;}
   G4double TotNbofEvents = (G4double) numberOfEvent;
-
+  G4cout << TotNbofEvents << " events" << G4endl;
   G4AnalysisManager* analysisMan = G4AnalysisManager::Instance();
-  G4int id                       = analysisMan->GetH1Id("Cerenkov spectrum");
+  G4int id = analysisMan->GetH1Id("Cerenkov spectrum");
   analysisMan->SetH1XAxisTitle(id, "Energy [eV]");
   analysisMan->SetH1YAxisTitle(id, "Number of photons");
 
@@ -265,7 +276,6 @@ void Run::EndOfRun()
   id = analysisMan->GetH1Id("Transmitted_NF");
   analysisMan->SetH1XAxisTitle(id, "Polar Angle [deg]");
   analysisMan->SetH1YAxisTitle(id, "Number of photons");
-
 
   const DetectorConstruction* det =
     (const DetectorConstruction*) (G4RunManager::GetRunManager()
@@ -560,7 +570,8 @@ void Run::EndOfRun()
   G4cout << " Sum:                        " << std::setw(8) << sum << G4endl;
   G4cout << " Unaccounted for:            " << std::setw(8)
          << fTotalSurface - sum << G4endl;
-
+  G4cout << std::setprecision(6) << bounceIn << " bounces in with " << ParticleIn << " particles in so avg # bounces in: " << ((double) bounceIn) / ((double)ParticleIn) << G4endl;
+  G4cout << bounceOut << " bounces out with " << ParticleOut << " particles out so avg # bounces out: " << ((double) bounceOut) / ((double)ParticleOut) << G4endl;
   G4cout << "---------------------------------\n";
   G4cout.setf(mode, std::ios::floatfield);
   G4cout.precision(prec);
