@@ -97,10 +97,9 @@
 #/vis/viewer/flush
 
 /analysis/setFileName ./with_tuple.root
-/analysis/h1/set 10 100 1 100
 /analysis/h1/set 26 100 1 10
 /analysis/h1/set 27 100 1 10
 
 
-/run/beamOn 5000
+#/run/beamOn 5000
 /vis/scene/add/trajectories rich
