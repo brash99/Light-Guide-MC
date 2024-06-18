@@ -356,7 +356,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
                 run->AddTransmission();
                 break;
               case FresnelRefraction:
-                if(PreVolume == detVolume_mid)// && (PostVolume != detVolume && PostVolume != detVolume_mid && PostVolume != scint_volume))
+                if (true)//(PreVolume == detVolume_mid)// && (PostVolume != detVolume && PostVolume != detVolume_mid && PostVolume != scint_volume))
                 {
                   analysisMan->FillNtupleDColumn(5, 0, start_pos.x()); 
                   analysisMan->FillNtupleDColumn(5, 1, start_pos.y()); 
