@@ -53,7 +53,7 @@
 #include "G4ThreeVector.hh"
 #include "G4PVPlacement.hh"
 #include "G4SystemOfUnits.hh"
-#include "G4TwistedTrd.hh"
+#include "G4TwistedBox.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -122,10 +122,12 @@ DetectorConstruction::DetectorConstruction()
 
   // [1.   0.5  0.2  0.1  0.05]
   // [995. 495. 195.  95.  45.   5.]
+  // [49.75 24.75  9.75  4.75  2.25  0.25]
   
 
   fTankMaterial  = G4NistManager::Instance()->FindOrBuildMaterial("G4_GLASS_PLATE");
   fWorldMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_AIR");
+  // fWorldMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_Galactic");
   fScintMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_Pyrex_Glass");
 
   fDetectorMessenger = new DetectorMessenger(this);
@@ -166,6 +168,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
   world_PV = new G4PVPlacement(0, G4ThreeVector(), fWorld_LV, "World", 0, false, 0, true);
 
+  // Rotations ... need to understand this!
   G4RotationMatrix* Rot = new G4RotationMatrix();
   Rot->rotateZ((bend_ang/2)*deg);
 
@@ -182,6 +185,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4Box* rect_mid_curve = new G4Box("TwistedStrip", width, thick, l);
   G4Box* rect_mid_straight = new G4Box("rect_mid2", width, thick, len / 2);
   G4UnionSolid* rect_mid = new G4UnionSolid("rect_mid", rect_mid_straight, rect_mid_curve, 0, G4ThreeVector(0, 0, -l-len/2));
+  G4cout << "G4UnionSolid G4ThreeVector: " << "0" << " , " << "0" << " , " << -l-len/2 << G4endl;
+  G4cout << "Rotation: " << Rot << G4endl;
 
   rect_mid_LV = new G4LogicalVolume(rect_mid, fTankMaterial, "rect_mid", 0, 0, 0);
   rect_mid_PV = new G4PVPlacement(0, G4ThreeVector(0, 0, -len/2), rect_mid_LV, "rect_mid", fWorld_LV, false, 0, true);
