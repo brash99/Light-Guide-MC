@@ -10,7 +10,7 @@
 /run/initialize
 #
 # Use this open statement to create an OpenGL view:
-/vis/open OGL 600x600-0+0
+#/vis/open OGL 600x600-0+0
 #
 # Use this open statement to create a .prim file suitable for
 # viewing in DAWN:
@@ -22,7 +22,7 @@
 #
 # Use this open statement to create a .wrl file suitable for
 # viewing in a VRML viewer:
-#/vis/open VRML2FILE
+/vis/open VRML2FILE
 #
 # Disable auto refresh and quieten vis messages whilst scene and
 # trajectories are established:
@@ -101,5 +101,5 @@
 /analysis/h1/set 27 100 1 10
 
 
-/run/beamOn 500000
+/run/beamOn 5000
 /vis/scene/add/trajectories rich

@@ -152,6 +152,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     analysisMan->FillH1(40, mom[1]);
     analysisMan->FillH1(41, mom[2]);
     counter_step += 1;
+    //G4cout << "PreVolume == detVolume_mid && PostVolume == detVolume:  " << counter_step << G4endl;
     // time = step->GetPreStepPoint()->GetGlobalTime();
 
     // if(time_min <= (time * ns) && (time * ns) <= time_max)
@@ -210,6 +211,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     analysisMan->FillH1(37, mom[1]);
     analysisMan->FillH1(38, mom[2]);
     counter_step4 += 1;
+    //G4cout << "PreVolume == scint_volume && PostVolume == detVolume_mid:  " << counter_step4 << G4endl;
   }
   fEventAction->AddCount_mid(counter_step4);
   if (!in) {
