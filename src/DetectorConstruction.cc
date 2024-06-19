@@ -60,7 +60,7 @@ DetectorConstruction::DetectorConstruction()
   : G4VUserDetectorConstruction()
   , fDetectorMessenger(nullptr)
 {
-  fExpHall_x = fExpHall_y = fExpHall_z = 900.0 * cm;
+  fExpHall_x = fExpHall_y = fExpHall_z = 950.0 * cm;
   fTank_x = fTank_y = fTank_z = 1.0 * cm;
 
   fTank = nullptr;
@@ -124,6 +124,7 @@ DetectorConstruction::DetectorConstruction()
   bend_rad = 200000*cm;
 
   // [1.   0.5  0.2  0.1  0.05]
+  // [995. 495. 195.  95.  45.   5.]
   // [49.75 24.75  9.75  4.75  2.25  0.25]
   
 
@@ -166,8 +167,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
   fWorld_LV = new G4LogicalVolume(world_box, fWorldMaterial, "World", 0, 0, 0);
 
-  world_PV = new G4PVPlacement(0, G4ThreeVector(), fWorld_LV, "World", 0, false, 0);
+  world_PV = new G4PVPlacement(0, G4ThreeVector(), fWorld_LV, "World", 0, false, 0, true);
 
+  // Rotations ... need to understand this!
   G4RotationMatrix* Rot = new G4RotationMatrix();
   Rot->rotateY(90*deg);
   Rot->rotateX(90*deg - bend_ang);
@@ -192,15 +194,17 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4Tubs* rect_mid_curve = new G4Tubs("rect_mid1", bend_rad, bend_rad + (thick * 2), 2.5*cm, 0.*deg, bend_ang);
   G4Box* rect_mid_straight = new G4Box("rect_mid2", 2.5*cm, thick, len);
   G4UnionSolid* rect_mid = new G4UnionSolid("rect_mid", rect_mid_curve, rect_mid_straight, Rot, G4ThreeVector((bend_rad + thick)*std::cos(bend_ang) - len*std::cos(90*deg - bend_ang), (bend_rad + thick)*std::sin(bend_ang) + len*std::sin(90*deg - bend_ang), 0));
+  G4cout << "G4UnionSolid G4ThreeVector: " << (bend_rad + thick)*    std::cos(bend_ang) - len*std::cos(90*deg - bend_ang) << " , " << (bend_rad + thick)*std::sin(bend_ang) + len*std::sin(90*deg - bend_ang) << " , " << "0" << G4endl; 
+  G4cout << "Rotation: " << Rot << G4endl;
 
   rect_mid_LV = new G4LogicalVolume(rect_mid, fTankMaterial, "rect_mid", 0, 0, 0);
-  rect_mid_PV = new G4PVPlacement(Rotty, G4ThreeVector(0, (bend_rad + thick), 0), rect_mid_LV, "rect_mid", fWorld_LV, false, 0);
+  rect_mid_PV = new G4PVPlacement(Rotty, G4ThreeVector(0, (bend_rad + thick), 0), rect_mid_LV, "rect_mid", fWorld_LV, false, 0, true);
 
 
   // PMT
   G4Tubs* cone = new G4Tubs("Cone", 0., 2.75*cm, 5*cm, 0.*deg, 360.0*deg);
   cone_LV = new G4LogicalVolume(cone, fWorldMaterial, "Cone", 0, 0, 0);
-  cone_PV = new G4PVPlacement(Rott, G4ThreeVector(0, (bend_rad + thick) * (1 - std::cos(bend_ang)) + 5*cm*std::sin(bend_ang) + 2*len*std::cos(90*deg - bend_ang), - (bend_rad + thick) * std::sin(bend_ang) - 5*cm*std::cos(bend_ang) - 2*len*std::sin(90*deg - bend_ang)), cone_LV, "Cone", fWorld_LV, false, 0);
+  cone_PV = new G4PVPlacement(Rott, G4ThreeVector(0, (bend_rad + thick) * (1 - std::cos(bend_ang)) + 5*cm*std::sin(bend_ang) + 2*len*std::cos(90*deg - bend_ang), - (bend_rad + thick) * std::sin(bend_ang) - 5*cm*std::cos(bend_ang) - 2*len*std::sin(90*deg - bend_ang)), cone_LV, "Cone", fWorld_LV, false, 0, true);
 
 
 
@@ -220,7 +224,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   // scintillator
   G4Box* scint = new G4Box("Scint", 2.5*cm, thick, 5*cm);
   G4LogicalVolume* scint_LV = new G4LogicalVolume(scint, fTankMaterial, "Scint", 0, 0, 0);
-  scint_PV = new G4PVPlacement(0, G4ThreeVector(0, 0, 5*cm), scint_LV, "Scint", fWorld_LV, false, 0);
+  scint_PV = new G4PVPlacement(0, G4ThreeVector(0, 0, 5*cm), scint_LV, "Scint", fWorld_LV, false, 0, true);
 
 
 
