@@ -86,7 +86,7 @@ DetectorConstruction::DetectorConstruction()
   G4double pp[NUM] = {2.0*eV, 2.2*eV, 2.4*eV, 2.6*eV, 2.8*eV, 3.0*eV};
   G4double rindex[NUM] = {1.5, 1.5, 1.5, 1.5, 1.5, 1.5};
   G4double rindex2[NUM] = {1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
-  G4double rindex3[NUM] = {1.52, 1.52, 1.52, 1.52, 1.52, 1.52};
+  G4double rindex3[NUM] = {3.52, 3.52, 3.52, 3.52, 3.52, 3.52};
   G4double reflectivity[NUM] = {0.3, 0.3, 0.3, 0.3, 0.3, 0.3};
 
   G4double reflectivity2[NUM] = {1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
@@ -100,8 +100,8 @@ DetectorConstruction::DetectorConstruction()
   //fSurfaceMPT->AddProperty("REFLECTIVITY",pp,reflectivity,NUM);
   //fSurfaceMPT->AddProperty("TRANSMITTANCE",pp,tran,NUM);
 
-  fSurfaceMPT2->AddProperty("REFLECTIVITY", pp, reflectivity2, NUM);
-  fSurfaceMPT2->AddProperty("TRANSMITTANCE", pp, tran2, NUM);
+  //fSurfaceMPT2->AddProperty("REFLECTIVITY", pp, reflectivity2, NUM);
+  //fSurfaceMPT2->AddProperty("TRANSMITTANCE", pp, tran2, NUM);
 
   fWorldMPT->AddProperty("RINDEX", pp, rindex2, NUM);
   fScintMPT->AddProperty("RINDEX", pp, rindex3, NUM);
