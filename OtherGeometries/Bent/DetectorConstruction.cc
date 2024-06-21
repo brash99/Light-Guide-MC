@@ -194,8 +194,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4Tubs* rect_mid_curve = new G4Tubs("rect_mid1", bend_rad, bend_rad + (thick * 2), 2.5*cm, 0.*deg, bend_ang);
   G4Box* rect_mid_straight = new G4Box("rect_mid2", 2.5*cm, thick, len);
   G4UnionSolid* rect_mid = new G4UnionSolid("rect_mid", rect_mid_curve, rect_mid_straight, Rot, G4ThreeVector((bend_rad + thick)*std::cos(bend_ang) - len*std::cos(90*deg - bend_ang), (bend_rad + thick)*std::sin(bend_ang) + len*std::sin(90*deg - bend_ang), 0));
-  G4cout << "G4UnionSolid G4ThreeVector: " << (bend_rad + thick)*std::cos(bend_ang) - len*std::cos(90*deg - bend_ang) << " , " << (bend_rad + thick)*std::sin(bend_ang) + len*std::sin(90*deg - bend_ang) << " , " << "0" << G4endl; 
-  G4cout << "Rotation: " << Rot << G4endl;
+   G4cout << "================" << G4endl;
+  G4cout << std::setprecision(8) << "G4UnionSolid G4ThreeVector: " << (bend_rad + thick)*std::cos(bend_ang) - len*std::cos(90*deg - bend_ang) << " , " << (bend_rad + thick)*std::sin(bend_ang) + len*std::sin(90*deg - bend_ang) << " , " << "0" << G4endl; 
+  G4cout << "================" << G4endl;
 
   rect_mid_LV = new G4LogicalVolume(rect_mid, fTankMaterial, "rect_mid", 0, 0, 0);
   rect_mid_PV = new G4PVPlacement(Rotty, G4ThreeVector(0, (bend_rad + thick), 0), rect_mid_LV, "rect_mid", fWorld_LV, false, 0, true);

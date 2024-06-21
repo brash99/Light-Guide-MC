@@ -185,8 +185,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4Box* rect_mid_curve = new G4Box("TwistedStrip", width, thick, l);
   G4Box* rect_mid_straight = new G4Box("rect_mid2", width, thick, len / 2);
   G4UnionSolid* rect_mid = new G4UnionSolid("rect_mid", rect_mid_straight, rect_mid_curve, 0, G4ThreeVector(0, 0, -l-len/2));
-  G4cout << "G4UnionSolid G4ThreeVector: " << "0" << " , " << "0" << " , " << -l-len/2 << G4endl;
-  G4cout << "Rotation: " << Rot << G4endl;
+  G4cout << "================" << G4endl;
+  G4cout << std::setprecision(8) << "G4UnionSolid G4ThreeVector: " << "0" << " , " << "0" << " , " << -l-len/2 << G4endl;
+  G4cout << "================" << G4endl;
 
   rect_mid_LV = new G4LogicalVolume(rect_mid, fTankMaterial, "rect_mid", 0, 0, 0);
   rect_mid_PV = new G4PVPlacement(0, G4ThreeVector(0, 0, -len/2), rect_mid_LV, "rect_mid", fWorld_LV, false, 0, true);
