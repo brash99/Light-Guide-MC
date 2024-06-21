@@ -90,7 +90,8 @@ DetectorConstruction::DetectorConstruction()
   G4double reflectivity[NUM] = {0.3, 0.3, 0.3, 0.3, 0.3, 0.3};
 
   G4double reflectivity2[NUM] = {1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
-  G4double tran2[NUM] = {0., 0., 0., 0., 0., 0.};
+  //G4double tran2[NUM] = {0., 0., 0., 0., 0., 0.};
+  G4double tran2[NUM] = {0.0001, 0.0001, 0.0001, 0.0001, 0.0001, 0.0001};
 
   G4double tran[NUM] = {0.7, 0.7, 0.7, 0.7, 0.7, 0.7};
   G4double absorption[NUM] = {3.448*m, 4.082 * m,  6.329 * m,  9.174 * m,  12.346 * m, 13.889 * m};
