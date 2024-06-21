@@ -90,6 +90,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
     G4double phi   = CLHEP::twopi * G4UniformRand();
     G4double random = 2. * G4UniformRand()-1;
     G4double theta = std::acos(random);
+    G4cout << "Angles: " << theta3 << " " << phi << " " << random << " " << theta << G4endl;
     //G4double x     = std::cos(theta3);
     G4double x = std::sin(theta) * std::cos(phi);
     G4double y = std::sin(theta) * std::sin(phi);

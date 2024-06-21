@@ -47,7 +47,7 @@
 /gun/energy 0.155 eV
 /gun/position 0 0 6 cm
 #/gun/direction 1 0 0 
-/random/setSeeds 155555
+/random/setSeeds 155555 355555
 /opnovice2/gun/randomDirection true
 /opnovice2/gun/optPhotonPolar
 #
@@ -102,5 +102,5 @@
 /analysis/h1/set 27 100 1 10
 
 
-/run/beamOn 20 
+/run/beamOn 3 
 /vis/scene/add/trajectories rich
