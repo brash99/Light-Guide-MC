@@ -36,6 +36,11 @@
 /opnovice2/surfaceProperty REFLECTIVITY 0.000002 1. 0.000008 1.
 /opnovice2/surfaceProperty TRANSMITTANCE 0.000002 0. 0.000008 0.
 
+/opnovice2/surfaceSigmaAlpha 0.0
+/opnovice2/surfaceModel unified
+/opnovice2/surfaceType dielectric_dielectric
+/opnovice2/surfaceFinish polished
+
 
 #
 # Draw geometry:
@@ -47,7 +52,7 @@
 # Specify zoom value:
 /vis/viewer/zoom 1.5
 /gun/particle opticalphoton
-/gun/energy 3.155 eV
+/gun/energy 2.6 eV
 /gun/position 0 0 6 cm
 #/gun/direction 1 0 0 
 /random/setSeeds 155555 355555
