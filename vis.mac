@@ -32,6 +32,7 @@
 
 /opnovice2/boxProperty RINDEX 0.000002 1.52 0.000008 1.52
 /opnovice2/worldProperty RINDEX 0.000002 1.0 0.000008 1.0
+/opnovice2/surfaceProperty RINDEX 0.000002 1.0 0.000008 1.0
 /opnovice2/surfaceProperty REFLECTIVITY 0.000002 0.9999999 0.000008 0.9999999
 /opnovice2/surfaceProperty TRANSMITTANCE 0.000002 0.0000001 0.000008 0.0000001
 
@@ -46,7 +47,7 @@
 # Specify zoom value:
 /vis/viewer/zoom 1.5
 /gun/particle opticalphoton
-/gun/energy 0.155 eV
+/gun/energy 3.155 eV
 /gun/position 0 0 6 cm
 #/gun/direction 1 0 0 
 /random/setSeeds 155555 355555
@@ -104,5 +105,5 @@
 /analysis/h1/set 27 100 1 10
 
 
-/run/beamOn 10 
+/run/beamOn 100 
 /vis/scene/add/trajectories rich
