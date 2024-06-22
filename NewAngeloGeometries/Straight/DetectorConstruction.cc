@@ -188,9 +188,11 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4Box* rect_mid_curve = new G4Box("TwistedStrip", width, thick, l);
   G4Box* rect_mid_straight = new G4Box("rect_mid2", width, thick, len / 2);
   G4UnionSolid* rect_mid = new G4UnionSolid("rect_mid", rect_mid_straight, rect_mid_curve, 0, G4ThreeVector(0, 0, -l-len/2));
-  G4cout << "G4UnionSolid G4ThreeVector: " << "0" << " , " << "0" << " , " << -l-len/2 << G4endl;
+  
+  G4cout << std::setprecision(8) << "G4UnionSolid G4ThreeVector: " << "0" << " , " << "0" << " , " << -l-len/2 << G4endl;
   G4cout << "Rotation: " << Rot << G4endl;
 
+	
   rect_mid_LV = new G4LogicalVolume(rect_mid, fScintMaterial, "rect_mid", 0, 0, 0);
   rect_mid_PV = new G4PVPlacement(0, G4ThreeVector(0, 0, -len/2), rect_mid_LV, "rect_mid", fWorld_LV, false, 0, true);
 
@@ -210,8 +212,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
   // ------------- Surface --------------
 
-  // G4LogicalBorderSurface* surface1 =
-  //  new G4LogicalBorderSurface("Surface1", rect_mid_PV, world_PV, fSurface);
+  G4LogicalBorderSurface* surface1 =
+    new G4LogicalBorderSurface("Surface1", rect_mid_PV, world_PV, fSurface2);
 
   //G4LogicalBorderSurface* surface2 =
   //  new G4LogicalBorderSurface("Surface2", rect_left_PV, world_PV, fSurface);
@@ -255,14 +257,15 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   // G4LogicalBorderSurface* surface15 =
   //  new G4LogicalBorderSurface("Surface15", scint_PV, world_PV, fSurface);
 
-  //G4OpticalSurface* opticalSurface = dynamic_cast<G4OpticalSurface*>(
-  //  surface->GetSurface(fTank, world_PV)->GetSurfaceProperty());
-  //G4cout << "******  opticalSurface->DumpInfo:" << G4endl;
-  //if(opticalSurface)
-  //{
-  //  opticalSurface->DumpInfo();
-  //}
-  //G4cout << "******  end of opticalSurface->DumpInfo" << G4endl;
+  G4OpticalSurface* opticalSurface = dynamic_cast<G4OpticalSurface*>(
+    surface1->GetSurface(rect_mid_PV, world_PV)->GetSurfaceProperty());
+  
+  G4cout << "******  opticalSurface->DumpInfo:" << G4endl;
+  if(opticalSurface)
+  {
+    opticalSurface->DumpInfo();
+  }
+  G4cout << "******  end of opticalSurface->DumpInfo" << G4endl;
 
   return world_PV;
 }
@@ -271,9 +274,12 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 void DetectorConstruction::SetSurfaceSigmaAlpha(G4double v)
 {
   fSurface->SetSigmaAlpha(v);
+  fSurface2->SetSigmaAlpha(v);
   G4RunManager::GetRunManager()->GeometryHasBeenModified();
 
   G4cout << "Surface sigma alpha set to: " << fSurface->GetSigmaAlpha()
+         << G4endl;
+  G4cout << "Surface2 sigma alpha set to: " << fSurface2->GetSigmaAlpha()
          << G4endl;
 }
 
@@ -281,9 +287,11 @@ void DetectorConstruction::SetSurfaceSigmaAlpha(G4double v)
 void DetectorConstruction::SetSurfacePolish(G4double v)
 {
   fSurface->SetPolish(v);
+  fSurface2->SetPolish(v);
   G4RunManager::GetRunManager()->GeometryHasBeenModified();
 
   G4cout << "Surface polish set to: " << fSurface->GetPolish() << G4endl;
+  G4cout << "Surface2 polish set to: " << fSurface2->GetPolish() << G4endl;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -291,7 +299,7 @@ void DetectorConstruction::AddTankMPV(const G4String& prop,
                                       G4MaterialPropertyVector* mpv)
 {
   fTankMPT->AddProperty(prop, mpv);
-  G4cout << "The MPT for the box is now: " << G4endl;
+  G4cout << "AddTankMPV: The MPT for the box is now: " << G4endl;
   fTankMPT->DumpTable();
   G4cout << "............." << G4endl;
 }
@@ -301,7 +309,7 @@ void DetectorConstruction::AddWorldMPV(const G4String& prop,
                                        G4MaterialPropertyVector* mpv)
 {
   fWorldMPT->AddProperty(prop, mpv);
-  G4cout << "The MPT for the world is now: " << G4endl;
+  G4cout << "AddWorldMPV: The MPT for the world is now: " << G4endl;
   fWorldMPT->DumpTable();
   G4cout << "............." << G4endl;
 }
@@ -311,8 +319,12 @@ void DetectorConstruction::AddSurfaceMPV(const G4String& prop,
                                          G4MaterialPropertyVector* mpv)
 {
   fSurfaceMPT->AddProperty(prop, mpv);
-  G4cout << "The MPT for the surface is now: " << G4endl;
+  G4cout << "AddSurfaceMPV: The MPT for the surface is now: " << G4endl;
   fSurfaceMPT->DumpTable();
+  G4cout << "............." << G4endl;
+  fSurfaceMPT2->AddProperty(prop, mpv);
+  G4cout << "AddSurfaceMPV: The MPT for the surface2 is now: " << G4endl;
+  fSurfaceMPT2->DumpTable();
   G4cout << "............." << G4endl;
 }
 
@@ -320,7 +332,7 @@ void DetectorConstruction::AddSurfaceMPV(const G4String& prop,
 void DetectorConstruction::AddTankMPC(const G4String& prop, G4double v)
 {
   fTankMPT->AddConstProperty(prop, v);
-  G4cout << "The MPT for the box is now: " << G4endl;
+  G4cout << "AddTankMPC: The MPT for the box is now: " << G4endl;
   fTankMPT->DumpTable();
   G4cout << "............." << G4endl;
 }
@@ -329,7 +341,7 @@ void DetectorConstruction::AddTankMPC(const G4String& prop, G4double v)
 void DetectorConstruction::AddWorldMPC(const G4String& prop, G4double v)
 {
   fWorldMPT->AddConstProperty(prop, v);
-  G4cout << "The MPT for the world is now: " << G4endl;
+  G4cout << "AddWorldMPC: The MPT for the world is now: " << G4endl;
   fWorldMPT->DumpTable();
   G4cout << "............." << G4endl;
 }
@@ -337,8 +349,12 @@ void DetectorConstruction::AddWorldMPC(const G4String& prop, G4double v)
 void DetectorConstruction::AddSurfaceMPC(const G4String& prop, G4double v)
 {
   fSurfaceMPT->AddConstProperty(prop, v);
-  G4cout << "The MPT for the surface is now: " << G4endl;
+  G4cout << "AddSurfaceMPC: The MPT for the surface is now: " << G4endl;
   fSurfaceMPT->DumpTable();
+  G4cout << "............." << G4endl;
+  fSurfaceMPT2->AddConstProperty(prop, v);
+  G4cout << "AddSurfaceMPC: The MPT for the surface2 is now: " << G4endl;
+  fSurfaceMPT2->DumpTable();
   G4cout << "............." << G4endl;
 }
 
