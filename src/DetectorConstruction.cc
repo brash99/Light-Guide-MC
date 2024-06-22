@@ -191,6 +191,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4TwistedBox* rect_mid_curve = new G4TwistedBox("TwistedStrip", bend_ang*CLHEP::deg, width, thick, l);
   G4Box* rect_mid_straight = new G4Box("rect_mid2", width, thick, len / 2);
   G4UnionSolid* rect_mid = new G4UnionSolid("rect_mid", rect_mid_straight, rect_mid_curve, Rot, G4ThreeVector(0, 0, -l-len/2));
+  
   G4cout << std::setprecision(8) << "G4UnionSolid G4ThreeVector: " << "0" << " , " << "0" << " , " << -l-len/2 << G4endl;
   G4cout << "Rotation: " << Rot << G4endl;
 
@@ -215,7 +216,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   // ------------- Surface --------------
 
   G4LogicalBorderSurface* surface1 =
-     new G4LogicalBorderSurface("Surface1", rect_mid_PV, world_PV, fSurface2);
+    new G4LogicalBorderSurface("Surface1", rect_mid_PV, world_PV, fSurface2);
 
   //G4LogicalBorderSurface* surface2 =
   //  new G4LogicalBorderSurface("Surface2", rect_left_PV, world_PV, fSurface);
@@ -259,15 +260,15 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   // G4LogicalBorderSurface* surface15 =
   //  new G4LogicalBorderSurface("Surface15", scint_PV, world_PV, fSurface);
 
-  //G4OpticalSurface* opticalSurface = dynamic_cast<G4OpticalSurface*>(
-  //  surface->GetSurface(fTank, world_PV)->GetSurfaceProperty());
+  G4OpticalSurface* opticalSurface = dynamic_cast<G4OpticalSurface*>(
+    surface1->GetSurface(rect_mid_PV, world_PV)->GetSurfaceProperty());
   
-  G4cout << "******  surface1->DumpInfo:" << G4endl;
-  if(surface1)
+  G4cout << "******  opticalSurface->DumpInfo:" << G4endl;
+  if(opticalSurface)
   {
-    surface1->DumpInfo();
+    opticalSurface->DumpInfo();
   }
-  G4cout << "******  end of surface1->DumpInfo" << G4endl;
+  G4cout << "******  end of opticalSurface->DumpInfo" << G4endl;
 
   return world_PV;
 }
