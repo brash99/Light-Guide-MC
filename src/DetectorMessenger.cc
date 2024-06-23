@@ -61,7 +61,7 @@ DetectorMessenger::DetectorMessenger(DetectorConstruction* Det)
   fSurfaceTypeCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fSurfaceTypeCmd->SetToBeBroadcasted(false);
 
-  fBendRadiusCmd = new G4UIcmdWithADouble("/opnovice2/bendRaduis", this);
+  fBendRadiusCmd = new G4UIcmdWithADouble("/opnovice2/bendRadius", this);
   fBendRadiusCmd->SetGuidance("Bend radius.");
   fBendRadiusCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fBendRadiusCmd->SetToBeBroadcasted(false);
