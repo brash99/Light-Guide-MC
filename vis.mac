@@ -7,6 +7,20 @@
 /control/verbose 2
 /run/verbose 2
 #
+/opnovice2/bendAngle 0.1
+/opnovice2/bendRadius 97.49
+
+/opnovice2/boxProperty RINDEX 0.000002 1.52 0.000008 1.52
+/opnovice2/worldProperty RINDEX 0.000002 1.0 0.000008 1.0
+/opnovice2/surfaceProperty RINDEX 0.000002 1.52 0.000008 1.52
+/opnovice2/surfaceProperty REFLECTIVITY 0.000002 1. 0.000008 1.
+/opnovice2/surfaceProperty TRANSMITTANCE 0.000002 0. 0.000008 0.
+
+/opnovice2/surfaceSigmaAlpha 0.0
+/opnovice2/surfaceModel unified
+/opnovice2/surfaceType dielectric_dielectric
+/opnovice2/surfaceFinish polished
+
 /run/initialize
 #
 # Use this open statement to create an OpenGL view:
@@ -28,19 +42,6 @@
 # trajectories are established:
 /vis/viewer/set/autoRefresh false
 /vis/verbose errors
-
-
-/opnovice2/boxProperty RINDEX 0.000002 1.52 0.000008 1.52
-/opnovice2/worldProperty RINDEX 0.000002 1.0 0.000008 1.0
-/opnovice2/surfaceProperty RINDEX 0.000002 1.52 0.000008 1.52
-/opnovice2/surfaceProperty REFLECTIVITY 0.000002 1. 0.000008 1.
-/opnovice2/surfaceProperty TRANSMITTANCE 0.000002 0. 0.000008 0.
-
-/opnovice2/surfaceSigmaAlpha 0.0
-/opnovice2/surfaceModel unified
-/opnovice2/surfaceType dielectric_dielectric
-/opnovice2/surfaceFinish polished
-
 
 #
 # Draw geometry:
