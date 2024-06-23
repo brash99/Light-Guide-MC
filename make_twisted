@@ -1,3 +1,6 @@
 #!/bin/sh
+cd ~/Light-Guide-MC
 cp NewAngeloGeometries/Twist/DetectorConstruction.cc src/.
 make
+OpNovice2 vis.mac > tempoutput_twisted_juniper
+grep Photons tempoutput_twisted_juniper

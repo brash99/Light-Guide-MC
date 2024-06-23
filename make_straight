@@ -1,3 +1,6 @@
 #!/bin/sh
+cd ~/Light-Guide-MC
 cp NewAngeloGeometries/Straight/DetectorConstruction.cc src/.
 make
+OpNovice2 vis.mac > tempoutput_straight_juniper
+grep Photons tempoutput_straight_juniper
