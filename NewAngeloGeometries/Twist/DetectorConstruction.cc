@@ -64,7 +64,9 @@ DetectorConstruction::DetectorConstruction()
   fExpHall_x = fExpHall_y = fExpHall_z = 950.0 * cm;
   fTank_x = fTank_y = fTank_z = 1.0 * cm;
 
-  fTank = nullptr;
+  //fTank = nullptr;
+  //fWorld = nullptr;
+  //fScint = nullptr;
 
   fTankMPT    = new G4MaterialPropertiesTable();
   fScintMPT = new G4MaterialPropertiesTable();
@@ -73,41 +75,48 @@ DetectorConstruction::DetectorConstruction()
   fSurfaceMPT2 = new G4MaterialPropertiesTable();
 
   fSurface2 = new G4OpticalSurface("Surface2");
-  fSurface2->SetType(dielectric_dielectric);
-  fSurface2->SetFinish(polished);
-  fSurface2->SetModel(unified);
+  //fSurface2->SetType(dielectric_dielectric);
+  //fSurface2->SetFinish(polished);
+  //fSurface2->SetModel(unified);
 
   fSurface = new G4OpticalSurface("Surface");
-  fSurface->SetType(dielectric_dielectric);
-  fSurface->SetFinish(polished);
-  fSurface->SetModel(unified);
+  //fSurface->SetType(dielectric_dielectric);
+  //fSurface->SetFinish(polished);
+  //fSurface->SetModel(unified);
 
-  const G4int NUM = 6;
-  G4double pp[NUM] = {2.0*eV, 2.2*eV, 2.4*eV, 2.6*eV, 2.8*eV, 3.0*eV};
-  G4double rindex[NUM] = {1.5, 1.5, 1.5, 1.5, 1.5, 1.5};
-  G4double rindex2[NUM] = {1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
-  G4double rindex3[NUM] = {1.52, 1.52, 1.52, 1.52, 1.52, 1.52};
-  G4double reflectivity[NUM] = {0.3, 0.3, 0.3, 0.3, 0.3, 0.3};
+    //EJB: should not need any of these definitions since we are using vis.mac to set the properties
 
-  G4double reflectivity2[NUM] = {1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
-  G4double tran2[NUM] = {0., 0., 0., 0., 0., 0.};
+    /*
 
-  G4double tran[NUM] = {0.7, 0.7, 0.7, 0.7, 0.7, 0.7};
-  G4double absorption[NUM] = {3.448*m, 4.082 * m,  6.329 * m,  9.174 * m,  12.346 * m, 13.889 * m};
-  fTankMPT->AddProperty("RINDEX", pp, rindex3, NUM);      // was rindex not rindex3
-  //fTankMPT->AddProperty("ABSLENGTH", pp, absorption, NUM);
-  //fSurfaceMPT->AddProperty("REFLECTIVITY",pp,reflectivity,NUM);
-  //fSurfaceMPT->AddProperty("TRANSMITTANCE",pp,tran,NUM);
+    const G4int NUM = 6;
+    G4double pp[NUM] = {2.0*eV, 2.2*eV, 2.4*eV, 2.6*eV, 2.8*eV, 3.0*eV};
+    G4double rindex[NUM] = {1.5, 1.5, 1.5, 1.5, 1.5, 1.5};
+    G4double rindex2[NUM] = {1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
+    G4double rindex3[NUM] = {1.52, 1.52, 1.52, 1.52, 1.52, 1.52};
+    G4double reflectivity[NUM] = {0.3, 0.3, 0.3, 0.3, 0.3, 0.3};
 
-  fSurfaceMPT2->AddProperty("REFLECTIVITY", pp, reflectivity2, NUM);
-  fSurfaceMPT2->AddProperty("TRANSMITTANCE", pp, tran2, NUM);
+    G4double reflectivity2[NUM] = {1.0, 1.0, 1.0, 1.0, 1.0, 1.0};
+    G4double tran2[NUM] = {0., 0., 0., 0., 0., 0.};
 
-  fWorldMPT->AddProperty("RINDEX", pp, rindex2, NUM);
+    G4double tran[NUM] = {0.7, 0.7, 0.7, 0.7, 0.7, 0.7};
+    G4double absorption[NUM] = {3.448*m, 4.082 * m,  6.329 * m,  9.174 * m,  12.346 * m, 13.889 * m};
 
-  fScintMPT->AddProperty("RINDEX", pp, rindex, NUM);
-  fScintMPT->AddProperty("REFLECTIVITY", pp, reflectivity2, NUM);
-  fScintMPT->AddProperty("TRANSMITTANCE", pp, tran2, NUM);
+    fTankMPT->AddProperty("RINDEX", pp, rindex3, NUM);      // was rindex not rindex3
 
+    //fTankMPT->AddProperty("ABSLENGTH", pp, absorption, NUM);
+    //fSurfaceMPT->AddProperty("REFLECTIVITY",pp,reflectivity,NUM);
+    //fSurfaceMPT->AddProperty("TRANSMITTANCE",pp,tran,NUM);
+
+    fSurfaceMPT2->AddProperty("REFLECTIVITY", pp, reflectivity2, NUM);
+    fSurfaceMPT2->AddProperty("TRANSMITTANCE", pp, tran2, NUM);
+
+    fWorldMPT->AddProperty("RINDEX", pp, rindex2, NUM);
+
+    fScintMPT->AddProperty("RINDEX", pp, rindex, NUM);
+    fScintMPT->AddProperty("REFLECTIVITY", pp, reflectivity2, NUM);
+    fScintMPT->AddProperty("TRANSMITTANCE", pp, tran2, NUM);
+
+    */
 
   fSurface2->SetMaterialPropertiesTable(fSurfaceMPT2);
   fSurface->SetMaterialPropertiesTable(fSurfaceMPT);
@@ -162,6 +171,25 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   fTankMaterial->GetIonisation()->SetBirksConstant(0.126 * mm / MeV);
   fScintMaterial->SetMaterialPropertiesTable(fScintMPT);
   fWorldMaterial->SetMaterialPropertiesTable(fWorldMPT);
+
+  G4cout << "******  DetectorConstruction::Construct(): fTankMaterial->DumpInfo:" << G4endl;
+  G4MaterialPropertyVector* v1 = fTankMPT->GetProperty("RINDEX");
+  for (size_t i = 0; i < v1->GetVectorLength(); i++)
+    {
+        G4cout << v1->Energy(i) << " " << v1->Value(i) << G4endl;
+    }
+  G4cout << "******  DetectorConstruction::Construct(): fScintMaterial->DumpInfo:" << G4endl;
+  G4MaterialPropertyVector* v2 = fScintMPT->GetProperty("RINDEX");
+  for (size_t i = 0; i < v2->GetVectorLength(); i++)
+    {
+        G4cout << v2->Energy(i) << " " << v2->Value(i) << G4endl;
+    }
+  G4cout << "******  DetectorConstruction::Construct(): fWorldMaterial->DumpInfo:" << G4endl;
+  G4MaterialPropertyVector* v3 = fWorldMPT->GetProperty("RINDEX");
+  for (size_t i = 0; i < v3->GetVectorLength(); i++)
+    {
+        G4cout << v3->Energy(i) << " " << v3->Value(i) << G4endl;
+    }
 
   G4double thick = 0.25*cm;
   G4double width = 2.5*cm;
@@ -313,8 +341,12 @@ void DetectorConstruction::AddTankMPV(const G4String& prop,
                                       G4MaterialPropertyVector* mpv)
 {
   fTankMPT->AddProperty(prop, mpv);
-  G4cout << "AddTankMPV: The MPT for the box is now: " << G4endl;
+  G4cout << "AddTankMPV: The MPT for the tank is now: " << G4endl;
   fTankMPT->DumpTable();
+  G4cout << "............." << G4endl;
+  fScintMPT->AddProperty(prop, mpv);
+  G4cout << "AddTankMPV: The MPT for the scint is now: " << G4endl;
+  fScintMPT->DumpTable();
   G4cout << "............." << G4endl;
 }
 
@@ -348,6 +380,10 @@ void DetectorConstruction::AddTankMPC(const G4String& prop, G4double v)
   fTankMPT->AddConstProperty(prop, v);
   G4cout << "AddTankMPC: The MPT for the box is now: " << G4endl;
   fTankMPT->DumpTable();
+  G4cout << "............." << G4endl;
+  fScintMPT->AddConstProperty(prop, v);
+  G4cout << "AddTankMPC: The MPT for the scint is now: " << G4endl;
+  fScintMPT->DumpTable();
   G4cout << "............." << G4endl;
 }
 

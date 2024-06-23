@@ -52,10 +52,16 @@ class DetectorConstruction : public G4VUserDetectorConstruction
 
   G4VPhysicalVolume* GetTank() { return fTank; }
   G4double GetTankXSize() { return fTank_x; }
+  G4VPhysicalVolume* GetScint() { return fWorld; }
+  G4double GetWorldXSize() { return fWorld_x; }
+  G4VPhysicalVolume* GetWorld() { return fScint; }
+  G4double GetScintXSize() { return fScint_x; }
+
   G4VPhysicalVolume* GetScoringVolume() const { return cone_PV; }
   G4VPhysicalVolume* GetMidVolume() const { return rect_mid_PV; }
   G4VPhysicalVolume* GetScintVolume() const { return scint_PV; }
   G4VPhysicalVolume* GetTankVolume() const { return fTank; }
+  G4VPhysicalVolume* GetWorldVolume() const { return fWorld; }
 
   G4OpticalSurface* GetSurface(void) { return fSurface; }
 
@@ -91,13 +97,17 @@ class DetectorConstruction : public G4VUserDetectorConstruction
   {
     return fTankMPT;
   }
-
-  void AddWorldMPV(const G4String& prop, G4MaterialPropertyVector* mpv);
-  void AddWorldMPC(const G4String& prop, G4double v);
   G4MaterialPropertiesTable* GetWorldMaterialPropertiesTable()
   {
     return fWorldMPT;
   }
+  G4MaterialPropertiesTable* GetScintMaterialPropertiesTable()
+  {
+    return fScintMPT;
+  }
+
+  void AddWorldMPV(const G4String& prop, G4MaterialPropertyVector* mpv);
+  void AddWorldMPC(const G4String& prop, G4double v);
 
   void AddSurfaceMPV(const G4String& prop, G4MaterialPropertyVector* mpv);
   void AddSurfaceMPC(const G4String& prop, G4double v);
@@ -106,10 +116,12 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     return fSurfaceMPT;
   }
 
-  void SetWorldMaterial(const G4String&);
-  G4Material* GetWorldMaterial() const { return fWorldMaterial; }
   void SetTankMaterial(const G4String&);
   G4Material* GetTankMaterial() const { return fTankMaterial; }
+  void SetWorldMaterial(const G4String&);
+  G4Material* GetWorldMaterial() const { return fWorldMaterial; }
+  void SetScintMaterial(const G4String&);
+  G4Material* GetScintMaterial() const { return fScintMaterial; }
   void SetBendRadius(G4double radius);
   void SetBendAngle(G4double angle);
 
@@ -121,6 +133,8 @@ class DetectorConstruction : public G4VUserDetectorConstruction
   G4double fExpHall_z;
 
   G4VPhysicalVolume* fTank;
+  G4VPhysicalVolume* fWorld;
+  G4VPhysicalVolume* fScint;
   G4VPhysicalVolume* rect_mid_PV;
   G4VPhysicalVolume* cone_PV;
   G4VPhysicalVolume* rem_cyl_PV;
@@ -133,6 +147,12 @@ class DetectorConstruction : public G4VUserDetectorConstruction
   G4double fTank_x;
   G4double fTank_y;
   G4double fTank_z;
+  G4double fWorld_x;
+  G4double fWorld_y;
+  G4double fWorld_z;
+  G4double fScint_x;
+  G4double fScint_y;
+  G4double fScint_z;
 
   G4double bend_ang;
   G4double bend_rad;
