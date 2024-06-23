@@ -59,7 +59,7 @@ End of Run User Vis Actions: none
 
 Some /vis commands (optionally) take a string to specify colour.
 "/vis/list" to see available colours.
-/run/verbose 2
+#/run/verbose 2
 #
 /opnovice2/bendAngle 0.1
 In DetectorConstruction::SetBendAngle(): Bend Angle set to 0.1
@@ -195,9 +195,8 @@ Surface2 sigma alpha set to: 0
 /opnovice2/surfaceFinish polished
 /run/geometryModified
 /run/initialize
-userDetector->Construct() start.
 G4UnionSolid G4ThreeVector: 0 , 0 , -1050
-Rotation: 0x600001c1ff20
+Rotation: 0x6000033080a0
 Checking overlaps for volume rect_mid (G4UnionSolid) ... OK! 
 Checking overlaps for volume Cone (G4Tubs) ... OK! 
 Checking overlaps for volume Scint (G4Box) ... OK! 
@@ -224,8 +223,6 @@ Checking overlaps for volume Scint (G4Box) ... OK!
  sigma_alpha: 0
 
 ******  end of opticalSurface->DumpInfo
-World is registered to the default region.
-physicsList->Construct() start.
 
  hInelastic FTFP_BERT : threshold between BERT and FTFP is over the interval 
  for pions :   3 to 6 GeV
@@ -236,8 +233,6 @@ physicsList->Construct() start.
 ### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
 ### Birks coefficients used in run time
    G4_GLASS_PLATE     0.126 mm/MeV     0.03024 g/cm^2/MeV  massFactor=  40.255264 effCharge= 74.231673
-physicsList->CheckParticleList() start.
-physicsList->setCut() start.
 #
 # Use this open statement to create an OpenGL view:
 #/vis/open OGL 600x600-0+0
@@ -378,7 +373,7 @@ Visualization verbosity changed to warnings (3)
 Set file name: ./with_tuple.root
 /analysis/h1/set 26 100 1 10
 /analysis/h1/set 27 100 1 10
-/run/beamOn 100
+/run/beamOn 30
 
 ### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
           DefaultRegionForTheWorld  1  0  0
@@ -1128,55 +1123,7 @@ Electron internal conversion ID                     2
 Correlated gamma emission flag                      0
 Max 2J for sampling of angular correlations         10
 =======================================================================
-
-Region <DefaultRegionForTheWorld> --  -- appears in <World> world volume
- This region is in the mass world.
- Root logical volume(s) : World 
- Pointers : G4VUserRegionInformation[0x0], G4UserLimits[0x0], G4FastSimulationManager[0x0], G4UserSteppingAction[0x0]
- Materials : G4_AIR G4_Pyrex_Glass 
- Production cuts :   gamma 700 um      e- 700 um      e+ 700 um  proton 700 um 
-
-Region <DefaultRegionForParallelWorld> --  -- is not associated to any world.
- Root logical volume(s) : 
- Pointers : G4VUserRegionInformation[0x0], G4UserLimits[0x0], G4FastSimulationManager[0x0], G4UserSteppingAction[0x0]
- Materials : 
- Production cuts :   gamma 700 um      e- 700 um      e+ 700 um  proton 700 um 
-
-========= Table of registered couples ============================
-
-Index : 0     used in the geometry : Yes
- Material : G4_AIR
- Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
- Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
- Region(s) which use this couple : 
-    DefaultRegionForTheWorld
-
-Index : 1     used in the geometry : Yes
- Material : G4_Pyrex_Glass
- Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
- Energy thresholds :  gamma  4.58194 keV    e-  419.056 keV    e+  405.209 keV proton 70 keV
- Region(s) which use this couple : 
-    DefaultRegionForTheWorld
-
-==================================================================
-
-Start closing geometry.
-G4GeometryManager::ReportVoxelStats -- Voxel Statistics
-
-    Total memory consumed for geometry optimisation:   0 kByte
-    Total CPU time elapsed for geometry optimisation: 0 seconds
-
-    Voxelisation: top CPU users:
-    Percent   Total CPU    System CPU       Memory  Volume
-    -------   ----------   ----------     --------  ----------
-       0.00         0.00         0.00            1k World
-
-    Voxelisation: top memory users:
-    Percent     Memory      Heads    Nodes   Pointers    Total CPU    Volume
-    -------   --------     ------   ------   --------   ----------    ----------
-     100.00          0k         2        6         12         0.00    World
 /vis/scene/notifyHandlers scene-0
-### Run 0 starts.
 
 -------- WWWW ------- G4Exception-START -------- WWWW -------
 *** G4Exception : Analysis_W013
@@ -1191,20 +1138,16 @@ Setting was ignored.
 ... open analysis file : ./with_tuple.root - done
 ... open analysis file : ./with_tuple.root - done
 ===========================================
-Output VRML 2.0 file: g4_62.wrl
+Output VRML 2.0 file: g4_03.wrl
 Maximum number of files in the destination directory: 100
   (Customizable with the environment variable: G4VRMLFILE_MAX_FILE_NUM) 
 ===========================================
- Run terminated.
-Run Summary
-  Number of events processed : 100
-  User=0.450000s Real=0.471736s Sys=0.020000s
-100 events
+30 events
 
     Run Summary
 ---------------------------------
 Primary particle was: opticalphoton with energy 2.6 eV .
-Number of events: 100
+Number of events: 30
 Material of world: G4_AIR
 Material of tank:  G4_GLASS_PLATE
 
@@ -1218,21 +1161,20 @@ Average number of OpRayleigh per event:   0
 Average number of OpAbsorption per event: 0
 
 Surface events (on +X surface, maximum one per photon) this run:
-# of primary particles:         1e+02
+# of primary particles:            30
 OpAbsorption before surface:        0
-Total # of surface events:      41311
-Unaccounted for:              4.1e+04
+Total # of surface events:      11169
+Unaccounted for:              1.1e+04
 
 Surface events by process:
-  Fresnel refraction:              68
-  Fresnel reflection:               3
-  Total internal reflection:    20611
-  Same material:                   47
-  Step too small:               20582
- Sum:                           41311
+  Fresnel refraction:              19
+  Total internal reflection:     5573
+  Same material:                   15
+  Step too small:                5562
+ Sum:                           11169
  Unaccounted for:                   0
-2821 bounces in with 17 particles in so avg # bounces in: 165.941
-17680 bounces out with 30 particles out so avg # bounces out: 589.333
+563 bounces in with 4 particles in so avg # bounces in: 140.75
+4975 bounces out with 11 particles out so avg # bounces out: 452.273
 ---------------------------------
 
  Histogram statistics for the entire run:
@@ -1241,16 +1183,16 @@ Surface events by process:
 ... write file : ./with_tuple.root - done
 ... close file : ./with_tuple.root - done
 
-Photons that reached the end: 47
+Photons that reached the end: 15
 
-Photons in middle: 47
+Photons in middle: 15
 
 Efficiency: 1
 Efficiency for Not Trapped: 1
-100 events have been kept for refreshing and/or reviewing.
+30 events have been kept for refreshing and/or reviewing.
   "/vis/reviewKeptEvents" to review them one by one.
   "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
-*** VRML 2.0 File  g4_62.wrl  is generated.
+*** VRML 2.0 File  g4_03.wrl  is generated.
 MESSAGE from VRML2FILE driver:
     Set an environmental variable  G4VRMLFILE_VIEWER
     if you want to visualize the generated VRML file
@@ -1305,4 +1247,3 @@ WARNING: Trajectory storing has been requested.  This action may be
 /vis/scene/notifyHandlers
 Graphics systems deleted.
 Visualization Manager deleting...
-G4 kernel has come to Quit state.
