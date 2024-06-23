@@ -123,8 +123,10 @@ DetectorConstruction::DetectorConstruction()
   rec_box_LV = nullptr;
 
 
-  bend_ang = 0.1; //twist in degrees
-  bend_rad = (95 + 2.49)*cm;  //the actual bend rad is 2.49 cm less than this value
+  //bend_ang = 0.1; //twist in degrees
+  //bend_rad = (95 + 2.49)*cm;  //the actual bend rad is 2.49 cm less than this value
+  G4cout << "In DetectorConstruction::DetectorConstruction(): Bend Radius: " << bend_rad << G4endl;
+  G4cout << "In DetectorConstruction::DetectorConstruction(): Bend Angle: " << bend_ang << G4endl;
 
   // [1.   0.5  0.2  0.1  0.05]
   // [995. 495. 195.  95.  45.   5.]
@@ -214,6 +216,15 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
 
   // ------------- Surface --------------
+
+  G4cout << "******  DetectorConstruction::Construct(): Bend Angle" << G4endl;
+  G4cout << bend_ang << G4endl;
+  G4cout << "******  DetectorConstruction::Construct(): Bend Radius" << G4endl;
+  G4cout << bend_rad << G4endl;
+
+  fSurface2->SetMaterialPropertiesTable(fSurfaceMPT2);
+  G4cout << "******  DetectorConstruction::Construct(): fSurface2->DumpInfo:" << G4endl;
+  fSurface2->DumpInfo();
 
   G4LogicalBorderSurface* surface1 =
     new G4LogicalBorderSurface("Surface1", rect_mid_PV, world_PV, fSurface2);
@@ -400,12 +411,16 @@ void DetectorConstruction::SetBendRadius(G4double radius)
 {
   bend_rad = radius*cm;
   G4RunManager::GetRunManager()->PhysicsHasBeenModified();
-  world_PV = DetectorConstruction::Construct();
+  //world_PV = DetectorConstruction::Construct();
+  G4cout << "In DetectorConstruction::SetBendRadius(): Bend Radius set to " << radius << G4endl;
+
 }
 
 void DetectorConstruction::SetBendAngle(G4double angle)
 {
-  bend_ang = angle*deg;
+  bend_ang = angle;
   G4RunManager::GetRunManager()->PhysicsHasBeenModified();
-  world_PV = DetectorConstruction::Construct();
+  //world_PV = DetectorConstruction::Construct();
+  G4cout << "In DetectorConstruction::SetBendAngle(): Bend Angle set to " << angle << G4endl;
+
 }
