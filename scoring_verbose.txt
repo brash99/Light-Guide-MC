@@ -1,0 +1,42 @@
+G4WT5 > SCORING (counter_step4): PreVolume == scint_volume && PostVolume == detVolume_mid:  1
+G4WT5 > SCORING (counter_step4): Scint Scint rect_mid rect_mid
+G4WT5 > SCORING (counter_step4): -19.49024660826285 -1.795918022446779 0
+G4WT9 > SCORING (counter_step4): PreVolume == scint_volume && PostVolume == detVolume_mid:  1
+G4WT9 > SCORING (counter_step4): Scint Scint rect_mid rect_mid
+G4WT9 > SCORING (counter_step4): 14.29926889364035 1.420542239155894 0
+G4WT6 > SCORING (counter_step4): PreVolume == scint_volume && PostVolume == detVolume_mid:  1
+G4WT6 > SCORING (counter_step4): Scint Scint rect_mid rect_mid
+G4WT6 > SCORING (counter_step4): 12.91426710429512 -2.052464730074332 0
+G4WT1 > SCORING (counter_step4): PreVolume == scint_volume && PostVolume == detVolume_mid:  1
+G4WT1 > SCORING (counter_step4): Scint Scint rect_mid rect_mid
+G4WT1 > SCORING (counter_step4): -6.915481109126857 2.147105096429351 0
+G4WT0 > SCORING (counter_step4): PreVolume == scint_volume && PostVolume == detVolume_mid:  1
+G4WT0 > SCORING (counter_step4): Scint Scint rect_mid rect_mid
+G4WT0 > SCORING (counter_step4): 0.5856902436637159 -1.5263679461789 0
+G4WT11 > SCORING (counter_step4): PreVolume == scint_volume && PostVolume == detVolume_mid:  1
+G4WT11 > SCORING (counter_step4): Scint Scint rect_mid rect_mid
+G4WT11 > SCORING (counter_step4): -11.90499404711791 2.083885998681371 1.77635683940025e-15
+G4WT8 > SCORING (counter_step4): PreVolume == scint_volume && PostVolume == detVolume_mid:  1
+G4WT8 > SCORING (counter_step4): Scint Scint rect_mid rect_mid
+G4WT8 > SCORING (counter_step4): -2.388797025560709 0.106393764316465 -8.881784197001252e-16
+G4WT5 > SCORING (counter_step): PreVolume == detVolume_mid && PostVolume == detVolume:  1
+G4WT5 > SCORING (counter_step): rect_mid rect_mid Cone Cone
+G4WT5 > SCORING (counter_step): -2.353896773390916 -4.979757959500883 -2082.197635473185
+G4WT9 > SCORING (counter_step): PreVolume == detVolume_mid && PostVolume == detVolume:  1
+G4WT9 > SCORING (counter_step): rect_mid rect_mid Cone Cone
+G4WT9 > SCORING (counter_step): -2.11971097291994 -20.10488622762528 -2095.849338475351
+G4WT6 > SCORING (counter_step): PreVolume == detVolume_mid && PostVolume == detVolume:  1
+G4WT6 > SCORING (counter_step): rect_mid rect_mid Cone Cone
+G4WT6 > SCORING (counter_step): 2.712705166425884 -12.89779699330147 -2099.027881290839
+G4WT1 > SCORING (counter_step): PreVolume == detVolume_mid && PostVolume == detVolume:  1
+G4WT1 > SCORING (counter_step): rect_mid rect_mid Cone Cone
+G4WT1 > SCORING (counter_step): 2.357055215960316 7.702416331913267 -2096.264457407658
+G4WT0 > SCORING (counter_step): PreVolume == detVolume_mid && PostVolume == detVolume:  1
+G4WT0 > SCORING (counter_step): rect_mid rect_mid Cone Cone
+G4WT0 > SCORING (counter_step): -2.5933591096991 5.52595417123227 -2098.558237320445
+G4WT11 > SCORING (counter_step): PreVolume == detVolume_mid && PostVolume == detVolume:  1
+G4WT11 > SCORING (counter_step): rect_mid rect_mid Cone Cone
+G4WT11 > SCORING (counter_step): -2.103976395759292 -24.69888607927276 -2099.565608575513
+G4WT8 > SCORING (counter_step): PreVolume == detVolume_mid && PostVolume == detVolume:  1
+G4WT8 > SCORING (counter_step): rect_mid rect_mid Cone Cone
+G4WT8 > SCORING (counter_step): -2.232787306938737 -16.06471727336487 -2098.783872262962
