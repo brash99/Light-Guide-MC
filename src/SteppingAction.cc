@@ -98,6 +98,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   auto detVolume_mid = detConstruction->GetMidVolume();
   auto scint_volume = detConstruction->GetScintVolume();
   auto tank = detConstruction->GetTankVolume();
+
   //G4bool condition = step->IsFirstStepInVolume();
 
   G4int counter_step = 0;
@@ -112,6 +113,8 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   G4double azim_time = startPoint->GetMomentumDirection().getPhi();
   G4bool in = false;
   G4ThreeVector mom = startPoint->GetMomentumDirection();
+  G4ThreeVector pos_start = startPoint->GetPosition();
+  G4ThreeVector pos_end = endPoint->GetPosition();
   G4ThreeVector initialMomentum = track->GetVertexMomentumDirection();
   G4double initialTheta = initialMomentum.theta();
    if (initialTheta > CLHEP::pi - 0.7297 && initialTheta < CLHEP::pi + 0.7297) {
@@ -152,7 +155,9 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     analysisMan->FillH1(40, mom[1]);
     analysisMan->FillH1(41, mom[2]);
     counter_step += 1;
-    //G4cout << "PreVolume == detVolume_mid && PostVolume == detVolume:  " << counter_step << G4endl;
+    G4cout << "SCORING (counter_step): PreVolume == detVolume_mid && PostVolume == detVolume:  " << counter_step << G4endl;
+    G4cout << "SCORING (counter_step): " << PreVolume->GetName() << " " << detVolume_mid->GetName() << " " << PostVolume->GetName() << " "  << detVolume->GetName() << G4endl;
+    G4cout << "SCORING (counter_step): " << pos_start[0] << " " << pos_start[1] << " " << pos_start[2] << G4endl;
     // time = step->GetPreStepPoint()->GetGlobalTime();
 
     // if(time_min <= (time * ns) && (time * ns) <= time_max)
@@ -211,7 +216,9 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     analysisMan->FillH1(37, mom[1]);
     analysisMan->FillH1(38, mom[2]);
     counter_step4 += 1;
-    //G4cout << "PreVolume == scint_volume && PostVolume == detVolume_mid:  " << counter_step4 << G4endl;
+    G4cout << "SCORING (counter_step4): PreVolume == scint_volume && PostVolume == detVolume_mid:  " << counter_step4 << G4endl;
+    G4cout << "SCORING (counter_step4): " << PreVolume->GetName() << " " << scint_volume->GetName() << " " << PostVolume->GetName() << " "  << detVolume_mid->GetName() << G4endl;
+    G4cout << "SCORING (counter_step4): " << pos_end[0] << " " << pos_end[1] << " " << pos_end[2] << G4endl;
   }
   fEventAction->AddCount_mid(counter_step4);
   if (!in) {
