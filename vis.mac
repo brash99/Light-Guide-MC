@@ -5,9 +5,9 @@
 # and initializes the graphic.
 #
 
-/control/verbose 2
-/tracking/verbose 2
-/process/optical/verbose 2
+#/control/verbose 2
+#/tracking/verbose 2
+#/process/optical/verbose 2
 
 #/run/verbose 2
 #
