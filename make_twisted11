@@ -1,0 +1,7 @@
+#!/bin/sh
+cd ~/Light-Guide-MC
+cp NewAngeloGeometries/Twist/DetectorConstruction.cc src/.
+cp src/G4OpBoundaryProcess.cc.11 src/G4OpBoundaryProcess.cc
+make clean; make
+OpNovice2 vis.mac > tempoutput_twisted_juniper11
+grep Photons tempoutput_twisted_juniper11
