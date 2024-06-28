@@ -2,3 +2,5 @@
 *.wrl
 *~
 tempoutput*
+.idea/*
+cmake-build-debug/*
