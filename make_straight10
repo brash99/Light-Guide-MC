@@ -1,0 +1,8 @@
+#!/bin/sh
+cd ~/Light-Guide-MC
+cp NewAngeloGeometries/Straight/DetectorConstruction.cc src/.
+cp src/G4OpBoundaryProcess.cc.10 src/G4OpBoundaryProcess.cc
+make clean; make
+OpNovice2 vis.mac > tempoutput_straight_juniper10
+grep Photons tempoutput_straight_juniper110
+

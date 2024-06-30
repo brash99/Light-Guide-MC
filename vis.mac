@@ -45,8 +45,8 @@
 #
 # Disable auto refresh and quieten vis messages whilst scene and
 # trajectories are established:
-/vis/viewer/set/autoRefresh false
-/vis/verbose errors
+#/vis/viewer/set/autoRefresh false
+#/vis/verbose errors
 
 #
 # Draw geometry:
@@ -116,5 +116,5 @@
 /analysis/h1/set 27 100 1 10
 
 
-/run/beamOn 100
+/run/beamOn 500
 /vis/scene/add/trajectories rich
