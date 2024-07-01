@@ -6,12 +6,12 @@
 #
 
 #/control/verbose 2
-#/tracking/verbose 2
+/tracking/verbose 2
 #/process/optical/verbose 2
 
 #/run/verbose 2
 #
-/opnovice2/bendAngle 89.1
+/opnovice2/bendAngle 0.1
 /opnovice2/bendRadius 97.49
 
 /opnovice2/boxProperty RINDEX 0.000002 1.52 0.000008 1.52
@@ -116,5 +116,5 @@
 /analysis/h1/set 27 100 1 10
 
 
-/run/beamOn 500
+/run/beamOn 1000
 /vis/scene/add/trajectories rich
