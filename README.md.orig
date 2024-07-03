@@ -1,8 +1,3 @@
 # Light-Guide-MC
-<<<<<<< HEAD
 
 Bent light guide simulation using geant4 based on the OpNovice2 geant4 example. (https://github.com/Geant4/geant4/tree/master/examples/extended/optical/OpNovice2)
-=======
-# Adiabatic Light Guide Monte Carlo Simulation
-
->>>>>>> 99d6308 (updated stepping action to allow for more data collection)
