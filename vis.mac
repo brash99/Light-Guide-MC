@@ -11,7 +11,7 @@
 
 #/run/verbose 2
 #
-/opnovice2/bendAngle 0.001
+/opnovice2/bendAngle 89.001
 /opnovice2/bendRadius 97.49
 
 /opnovice2/boxProperty RINDEX 0.000002 1.52 0.000008 1.52

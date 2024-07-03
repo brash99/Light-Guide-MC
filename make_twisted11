@@ -1,4 +1,9 @@
 #!/bin/sh
+#
+# cmake -Dgeant4_DIR=/Users/brash/Geant4/geant4_install_11.2.1/lib/cmake/Geant4/ .
+#
+# might have to remove CMakeCache.txt and CMakeFiles/ and re-run cmake
+#
 export G4FORCENUMBEROFTHREADS=1
 cd ~/Light-Guide-MC
 cp NewAngeloGeometries/Twist/DetectorConstruction.cc src/.
