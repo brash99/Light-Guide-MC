@@ -7,23 +7,23 @@
 
 #/control/verbose 2
 /tracking/verbose 2
-#/process/optical/verbose 2
+/process/optical/verbose 2
 
 #/run/verbose 2
 #
-/opnovice2/bendAngle 0.1
+/opnovice2/bendAngle 0.001
 /opnovice2/bendRadius 97.49
 
 /opnovice2/boxProperty RINDEX 0.000002 1.52 0.000008 1.52
 /opnovice2/worldProperty RINDEX 0.000002 1.0 0.000008 1.0
-/opnovice2/surfaceProperty RINDEX 0.000002 1.52 0.000008 1.52
+###/opnovice2/surfaceProperty RINDEX 0.000002 1.52 0.000008 1.52
 #/opnovice2/surfaceProperty REFLECTIVITY 0.000002 1.0 0.000008 1.0
 #/opnovice2/surfaceProperty TRANSMITTANCE 0.000002 0.0 0.000008 0.0
 
 #/opnovice2/surfaceSigmaAlpha 0.0
-/opnovice2/surfaceModel unified
-/opnovice2/surfaceType dielectric_dielectric
-/opnovice2/surfaceFinish polished
+###/opnovice2/surfaceModel unified
+###/opnovice2/surfaceType dielectric_dielectric
+###/opnovice2/surfaceFinish polished
 #/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.01 - none reach the PMT!!!
 
 /run/initialize
@@ -60,9 +60,9 @@
 /gun/particle opticalphoton
 /gun/energy 2.6 eV
 /gun/position 0 0 6 cm
-#/gun/direction 1 0 0 
+/gun/direction 0.01 0.01 -0.99
 /random/setSeeds 155555 355555
-/opnovice2/gun/randomDirection true
+###/opnovice2/gun/randomDirection true
 /opnovice2/gun/optPhotonPolar
 #
 # Specify style (surface or wireframe):

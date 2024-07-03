@@ -254,8 +254,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4cout << "******  DetectorConstruction::Construct(): fSurface2->DumpInfo:" << G4endl;
   fSurface2->DumpInfo();
 
-  G4LogicalBorderSurface* surface1 =
-    new G4LogicalBorderSurface("Surface1", rect_mid_PV, world_PV, fSurface2);
+  //G4LogicalBorderSurface* surface1 =
+  //  new G4LogicalBorderSurface("Surface1", rect_mid_PV, world_PV, fSurface2);
 
   //G4LogicalBorderSurface* surface2 =
   //  new G4LogicalBorderSurface("Surface2", rect_left_PV, world_PV, fSurface);
@@ -299,14 +299,15 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   // G4LogicalBorderSurface* surface15 =
   //  new G4LogicalBorderSurface("Surface15", scint_PV, world_PV, fSurface);
 
-  G4OpticalSurface* opticalSurface = dynamic_cast<G4OpticalSurface*>(
-    surface1->GetSurface(rect_mid_PV, world_PV)->GetSurfaceProperty());
+  //G4OpticalSurface* opticalSurface = dynamic_cast<G4OpticalSurface*>(
+  //  surface1->GetSurface(rect_mid_PV, world_PV)->GetSurfaceProperty());
   
-  G4cout << "******  opticalSurface->DumpInfo:" << G4endl;
-  if(opticalSurface)
-  {
-    opticalSurface->DumpInfo();
-  }
+  //G4cout << "******  opticalSurface->DumpInfo:" << G4endl;
+  //if(opticalSurface)
+  //{
+  //  opticalSurface->DumpInfo();
+  //}
+ 
   G4cout << "******  end of opticalSurface->DumpInfo" << G4endl;
 
   return world_PV;

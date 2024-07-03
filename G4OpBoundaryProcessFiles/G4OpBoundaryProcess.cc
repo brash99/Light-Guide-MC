@@ -167,6 +167,7 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
   else
   {
     fStatus = NotAtBoundary;
+    G4cout << "G4OpBoundaryProcess: Not at Boundary!" << G4endl;
     if(verboseLevel > 1)
       BoundaryProcessVerbose();
     return G4VDiscreteProcess::PostStepDoIt(aTrack, aStep);
@@ -177,8 +178,8 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
 
   if(verboseLevel > 1)
   {
-    G4cout << " Photon at Boundary! " << G4endl;
-    G4cout << "Roll-Your_Own G4OpBoundaryProcess::PostStepDoit()" << G4endl;
+    G4cout << " Photon at Boundary ... new version! " << G4endl;
+    G4cout << "Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version" << G4endl;
     if(thePrePV != nullptr)
       G4cout << " thePrePV:  " << thePrePV->GetName() << G4endl;
     if(thePostPV != nullptr)
@@ -187,8 +188,10 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
 
   G4double stepLength = aTrack.GetStepLength();
 
-  if(stepLength <= 10000.0*fCarTolerance)
+  if(stepLength <= 1000000.0*fCarTolerance)
   {
+    if (verboseLevel > 1) 
+        G4cout << "G4OpBoundaryProcess: stepLength Bug Fix!!!" << stepLength << " " << fCarTolerance <<G4endl;
     fStatus = StepTooSmall;
     if(verboseLevel > 1)
       BoundaryProcessVerbose();
@@ -210,7 +213,7 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
   else if (stepLength <= 10.*fCarTolerance && fNumSmallStepWarnings < 10)
   {  // see bug 2510
     ++fNumSmallStepWarnings;
-    if(verboseLevel > 0)
+    if(verboseLevel > 1)
     {
       G4ExceptionDescription ed;
       ed << "G4OpBoundaryProcess: "
@@ -263,7 +266,7 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
 
   if(fOldMomentum * fGlobalNormal > 0.0)
   {
-#ifdef G4OPTICAL_DEBUG
+//#ifdef G4OPTICAL_DEBUG
     G4ExceptionDescription ed;
     ed << " G4OpBoundaryProcess/PostStepDoIt(): fGlobalNormal points in a "
           "wrong direction. "
@@ -277,15 +280,18 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
        << "     Old Momentum  (during step)     = " << fOldMomentum << G4endl
        << "     Global Normal (Exiting New Vol) = " << fGlobalNormal << G4endl
        << G4endl;
-    G4Exception("G4OpBoundaryProcess::PostStepDoIt", "OpBoun02",
-                EventMustBeAborted,  // Or JustWarning to see if it happens
-                                     // repeatedly on one ray
-                ed,
-                "Invalid Surface Normal - Geometry must return valid surface "
-                "normal pointing in the right direction");
-#else
+    //G4Exception("G4OpBoundaryProcess::PostStepDoIt", "OpBoun02",
+    //            EventMustBeAborted,  // Or JustWarning to see if it happens
+    //                                 // repeatedly on one ray
+    //            ed,
+    //            "Invalid Surface Normal - Geometry must return valid surface "
+    //            "normal pointing in the right direction");
+    G4cout << " I am so confused!  G4OpBoundaryProcess/PostStepDoIt(): "
+           << " The Navigator reports that it returned an invalid normal"
+           << G4endl;
+//#else
     fGlobalNormal = -fGlobalNormal;
-#endif
+//#endif
   }
 
   G4MaterialPropertyVector* rIndexMPV = nullptr;
@@ -516,7 +522,7 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
     if(fNumBdryTypeWarnings <= 10)
     {
       ++fNumBdryTypeWarnings;
-      if(verboseLevel > 0)
+      if(verboseLevel > 1)
       {
         G4ExceptionDescription ed;
         ed << " PostStepDoIt(): Illegal boundary type." << G4endl;
@@ -1083,6 +1089,7 @@ void G4OpBoundaryProcess::DielectricDielectric()
 
   if(fFinish == polished)
   {
+    //G4cout << "Here I am doing polished dielectric-dielectric" << G4endl;
     fFacetNormal = fGlobalNormal;
   }
   else
@@ -1151,6 +1158,8 @@ leap:
     {
       swap = false;
 
+      if (verboseLevel > 1)
+          G4cout << "Here I am doing Total Internal Reflection: " << G4endl;
       fStatus = TotalInternalReflection;
       if(!surfaceRoughnessCriterionPass)
         fStatus = LambertianReflection;
@@ -1167,6 +1176,11 @@ leap:
       }
       else
       {
+          if (verboseLevel > 1) {
+            G4cout << "Here I am setting new momentum and polarization: " << G4endl;
+            G4cout << "Old Momentum: " << fOldMomentum << G4endl;
+            G4cout << "Facet Normal: " << fFacetNormal.getX() << " " << fFacetNormal.getY() << " " << fFacetNormal.getZ() << G4endl;
+          }
         fNewMomentum =
           fOldMomentum - 2. * fOldMomentum * fFacetNormal * fFacetNormal;
         fNewPolarization = -fOldPolarization + (2. * fOldPolarization *

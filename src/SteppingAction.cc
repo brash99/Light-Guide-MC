@@ -125,6 +125,16 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   const G4DynamicParticle* theParticle = track->GetDynamicParticle();
   const G4ParticleDefinition* particleDef = theParticle->GetParticleDefinition();
 
+  if (PreVolume != nullptr && PostVolume != nullptr) {
+    G4cout << "SteppingAction: Volumes -> " << PreVolume->GetName() << " " << PostVolume->GetName() << G4endl;
+  }
+  else {
+    G4cout << "SteppingAction: Volumes -> " << PreVolume << " " << PostVolume << G4endl;
+  }
+  G4cout << "SteppingAction: Mom Dir -> " << startPoint->GetMomentumDirection() << G4endl;
+  G4cout << "SteppingAction: Start   -> " << pos_start[0] << " " << pos_start[1] << " " << pos_start[2] << G4endl;
+  G4cout << "SteppingAction: End     -> " << pos_end[0] << " " << pos_end[1] << " " << pos_end[2] << G4endl;
+
   if (PostVolume != detVolume_mid && PostVolume != detVolume && PostVolume != scint_volume && PreVolume != detVolume_mid && PreVolume != detVolume && PreVolume != scint_volume){
     analysisMan->FillNtupleDColumn(0, 0, initialMomentum[0]); 
     analysisMan->FillNtupleDColumn(0, 1, initialMomentum[1]); 
