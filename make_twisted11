@@ -1,4 +1,5 @@
 #!/bin/sh
+export G4FORCENUMBEROFTHREADS=1
 cd ~/Light-Guide-MC
 cp NewAngeloGeometries/Twist/DetectorConstruction.cc src/.
 #cp src/G4OpBoundaryProcess.cc.11 src/G4OpBoundaryProcess.cc
