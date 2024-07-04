@@ -1,13 +1,21 @@
 #!/bin/sh
 #
-# cmake -Dgeant4_DIR=/Users/brash/Geant4/geant4_install_11.2.1/lib/cmake/Geant4/ .
-#
-# might have to remove CMakeCache.txt and CMakeFiles/ and re-run cmake
-#
-export G4FORCENUMBEROFTHREADS=1
 cd ~/Light-Guide-MC
+
+#
+#  Remake from scratch
+rm CMakeCache.txt
+rm -rf CMakeFiles
+cmake -DGeant4_DIR=/Users/brash/Geant4/geant4_install_11.2.1/lib/cmake/Geant4/ .
+#
+#
+
+# Set the number of threads to 1
+export G4FORCENUMBEROFTHREADS=1
+
+# Copy the twisted geometry file to the source directory
 cp NewAngeloGeometries/Twist/DetectorConstruction.cc src/.
 #cp src/G4OpBoundaryProcess.cc.11 src/G4OpBoundaryProcess.cc
 make clean; make
-OpNovice2 vis.mac > tempoutput_twisted_juniper11
+./OpNovice2 vis.mac > tempoutput_twisted_juniper11
 grep Photons tempoutput_twisted_juniper11
