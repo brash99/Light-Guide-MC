@@ -6,7 +6,7 @@ cd ~/Light-Guide-MC
 #  Remake from scratch
 rm CMakeCache.txt
 rm -rf CMakeFiles
-cmake -DGeant4_DIR=/Users/brash/Geant4/geant4_install_11.2.1/lib/cmake/Geant4/ .
+cmake -DGeant4_DIR=$G4INSTALL/../../../lib/cmake/Geant4/ .
 #
 #
 

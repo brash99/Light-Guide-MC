@@ -222,8 +222,8 @@ EXPAT_LIBRARY:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/l
 //Path to a library.
 EXPAT_LIBRARY_RELEASE:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/lib/libexpat.tbd
 
-//The directory containing a CMake configuration file for Geant4.
-Geant4_DIR:PATH=/Users/brash/Geant4/geant4-v11.2.1-install/lib/cmake/Geant4
+//No help, variable specified on the command line.
+Geant4_DIR:UNINITIALIZED=/Users/brash/Geant4/geant4-v11.2.1-install/share/Geant4/geant4make/../../../lib/cmake/Geant4/
 
 //Value Computed by CMake
 OpNovice2_BINARY_DIR:STATIC=/Users/brash/Light-Guide-MC
