@@ -95,7 +95,7 @@ G4OpBoundaryProcess::G4OpBoundaryProcess(const G4String& processName,
   Initialise();
   //G4cout << "Roll-Your-Own G4OpBoundaryProcess is created " << G4endl;
 
-  if(verboseLevel > 0)
+  if(verboseLevel > -1)
   {
     G4cout << GetProcessName() << " is created " << G4endl;
   }
@@ -168,7 +168,7 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
   {
     fStatus = NotAtBoundary;
     G4cout << "G4OpBoundaryProcess: Not at Boundary!" << G4endl;
-    if(verboseLevel > 1)
+    if(verboseLevel > -1)
       BoundaryProcessVerbose();
     return G4VDiscreteProcess::PostStepDoIt(aTrack, aStep);
   }
@@ -176,9 +176,9 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
   G4VPhysicalVolume* thePrePV  = pStep->GetPreStepPoint()->GetPhysicalVolume();
   G4VPhysicalVolume* thePostPV = pStep->GetPostStepPoint()->GetPhysicalVolume();
 
-  if(verboseLevel > 1)
+  if(verboseLevel > -1)
   {
-    G4cout << " Photon at Boundary ... new version! " << G4endl;
+    G4cout << " Photon at Boundary ... new version! Step number = " << aTrack.GetCurrentStepNumber() << G4endl;
     G4cout << "Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version" << G4endl;
     if(thePrePV != nullptr)
       G4cout << " thePrePV:  " << thePrePV->GetName() << G4endl;
@@ -188,12 +188,15 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
 
   G4double stepLength = aTrack.GetStepLength();
 
+  if (verboseLevel > -1) 
+      G4cout << "G4OpBoundaryProcess: stepLength=" << stepLength << G4endl;
+
   if(stepLength <= 1000000.0*fCarTolerance)
   {
-    if (verboseLevel > 1) 
-        G4cout << "G4OpBoundaryProcess: stepLength Bug Fix!!!" << stepLength << " " << fCarTolerance <<G4endl;
+    if (verboseLevel > -1) 
+        G4cout << "G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=" << stepLength << "  fCarTolerance=" << fCarTolerance <<G4endl;
     fStatus = StepTooSmall;
-    if(verboseLevel > 1)
+    if(verboseLevel > -1)
       BoundaryProcessVerbose();
 
     G4MaterialPropertyVector* groupvel = nullptr;
@@ -208,12 +211,14 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
       aParticleChange.ProposeVelocity(
         groupvel->Value(fPhotonMomentum, idx_groupvel));
     }
+    if (verboseLevel > -1) 
+        G4cout << "G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)" << G4endl;
     return G4VDiscreteProcess::PostStepDoIt(aTrack, aStep);
   }
-  else if (stepLength <= 10.*fCarTolerance && fNumSmallStepWarnings < 10)
+  else if (stepLength <= 10000000.0*fCarTolerance && fNumSmallStepWarnings < 10)
   {  // see bug 2510
     ++fNumSmallStepWarnings;
-    if(verboseLevel > 1)
+    if(verboseLevel > -1)
     {
       G4ExceptionDescription ed;
       ed << "G4OpBoundaryProcess: "
@@ -234,8 +239,9 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
   fPhotonMomentum  = aParticle->GetTotalMomentum();
   fOldMomentum     = aParticle->GetMomentumDirection();
   fOldPolarization = aParticle->GetPolarization();
+  fOldPosition     = aTrack.GetPosition();
 
-  if(verboseLevel > 1)
+  if(verboseLevel > -1)
   {
     G4cout << " Old Momentum Direction: " << fOldMomentum << G4endl
            << " Old Polarization:       " << fOldPolarization << G4endl;
@@ -248,6 +254,13 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
   G4int hNavId = G4ParallelWorldProcess::GetHypNavigatorID();
   auto iNav    = G4TransportationManager::GetTransportationManager()
                 ->GetActiveNavigatorsIterator();
+  if (verboseLevel > -1) {
+      G4cout << "G4OpBoundaryProcess: hNavId=" << hNavId << G4endl;
+      G4cout << "G4OpBounderyProcess: the global point=" << theGlobalPoint << G4endl;
+      G4cout << "G4OpBoundaryProcess: iNav[hNavId]->GetLocalExitNormalAndCheck(theGlobalPoint,&valid)=" << (iNav[hNavId])->GetLocalExitNormalAndCheck(theGlobalPoint, &valid) << G4endl;
+      G4cout << "G4OpBoundaryProcess: iNav[hNavId]->GetGlobalExitNormal(theGlobalPoint, &valid)=" << (iNav[hNavId])->GetGlobalExitNormal(theGlobalPoint, &valid) << G4endl;
+  }
+
   fGlobalNormal = (iNav[hNavId])->GetGlobalExitNormal(theGlobalPoint, &valid);
 
   if(valid)
@@ -289,6 +302,10 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
     G4cout << " I am so confused!  G4OpBoundaryProcess/PostStepDoIt(): "
            << " The Navigator reports that it returned an invalid normal"
            << G4endl;
+    G4cout << " OldMomentum: " << fOldMomentum.x() << " " << fOldMomentum.y()
+           << " " << fOldMomentum.z() << G4endl;
+    G4cout << " GlobalNormal: " << fGlobalNormal.x() << " " << fGlobalNormal.y()
+           << " " << fGlobalNormal.z() << G4endl;
 //#else
     fGlobalNormal = -fGlobalNormal;
 //#endif
@@ -307,7 +324,7 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
   else
   {
     fStatus = NoRINDEX;
-    if(verboseLevel > 1)
+    if(verboseLevel > -1)
       BoundaryProcessVerbose();
     aParticleChange.ProposeLocalEnergyDeposit(fPhotonMomentum);
     aParticleChange.ProposeTrackStatus(fStopAndKill);
@@ -374,7 +391,7 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
         else
         {
           fStatus = NoRINDEX;
-          if(verboseLevel > 1)
+          if(verboseLevel > -1)
             BoundaryProcessVerbose();
           aParticleChange.ProposeLocalEnergyDeposit(fPhotonMomentum);
           aParticleChange.ProposeTrackStatus(fStopAndKill);
@@ -438,7 +455,7 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
       if(fMaterial1 == fMaterial2)
       {
         fStatus = SameMaterial;
-        if(verboseLevel > 1)
+        if(verboseLevel > -1)
           BoundaryProcessVerbose();
         return G4VDiscreteProcess::PostStepDoIt(aTrack, aStep);
       }
@@ -455,7 +472,7 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
       else
       {
         fStatus = NoRINDEX;
-        if(verboseLevel > 1)
+        if(verboseLevel > -1)
           BoundaryProcessVerbose();
         aParticleChange.ProposeLocalEnergyDeposit(fPhotonMomentum);
         aParticleChange.ProposeTrackStatus(fStopAndKill);
@@ -522,7 +539,7 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
     if(fNumBdryTypeWarnings <= 10)
     {
       ++fNumBdryTypeWarnings;
-      if(verboseLevel > 1)
+      if(verboseLevel > -1)
       {
         G4ExceptionDescription ed;
         ed << " PostStepDoIt(): Illegal boundary type." << G4endl;
@@ -539,7 +556,7 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
   fNewMomentum     = fNewMomentum.unit();
   fNewPolarization = fNewPolarization.unit();
 
-  if(verboseLevel > 1)
+  if(verboseLevel > -1)
   {
     G4cout << " New Momentum Direction: " << fNewMomentum << G4endl
            << " New Polarization:       " << fNewPolarization << G4endl;
@@ -567,6 +584,8 @@ G4VParticleChange* G4OpBoundaryProcess::PostStepDoIt(const G4Track& aTrack,
 
   if(fStatus == Detection && fInvokeSD)
     InvokeSD(pStep);
+  if (verboseLevel > -1) 
+      G4cout << "G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end" << G4endl;
   return G4VDiscreteProcess::PostStepDoIt(aTrack, aStep);
 }
 
@@ -1089,7 +1108,8 @@ void G4OpBoundaryProcess::DielectricDielectric()
 
   if(fFinish == polished)
   {
-    //G4cout << "Here I am doing polished dielectric-dielectric" << G4endl;
+    if (verboseLevel > -1)
+        G4cout << "Here I am doing polished dielectric-dielectric" << G4endl;
     fFacetNormal = fGlobalNormal;
   }
   else
@@ -1129,11 +1149,20 @@ leap:
       fGlobalNormal = -fGlobalNormal;
       G4SwapPtr(fMaterial1, fMaterial2);
       G4SwapObj(&fRindex1, &fRindex2);
+      if (verboseLevel > -1) {
+          G4cout << "Swapping materials: " << fMaterial1->GetName() << " " << fMaterial2->GetName() << G4endl;
+      }
     }
 
     if(fFinish == polished)
     {
       fFacetNormal = fGlobalNormal;
+      if (verboseLevel > -1) {
+      G4cout << "Facet Normal: " << fFacetNormal.getX() << " " << fFacetNormal.getY() << " " << fFacetNormal.getZ() << G4endl;
+      G4cout << "Global Normal: " << fGlobalNormal.getX() << " " << fGlobalNormal.getY() << " " << fGlobalNormal.getZ() << G4endl;
+      G4cout << "Old Momentum: " << fOldMomentum.getX() << " " << fOldMomentum.getY() << " " << fOldMomentum.getZ() << G4endl;
+      G4cout << "Old Position: " << fOldPosition.getX() << " " << fOldPosition.getY() << " " << fOldPosition.getZ() << G4endl;
+      }
     }
     else
     {
@@ -1158,7 +1187,7 @@ leap:
     {
       swap = false;
 
-      if (verboseLevel > 1)
+      if (verboseLevel > -1) 
           G4cout << "Here I am doing Total Internal Reflection: " << G4endl;
       fStatus = TotalInternalReflection;
       if(!surfaceRoughnessCriterionPass)
@@ -1176,15 +1205,16 @@ leap:
       }
       else
       {
-          if (verboseLevel > 1) {
+        if (verboseLevel > -1) {
             G4cout << "Here I am setting new momentum and polarization: " << G4endl;
-            G4cout << "Old Momentum: " << fOldMomentum << G4endl;
-            G4cout << "Facet Normal: " << fFacetNormal.getX() << " " << fFacetNormal.getY() << " " << fFacetNormal.getZ() << G4endl;
-          }
+        }
         fNewMomentum =
           fOldMomentum - 2. * fOldMomentum * fFacetNormal * fFacetNormal;
         fNewPolarization = -fOldPolarization + (2. * fOldPolarization *
                                                 fFacetNormal * fFacetNormal);
+        if (verboseLevel > -1) {
+            G4cout << "New Momentum: " << fNewMomentum.getX() << " " << fNewMomentum.getY() << " " << fNewMomentum.getZ() << G4endl;
+        }
       }
     }
     // NOT TIR
@@ -1317,6 +1347,9 @@ leap:
     }
     // Loop checking, 13-Aug-2015, Peter Gumplinger
   } while(!done);
+
+  if (verboseLevel > -1) 
+      G4cout << "End of Loop Checking" << G4endl;
 
   if(inside && !swap)
   {
@@ -1647,7 +1680,7 @@ void G4OpBoundaryProcess::CoatedDielectricDielectric()
                         sintTL, E1_perp, E1_parl, wavelength, cost1, cost2);
     if (!G4BooleanRand(transCoeff))
     {
-      if(verboseLevel > 2)
+      if(verboseLevel > -2)
         G4cout << "Reflection from " << fMaterial1->GetName() << " to "
                << fMaterial2->GetName() << G4endl;
 
@@ -1692,7 +1725,7 @@ void G4OpBoundaryProcess::CoatedDielectricDielectric()
       }
 
     } else { // photon gets transmitted
-      if (verboseLevel > 2)
+      if (verboseLevel > -2)
         G4cout << "Transmission from " << fMaterial1->GetName() << " to "
                << fMaterial2->GetName() << G4endl;
 
