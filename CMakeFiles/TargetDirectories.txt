@@ -1,0 +1,7 @@
+/Users/brash/Light-Guide-MC/CMakeFiles/OpNovice2.dir
+/Users/brash/Light-Guide-MC/CMakeFiles/edit_cache.dir
+/Users/brash/Light-Guide-MC/CMakeFiles/rebuild_cache.dir
+/Users/brash/Light-Guide-MC/CMakeFiles/list_install_components.dir
+/Users/brash/Light-Guide-MC/CMakeFiles/install.dir
+/Users/brash/Light-Guide-MC/CMakeFiles/install/local.dir
+/Users/brash/Light-Guide-MC/CMakeFiles/install/strip.dir

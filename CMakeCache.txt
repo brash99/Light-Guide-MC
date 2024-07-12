@@ -223,7 +223,7 @@ EXPAT_LIBRARY:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.p
 EXPAT_LIBRARY_RELEASE:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libexpat.tbd
 
 //No help, variable specified on the command line.
-Geant4_DIR:UNINITIALIZED=/Users/brash/Geant4/geant4_install_11.2.1/lib/cmake/Geant4/
+Geant4_DIR:UNINITIALIZED=/Users/brash/Geant4/geant4_install_11.2.1/share/Geant4-11.2.1/geant4make/../../../lib/cmake/Geant4/
 
 //Include for the OpenGL GLU library
 OPENGL_GLU_INCLUDE_DIR:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks/OpenGL.framework
