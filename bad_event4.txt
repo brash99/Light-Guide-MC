@@ -1,0 +1,192 @@
+Geometry setup:
+
+rect_mid is a G4TwistedBox, with a bendAngle of 0.001 degrees (i.e. essentially a straight box) and a length of about 2m.
+It is 0.5 cm high (y = -2.5 mm to +2.5mm) and 5 cm wide (x = -25 mm to +25 mm).  At the end of rect_mid, there is a PMT
+(modeled as a cone) the starts at about z = -2070mm.  So, the photon has to get to this z-value to reach the PMT.
+
+There is a rectangular (G4Box) piece of scintillator), centered at (0,0,0), that is the same width and height as rect_mid, but
+is 12 cm long in the z-direction.
+
+Photons a generated at (0,0,0), with a direction that is randomized.  The energy is 2.6 eV.  We are interested in looking at
+photons that make it into rect_mid and then into the PMT.  About 40% of generated photons make it into rect_mid (the remainder
+refract out of the scintillator).  Essentially, the scintillator is acting here a bit like a photon colomator; photons that make
+it into rect_mid are bouncing at angles less than the critical angle and thus we expect for this straight geometry that they
+should all make it to the PMT.
+
+Below is the end portion of an event where this does not happen.
+
+G4WT7 >  Photon at Boundary ... new version! Step number = 742
+G4WT7 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT7 >  thePrePV:  rect_mid
+G4WT7 >  thePostPV: World
+G4WT7 > G4OpBoundaryProcess: stepLength=8.782660386142039
+G4WT7 >  Old Momentum Direction: (-0.5542752615912345,0.569311009997802,-0.6071769991388435)
+G4WT7 >  Old Polarization:       (-0.1014660800385522,-0.7702639165545424,-0.6296015672277722)
+G4WT7 > Here I am doing polished dielectric-dielectric
+G4WT7 > Facet Normal: -1.356495634773994e-05 -0.9999999999079907 1.03772248399821e-07
+G4WT7 > Global Normal: -1.356495634773994e-05 -0.9999999999079907 1.03772248399821e-07
+G4WT7 > Old Momentum: -0.5542752615912345 0.569311009997802 -0.6071769991388435
+G4WT7 > Old Position: 11.89145763908278 2.49983869312621 -1654.429496057068
+G4WT7 > Here I am doing Total Internal Reflection: 
+G4WT7 > Here I am setting new momentum and polarization: 
+G4WT7 > New Momentum: -0.5542907067469581 -0.5692960983650643 -0.6071768809830238
+G4WT7 > End of Loop Checking
+G4WT7 >  New Momentum Direction: (-0.554290706746958,-0.5692960983650642,-0.6071768809830237)
+G4WT7 >  New Polarization:       (0.1014451828101769,-0.7702665383666087,0.6296017270920811)
+G4WT7 >  *** TotalInternalReflection ***
+G4WT7 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT7 >   742     11.9      2.5 -1.65e+03   2.6e-06        0     8.78  2.96e+03       World Transportation
+
+My analysis of step 742:
+    The photon is at the boundary between rect_mid and World, at the top (y=+2.5mm) of rect_mid, traveling with
+    a positive y-momentum.  Thus, the result should be to reflect the photon back into rect_mid, with a negative
+    y-momentum. This appears to be what happens.
+
+G4WT7 >  Photon at Boundary ... new version! Step number = 743
+G4WT7 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT7 >  thePrePV:  World
+G4WT7 >  thePostPV: rect_mid
+G4WT7 > G4OpBoundaryProcess: stepLength=0
+G4WT7 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT7 >  *** StepTooSmall ***
+G4WT7 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT7 >   743     11.9      2.5 -1.65e+03   2.6e-06        0        0  2.96e+03    rect_mid Transportation
+
+My analysis of step 743:
+    This is the second "pass" through G4OpBoundaryProcess for this photon.  The photon is at the same position as
+    for step 742, but the step length is zero.
+
+G4WT7 >  Photon at Boundary ... new version! Step number = 744
+G4WT7 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT7 >  thePrePV:  rect_mid
+G4WT7 >  thePostPV: World
+G4WT7 > G4OpBoundaryProcess: stepLength=8.782660386142114
+G4WT7 >  Old Momentum Direction: (-0.554290706746958,-0.5692960983650642,-0.6071768809830237)
+G4WT7 >  Old Polarization:       (0.1014451828101769,-0.7702665383666087,0.6296017270920811)
+G4WT7 > Here I am doing polished dielectric-dielectric
+G4WT7 > Facet Normal: 1.361149230901716e-05 0.9999999999073619 -6.129024419946408e-08
+G4WT7 > Global Normal: 1.361149230901716e-05 0.9999999999073619 -6.129024419946408e-08
+G4WT7 > Old Momentum: -0.554290706746958 -0.5692960983650642 -0.6071768809830237
+G4WT7 > Old Position: 7.023310606529557 -2.500095597969904 -1659.762124397059
+G4WT7 > Here I am doing Total Internal Reflection: 
+G4WT7 > Here I am setting new momentum and polarization: 
+G4WT7 > New Momentum: -0.5542752086036538 0.5693111131734537 -0.6071769507685377
+G4WT7 > End of Loop Checking
+G4WT7 >  New Momentum Direction: (-0.5542752086036538,0.5693111131734537,-0.6071769507685377)
+G4WT7 >  New Polarization:       (-0.1014661517277611,-0.7702638536174207,-0.6296016326725972)
+G4WT7 >  *** TotalInternalReflection ***
+G4WT7 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT7 >   744     7.02     -2.5 -1.66e+03   2.6e-06        0     8.78  2.96e+03       World Transportation
+
+My analysis of step 744:
+    The photon is at the boundary between rect_mid and World, at the bottom (y=-2.5mm) of rect_mid, traveling with
+    a negative y-momentum.  Thus, the result should be to reflect the photon back into rect_mid, with a positive
+    y-momentum. This appears to be what happens.  This is very similar to step 742, as I would expect, but of course
+    the photon is at the bottom, so is reflected back upwards.
+
+G4WT7 >  Photon at Boundary ... new version! Step number = 745
+G4WT7 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT7 >  thePrePV:  World
+G4WT7 >  thePostPV: rect_mid
+G4WT7 > G4OpBoundaryProcess: stepLength=0
+G4WT7 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT7 >  *** StepTooSmall ***
+G4WT7 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT7 >   745     7.02     -2.5 -1.66e+03   2.6e-06        0        0  2.96e+03    rect_mid Transportation
+
+My analysis of step 745:
+    This is the second "pass" through G4OpBoundaryProcess for this photon.  The photon is at the same position as
+    for step 744, but the step length is zero.  Again, this is a repeat of step 743, as I would expect, other than
+    the fact that the photon is at the bottom of rect_mid.
+
+G4WT7 >  Photon at Boundary ... new version! Step number = 746
+G4WT7 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT7 >  thePrePV:  rect_mid
+G4WT7 >  thePostPV: World
+G4WT7 > G4OpBoundaryProcess: stepLength=8.782660386142155
+G4WT7 >  Old Momentum Direction: (-0.5542752086036538,0.5693111131734537,-0.6071769507685377)
+G4WT7 >  Old Polarization:       (-0.1014661517277611,-0.7702638536174207,-0.6296016326725972)
+G4WT7 > Here I am doing polished dielectric-dielectric
+G4WT7 > Facet Normal: -1.365802827539798e-05 -0.9999999999067291 1.880823999910667e-08
+G4WT7 > Global Normal: -1.365802827539798e-05 -0.9999999999067291 1.880823999910667e-08
+G4WT7 > Old Momentum: -0.5542752086036538 0.5693111131734537 -0.6071769507685377
+G4WT7 > Old Position: 2.155299688905568 2.499970563089081 -1665.094753349952
+G4WT7 > Here I am doing Total Internal Reflection: 
+G4WT7 > Here I am setting new momentum and polarization: 
+G4WT7 > New Momentum: -0.5542907597317358 -0.5692959951879709 -0.607176929353342
+G4WT7 > End of Loop Checking
+G4WT7 >  New Momentum Direction: (-0.5542907597317357,-0.5692959951879708,-0.6071769293533419)
+G4WT7 >  New Polarization:       (0.1014451111192467,-0.7702666013017885,0.6296016616472636)
+G4WT7 >  *** TotalInternalReflection ***
+G4WT7 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT7 >   746     2.16      2.5 -1.67e+03   2.6e-06        0     8.78  2.97e+03       World Transportation
+
+My analysis of step 746:
+    The photon is at the boundary between rect_mid and World, at the top (y=+2.5mm) of rect_mid, traveling with
+    a positive y-momentum.  Thus, the result should be to reflect the photon back into rect_mid, with a negative
+    y-momentum. This appears to be what happens.  Other than the x-position and z-position being a bit different,
+    This is a repeat of step 742, as I would expect.
+
+G4WT7 >  Photon at Boundary ... new version! Step number = 747
+G4WT7 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT7 >  thePrePV:  World
+G4WT7 >  thePostPV: rect_mid
+G4WT7 > G4OpBoundaryProcess: stepLength=0
+G4WT7 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT7 >  *** StepTooSmall ***
+G4WT7 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT7 >   747     2.16      2.5 -1.67e+03   2.6e-06        0        0  2.97e+03    rect_mid Transportation
+
+My analysis of step 747:
+    This is the second "pass" through G4OpBoundaryProcess for this photon.  The photon is at the same position as
+    for step 746, but the step length is zero.  Again, this is a repeat of steps 743, as I would expect.
+
+G4WT7 >  Photon at Boundary ... new version! Step number = 748
+G4WT7 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT7 >  thePrePV:  rect_mid
+G4WT7 >  thePostPV: World
+G4WT7 > G4OpBoundaryProcess: stepLength=8.782660386142171
+G4WT7 >  Old Momentum Direction: (-0.5542907597317357,-0.5692959951879708,-0.6071769293533419)
+G4WT7 >  Old Polarization:       (0.1014451111192467,-0.7702666013017885,0.6296016616472636)
+G4WT7 > Here I am doing polished dielectric-dielectric
+G4WT7 > Facet Normal: 0.9999999999060922 -1.370456423613917e-05 -2.181661564992903e-08
+G4WT7 > Global Normal: 0.9999999999060922 -1.370456423613917e-05 -2.181661564992903e-08
+G4WT7 > Old Momentum: -0.5542907597317357 -0.5692959951879708 -0.6071769293533419
+G4WT7 > Old Position: -2.712847808994995 -2.499962821837694 -1670.427382114763
+G4WT7 > Here I am doing Total Internal Reflection: 
+G4WT7 > Here I am setting new momentum and polarization: 
+G4WT7 > New Momentum: 0.5542751291233661 -0.569311187600406 -0.6071769535384978
+G4WT7 > End of Loop Checking
+G4WT7 >  New Momentum Direction: (0.5542751291233662,-0.5693111876004061,-0.6071769535384979)
+G4WT7 >  New Polarization:       (0.1014661959458169,0.7702638204907463,-0.6296016660741016)
+G4WT7 >  *** TotalInternalReflection ***
+G4WT7 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT7 >   748    -2.71     -2.5 -1.67e+03   2.6e-06        0     8.78  2.98e+03       World Transportation
+
+My analysis of step 748:
+    The photon is at the boundary between rect_mid and World, at the bottom (y=-2.5mm) of rect_mid, traveling with
+    a negative y-momentum.  Thus, the result should be to reflect the photon back into rect_mid, with a positive
+    y-momentum, just as in steps 742, 744, and 746.  However, this is NOT what happens!!!!!!!!!!!!!!!!!
+
+    One can see here that the result instead is to reverse the x-momentum!!!!  This is indeed what the value
+    of GlobalNormal and FacetNormal suggest should happen, but it is simply not the correct thing to do here.
+    The photon is at the bottom face, as in step 744.
+
+G4WT7 >   749 7.14e+03 -7.34e+03 -9.5e+03   2.6e-06        0 1.29e+04  1.59e+04  OutOfWorld Transportation
+
+My analysis of step 749:
+    The photon is now out of the world volume.  This is the end of the event.
+
+G4WT7 > SCORING1: PostVolume == nullptr:  calling fStopAndKill
+G4WT7 > 0x0
+G4WT7 > 
+G4WT7 >  Histogram statistics for the local thread:
+G4WT7 > 
+G4WT7 > 
+G4WT7 > 
+G4WT7 > Photons that reached the end: 0
+G4WT7 > 
+G4WT7 > Photons in middle: 1
+G4WT7 > 
+G4WT7 > Efficiency: 0
+G4WT7 > Efficiency for Not Trapped: 0

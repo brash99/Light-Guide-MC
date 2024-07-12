@@ -1,0 +1,36 @@
+G4WT11 >   462     23.1     -2.5     -733   2.6e-06        0      7.6  1.62e+03       World Transportation
+G4WT11 >  Photon at Boundary ... new version! 
+G4WT11 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT11 >  thePrePV:  World
+G4WT11 >  thePostPV: rect_mid
+G4WT11 > G4OpBoundaryProcess: stepLength=0
+G4WT11 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT11 >  *** StepTooSmall ***
+G4WT11 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT11 >   463     23.1     -2.5     -733   2.6e-06        0        0  1.62e+03    rect_mid Transportation
+G4WT11 >  Photon at Boundary ... new version! 
+G4WT11 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT11 >  thePrePV:  rect_mid
+G4WT11 >  thePostPV: World
+G4WT11 > G4OpBoundaryProcess: stepLength=3.371955142037847
+G4WT11 >  Old Momentum Direction: (0.5713576802569027,0.6576514767690375,-0.4909632738962816)
+G4WT11 >  Old Polarization:       (-0.7684644214142051,0.2186884128519503,-0.6013632937790815)
+G4WT11 >  I am so confused!  G4OpBoundaryProcess/PostStepDoIt():  The Navigator reports that it returned an invalid normal
+G4WT11 > Here I am doing polished dielectric-dielectric
+G4WT11 > Facet Normal: -5.540113488350774e-06 -0.9999999999846297 2.18166156499286e-07
+G4WT11 > Global Normal: -5.540113488350774e-06 -0.9999999999846297 2.18166156499286e-07
+G4WT11 > Old Momentum: 0.5713576802569027 0.6576514767690375 -0.4909632738962816
+G4WT11 > Old Position: 24.99999843499015 -0.2825562172238723 -734.8502422850293
+G4WT11 > Here I am doing Total Internal Reflection: 
+G4WT11 > Here I am setting new momentum and polarization: 
+G4WT11 > New Momentum: 0.5713503932930086 -0.6576580217245275 -0.4909629869402637
+G4WT11 > End of Loop Checking
+G4WT11 >  New Momentum Direction: (0.5713503932930086,-0.6576580217245275,-0.4909629869402637)
+G4WT11 >  New Polarization:       (0.7684668444857377,0.2186801604725294,0.6013631983600609)
+G4WT11 >  *** TotalInternalReflection ***
+G4WT11 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT11 >   464       25   -0.283     -735   2.6e-06        0     3.37  1.62e+03       World Transportation
+G4WT11 >   465 8.28e+03 -9.5e+03 -7.83e+03   2.6e-06        0 1.44e+04  1.61e+04  OutOfWorld Transportation
+G4WT11 > SCORING1: PostVolume == nullptr:  calling fStopAndKill
+G4WT11 > 0x0
+G4WT11 > 

@@ -6,7 +6,7 @@
 #
 
 #/control/verbose 2
-#/tracking/verbose 2
+/tracking/verbose 2
 #/process/optical/verbose 2
 
 #/run/verbose 2
@@ -16,7 +16,7 @@
 
 /opnovice2/boxProperty RINDEX 0.000002 1.52 0.000008 1.52
 /opnovice2/worldProperty RINDEX 0.000002 1.0 0.000008 1.0
-###/opnovice2/surfaceProperty RINDEX 0.000002 1.52 0.000008 1.52
+###/opnovice2/surfaceProperty RINDEX 0.000002 1.52 0.000008 1.522
 #/opnovice2/surfaceProperty REFLECTIVITY 0.000002 1.0 0.000008 1.0
 #/opnovice2/surfaceProperty TRANSMITTANCE 0.000002 0.0 0.000008 0.0
 
@@ -30,6 +30,7 @@
 #
 # Use this open statement to create an OpenGL view:
 #/vis/open OGL 600x600-0+0
+#/vis/open
 #
 # Use this open statement to create a .prim file suitable for
 # viewing in DAWN:
@@ -41,7 +42,7 @@
 #
 # Use this open statement to create a .wrl file suitable for
 # viewing in a VRML viewer:
-/vis/open VRML2FILE
+#/vis/open VRML2FILE
 #
 # Disable auto refresh and quieten vis messages whilst scene and
 # trajectories are established:
@@ -116,5 +117,5 @@
 /analysis/h1/set 27 100 1 10
 
 
-/run/beamOn 1000
+/run/beamOn 24
 /vis/scene/add/trajectories rich

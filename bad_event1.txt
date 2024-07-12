@@ -1,0 +1,35 @@
+G4WT5 >   294    -15.7     -2.5     -442   2.6e-06        0      7.6  1.02e+03       World Transportation
+G4WT5 >  Photon at Boundary ... new version! 
+G4WT5 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT5 >  thePrePV:  World
+G4WT5 >  thePostPV: rect_mid
+G4WT5 > G4OpBoundaryProcess: stepLength=0
+G4WT5 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT5 >  *** StepTooSmall ***
+G4WT5 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT5 >   295    -15.7     -2.5     -442   2.6e-06        0        0  1.02e+03    rect_mid Transportation
+G4WT5 >  Photon at Boundary ... new version! 
+G4WT5 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT5 >  thePrePV:  rect_mid
+G4WT5 >  thePostPV: World
+G4WT5 > G4OpBoundaryProcess: stepLength=7.602773053872784
+G4WT5 >  Old Momentum Direction: (0.5713559824335748,0.6576531181413429,-0.4909630510907454)
+G4WT5 >  Old Polarization:       (-0.6781615056639915,0.04140425375719198,-0.7337456371293518)
+G4WT5 > Here I am doing polished dielectric-dielectric
+G4WT5 > Facet Normal: -0.99999999988119 1.54149182974822e-05 -1.066721372960205e-08
+G4WT5 > Global Normal: -0.99999999988119 1.54149182974822e-05 -1.066721372960205e-08
+G4WT5 > Old Momentum: 0.5713559824335748 0.6576531181413429 -0.4909630510907454
+G4WT5 > Old Position: -11.40494555651271 2.50003441426022 -445.778277292439
+G4WT5 > Here I am doing Total Internal Reflection: 
+G4WT5 > Here I am setting new momentum and polarization: 
+G4WT5 > New Momentum: -0.571335696349462 0.6576707326402126 -0.4909630632800818
+G4WT5 > End of Loop Checking
+G4WT5 >  New Momentum Direction: (-0.571335696349462,0.6576707326402126,-0.4909630632800818)
+G4WT5 >  New Polarization:       (-0.6781627974821227,-0.04138334612887161,0.7337456226611505)
+G4WT5 >  *** TotalInternalReflection ***
+G4WT5 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT5 >   296    -11.4      2.5     -446   2.6e-06        0      7.6  1.03e+03       World Transportation
+G4WT5 >   297 -8.26e+03  9.5e+03 -7.54e+03   2.6e-06        0 1.44e+04  1.55e+04  OutOfWorld Transportation
+G4WT5 > SCORING1: PostVolume == nullptr:  calling fStopAndKill
+G4WT5 > 0x0
+G4WT5 > 

@@ -64,9 +64,9 @@ DetectorConstruction::DetectorConstruction()
   fExpHall_x = fExpHall_y = fExpHall_z = 950.0 * cm;
   fTank_x = fTank_y = fTank_z = 1.0 * cm;
 
-  //fTank = nullptr;
-  //fWorld = nullptr;
-  //fScint = nullptr;
+  fTank = nullptr;
+  fWorld = nullptr;
+  fScint = nullptr;
 
   fTankMPT    = new G4MaterialPropertiesTable();
   fScintMPT = new G4MaterialPropertiesTable();

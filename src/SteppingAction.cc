@@ -150,7 +150,9 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 
  if(PostVolume == tank)
   {
-    track->SetTrackStatus(fStopAndKill);
+     G4cout << "SCORING1: PostVolume == nullptr:  calling fStopAndKill" << G4endl;
+     G4cout << PostVolume << G4endl;
+     track->SetTrackStatus(fStopAndKill);
   }
 
   if(PreVolume == detVolume_mid && PostVolume == detVolume)
@@ -206,6 +208,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     analysisMan->FillH1(33, initialMomentum[0]);
     analysisMan->FillH1(34, initialMomentum[1]);
     analysisMan->FillH1(35, initialMomentum[2]);
+    G4cout << "SCORING: PreVolume == detVolume_mid && PostVolume == detVolume:  calling fStopAndKill" << G4endl;
     track->SetTrackStatus(fStopAndKill);
   }
   fEventAction->AddCount(counter_step);
@@ -246,6 +249,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   //   analysisMan->FillH1(33, initialMomentum[0]);
   //   analysisMan->FillH1(34, initialMomentum[1]);
   //   analysisMan->FillH1(35, initialMomentum[2]);
+    G4cout << "SCORING4: PostVolume == scint_volume && PreVolume == detVolume_mid:  calling fStopAndKill" << G4endl;
     track->SetTrackStatus(fStopAndKill);
   }
 
@@ -401,7 +405,9 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
                 else {
                   trackInfo->addBounceOut();
                 }
+                G4cout << "FresnelRefraction: " << PreVolume->GetName() << " " << PostVolume->GetName() << " ... calling fStopAndKill" << G4endl;
                 track->SetTrackStatus(fStopAndKill);
+
                 break;
               case FresnelReflection:
                 run->AddFresnelReflection();
