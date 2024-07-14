@@ -1,0 +1,2507 @@
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 133
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   133     23.6     -2.5     -348   2.6e-06        0        0       655    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (23.56518830442292,-2.500051069379115,-348.3374638314804)
+G4WT4 >   Direction   =                         (-0.6515251168386165,0.4316173658477396,-0.623876166901001)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (2.230222526625942e-06,0.9999999999975033,-1.397805800315154e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58437018995674  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 134
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58437018995674
+G4WT4 >  Old Momentum Direction: (-0.6515251168386165,0.4316173658477396,-0.623876166901001)
+G4WT4 >  Old Polarization:       (0.4098455864130802,0.8922941990183797,0.1893083666821583)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.167153200076557e-06,0.9999999999976307,-2.056451096627469e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(16.01768016290956,2.499964277015093,-355.5646763015528)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (16.01768016290956,2.499964277015093,-355.5646763015528)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (2.230222526625942e-06,0.9999999999975033,-1.397805800315154e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (16.01768016290956,2.499964277015093,-355.5646763015528)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (16.01768016290956,2.499964277015093,-355.5646763015528)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.230222526625942e-06,0.9999999999975033,-1.397805800315154e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -2.230222526625942e-06 -0.9999999999975033 1.397805800315154e-07
+G4WT4 > Global Normal: -2.230222526625942e-06 -0.9999999999975033 1.397805800315154e-07
+G4WT4 > Old Momentum: -0.6515251168386165 0.4316173658477396 -0.623876166901001
+G4WT4 > Old Position: 16.01768016290956 2.499964277015093 -355.5646763015528
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515270420380685 -0.4316146341629898 -0.6238760462379314
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515270420380685,-0.4316146341629898,-0.6238760462379314)
+G4WT4 >  New Polarization:       (-0.4098416063798753,0.8922959741799206,-0.1893086161332079)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   134       16      2.5     -356   2.6e-06        0     11.6       666       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (16.01768016290956,2.499964277015093,-355.5646763015528)
+G4WT4 >   Direction   =                         (-0.6515270420380685,-0.4316146341629898,-0.6238760462379314)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 135
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   135       16      2.5     -356   2.6e-06        0        0       666    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (16.01768016290956,2.499964277015093,-355.5646763015528)
+G4WT4 >   Direction   =                         (-0.6515270420380685,-0.4316146341629898,-0.6238760462379314)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-2.293291841222084e-06,-0.9999999999973679,7.391605040028127e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58437018995694  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 136
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58437018995694
+G4WT4 >  Old Momentum Direction: (-0.6515270420380685,-0.4316146341629898,-0.6238760462379314)
+G4WT4 >  Old Polarization:       (-0.4098416063798753,0.8922959741799206,-0.1893086161332079)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.230222526625942e-06,-0.9999999999975033,1.397805800315154e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(8.470149719172937,-2.500019424531817,-362.7918873738197)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (8.470149719172937,-2.500019424531817,-362.7918873738197)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-2.293291841222084e-06,-0.9999999999973679,7.391605040028127e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (8.470149719172937,-2.500019424531817,-362.7918873738197)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (8.470149719172937,-2.500019424531817,-362.7918873738197)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.293291841222084e-06,-0.9999999999973679,7.391605040028127e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 2.293291841222084e-06 0.9999999999973679 -7.391605040028127e-08
+G4WT4 > Global Normal: 2.293291841222084e-06 0.9999999999973679 -7.391605040028127e-08
+G4WT4 > Old Momentum: -0.6515270420380685 -0.4316146341629898 -0.6238760462379314
+G4WT4 > Old Position: 8.470149719172937 -2.500019424531817 -362.7918873738197
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515250623947889 0.4316175302128387 -0.6238761100446435
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515250623947888,0.4316175302128386,-0.6238761100446434)
+G4WT4 >  New Polarization:       (0.4098456989657834,0.8922941223835915,0.1893084842233563)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   136     8.47     -2.5     -363   2.6e-06        0     11.6       678       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (8.470149719172937,-2.500019424531817,-362.7918873738197)
+G4WT4 >   Direction   =                         (-0.6515250623947888,0.4316175302128386,-0.6238761100446434)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 137
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   137     8.47     -2.5     -363   2.6e-06        0        0       678    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (8.470149719172937,-2.500019424531817,-362.7918873738197)
+G4WT4 >   Direction   =                         (-0.6515250623947888,0.4316175302128386,-0.6238761100446434)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (2.356361162023673e-06,0.9999999999972238,-8.051520769045773e-09)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58437018995704  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 138
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58437018995704
+G4WT4 >  Old Momentum Direction: (-0.6515250623947888,0.4316175302128386,-0.6238761100446434)
+G4WT4 >  Old Polarization:       (0.4098456989657834,0.8922941223835915,0.1893084842233563)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.293291841222084e-06,0.9999999999973679,-7.391605040028127e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(0.9226422083568426,2.499997825928674,-370.0190991852472)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (0.9226422083568426,2.499997825928674,-370.0190991852472)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (2.356361162023673e-06,0.9999999999972238,-8.051520769045773e-09)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (0.9226422083568426,2.499997825928674,-370.0190991852472)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (0.9226422083568426,2.499997825928674,-370.0190991852472)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.356361162023673e-06,0.9999999999972238,-8.051520769045773e-09)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -2.356361162023673e-06 -0.9999999999972238 8.051520769045773e-09
+G4WT4 > Global Normal: -2.356361162023673e-06 -0.9999999999972238 8.051520769045773e-09
+G4WT4 > Old Momentum: -0.6515250623947888 0.4316175302128386 -0.6238761100446434
+G4WT4 > Old Position: 0.9226422083568426 2.499997825928674 -370.0190991852472
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515270964811475 -0.4316144697976422 -0.623876103094313
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515270964811475,-0.4316144697976422,-0.623876103094313)
+G4WT4 >  New Polarization:       (-0.4098414938268091,0.8922960508142151,-0.1893084985920211)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   138    0.923      2.5     -370   2.6e-06        0     11.6       689       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (0.9226422083568426,2.499997825928674,-370.0190991852472)
+G4WT4 >   Direction   =                         (-0.6515270964811475,-0.4316144697976422,-0.623876103094313)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 139
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   139    0.923      2.5     -370   2.6e-06        0        0       689    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (0.9226422083568426,2.499997825928674,-370.0190991852472)
+G4WT4 >   Direction   =                         (-0.6515270964811475,-0.4316144697976422,-0.623876103094313)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-2.419430482367542e-06,-0.9999999999970716,-5.781300886218985e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58437018995705  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 140
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58437018995705
+G4WT4 >  Old Momentum Direction: (-0.6515270964811475,-0.4316144697976422,-0.623876103094313)
+G4WT4 >  Old Polarization:       (-0.4098414938268091,0.8922960508142151,-0.1893084985920211)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.356361162023673e-06,-0.9999999999972238,8.051520769045773e-09)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-6.624888866068634,-2.499983971549251,-377.2463109161596)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-6.624888866068634,-2.499983971549251,-377.2463109161596)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-2.419430482367542e-06,-0.9999999999970716,-5.781300886218985e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-6.624888866068634,-2.499983971549251,-377.2463109161596)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-6.624888866068634,-2.499983971549251,-377.2463109161596)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.419430482367542e-06,-0.9999999999970716,-5.781300886218985e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 2.419430482367542e-06 0.9999999999970716 5.781300886218985e-08
+G4WT4 > Global Normal: 2.419430482367542e-06 0.9999999999970716 5.781300886218985e-08
+G4WT4 > Old Momentum: -0.6515270964811475 -0.4316144697976422 -0.623876103094313
+G4WT4 > Old Position: -6.624888866068634 -2.499983971549251 -377.2463109161596
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515250079509356 0.4316176945779305 -0.6238760531882642
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515250079509356,0.4316176945779305,-0.6238760531882642)
+G4WT4 >  New Polarization:       (0.4098458115184872,0.8922940457487688,0.1893086017645441)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   140    -6.62     -2.5     -377   2.6e-06        0     11.6       701       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-6.624888866068634,-2.499983971549251,-377.2463109161596)
+G4WT4 >   Direction   =                         (-0.6515250079509356,0.4316176945779305,-0.6238760531882642)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 141
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   141    -6.62     -2.5     -377   2.6e-06        0        0       701    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-6.624888866068634,-2.499983971549251,-377.2463109161596)
+G4WT4 >   Direction   =                         (-0.6515250079509356,0.4316176945779305,-0.6238760531882642)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (2.482499797421325e-06,0.9999999999969109,1.236775384934243e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58437018995696  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 142
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58437018995696
+G4WT4 >  Old Momentum Direction: (-0.6515250079509356,0.4316176945779305,-0.6238760531882642)
+G4WT4 >  Old Polarization:       (0.4098458115184872,0.8922940457487688,0.1893086017645441)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.419430482367542e-06,0.9999999999970716,5.781300886218985e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-14.17239574618692,2.500035182977274,-384.4735220689417)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-14.17239574618692,2.500035182977274,-384.4735220689417)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (2.482499797421325e-06,0.9999999999969109,1.236775384934243e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-14.17239574618692,2.500035182977274,-384.4735220689417)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-14.17239574618692,2.500035182977274,-384.4735220689417)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.482499797421325e-06,0.9999999999969109,1.236775384934243e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -2.482499797421325e-06 -0.9999999999969109 -1.236775384934243e-07
+G4WT4 > Global Normal: -2.482499797421325e-06 -0.9999999999969109 -1.236775384934243e-07
+G4WT4 > Old Momentum: -0.6515250079509356 0.4316176945779305 -0.6238760531882642
+G4WT4 > Old Position: -14.17239574618692 2.500035182977274 -384.4735220689417
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515271509242008 -0.4316143054322875 -0.6238761599506731
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515271509242008,-0.4316143054322875,-0.6238761599506731)
+G4WT4 >  New Polarization:       (-0.4098413812737438,0.8922961274484754,-0.1893083810508243)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   142    -14.2      2.5     -384   2.6e-06        0     11.6       712       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-14.17239574618692,2.500035182977274,-384.4735220689417)
+G4WT4 >   Direction   =                         (-0.6515271509242008,-0.4316143054322875,-0.6238761599506731)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 143
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   143    -14.2      2.5     -384   2.6e-06        0        0       712    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-14.17239574618692,2.500035182977274,-384.4735220689417)
+G4WT4 >   Direction   =                         (-0.6515271509242008,-0.4316143054322875,-0.6238761599506731)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-2.545569123512915e-06,-0.9999999999967421,-1.895420681246564e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58437018995678  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 144
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58437018995678
+G4WT4 >  Old Momentum Direction: (-0.6515271509242008,-0.4316143054322875,-0.6238761599506731)
+G4WT4 >  Old Polarization:       (-0.4098413812737438,0.8922961274484754,-0.1893083810508243)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.482499797421325e-06,-0.9999999999969109,-1.236775384934243e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-21.71992745130071,-2.499944710431417,-391.700734458499)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-21.71992745130071,-2.499944710431417,-391.700734458499)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-2.545569123512915e-06,-0.9999999999967421,-1.895420681246564e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-21.71992745130071,-2.499944710431417,-391.700734458499)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-21.71992745130071,-2.499944710431417,-391.700734458499)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.545569123512915e-06,-0.9999999999967421,-1.895420681246564e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 2.545569123512915e-06 0.9999999999967421 1.895420681246564e-07
+G4WT4 > Global Normal: 2.545569123512915e-06 0.9999999999967421 1.895420681246564e-07
+G4WT4 > Old Momentum: -0.6515271509242008 -0.4316143054322875 -0.6238761599506731
+G4WT4 > Old Position: -21.71992745130071 -2.499944710431417 -391.700734458499
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515249535070567 0.431617858943015 -0.6238759963318634
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515249535070567,0.431617858943015,-0.6238759963318634)
+G4WT4 >  New Polarization:       (0.4098459240711916,0.8922939691139117,0.1893087193057219)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   144    -21.7     -2.5     -392   2.6e-06        0     11.6       724       World Transportation
+
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-21.71992745130071,-2.499944710431417,-391.700734458499)
+G4WT4 >   Direction   =                         (-0.6515249535070567,0.431617858943015,-0.6238759963318634)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 145
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   145    -21.7     -2.5     -392   2.6e-06        0        0       724    rect_mid Transportation
+
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-21.71992745130071,-2.499944710431417,-391.700734458499)
+G4WT4 >   Direction   =                         (-0.6515249535070567,0.431617858943015,-0.6238759963318634)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-0.9999999999966901,2.57297843683476e-06,2.854033323358065e-09)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 5.034455506958255  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 146
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=5.034455506958255
+G4WT4 >  Old Momentum Direction: (-0.6515249535070567,0.431617858943015,-0.6238759963318634)
+G4WT4 >  Old Polarization:       (0.4098459240711916,0.8922939691139117,0.1893087193057219)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.545569123512915e-06,0.9999999999967421,1.895420681246564e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-25.00000084140503,-0.326983803574223,-394.841610403891)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-25.00000084140503,-0.326983803574223,-394.841610403891)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-0.9999999999966901,2.57297843683476e-06,2.854033323358065e-09)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-25.00000084140503,-0.326983803574223,-394.841610403891)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-25.00000084140503,-0.326983803574223,-394.841610403891)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-0.9999999999966901,2.57297843683476e-06,2.854033323358065e-09)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 0.9999999999966901 -2.57297843683476e-06 -2.854033323358065e-09
+G4WT4 > Global Normal: 0.9999999999966901 -2.57297843683476e-06 -2.854033323358065e-09
+G4WT4 > Old Momentum: -0.6515249535070567 0.431617858943015 -0.6238759963318634
+G4WT4 > Old Position: -25.00000084140503 -0.326983803574223 -394.841610403891
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515271710241929 0.4316145062179965 -0.6238760000508176
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515271710241928,0.4316145062179964,-0.6238760000508174)
+G4WT4 >  New Polarization:       (0.409841331278895,-0.8922960781515447,-0.1893087216451367)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   146      -25   -0.327     -395   2.6e-06        0     5.03       729       World Transportation
+
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-25.00000084140503,-0.326983803574223,-394.841610403891)
+G4WT4 >   Direction   =                         (0.6515271710241928,0.4316145062179964,-0.6238760000508174)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 147
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   147      -25   -0.327     -395   2.6e-06        0        0       729    rect_mid Transportation
+
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-25.00000084140503,-0.326983803574223,-394.841610403891)
+G4WT4 >   Direction   =                         (0.6515271710241928,0.4316145062179964,-0.6238760000508174)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (2.608638429192419e-06,0.9999999999965813,1.809257210114205e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 6.549913977848914  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 148
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=6.549913977848914
+G4WT4 >  Old Momentum Direction: (0.6515271710241928,0.4316145062179964,-0.6238760000508174)
+G4WT4 >  Old Polarization:       (0.409841331278895,-0.8922960781515447,-0.1893087216451367)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(0.9999999999966901,-2.57297843683476e-06,-2.854033323358065e-09)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-20.73255391696531,2.500054083745389,-398.9279445370683)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-20.73255391696531,2.500054083745389,-398.9279445370683)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (2.608638429192419e-06,0.9999999999965813,1.809257210114205e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-20.73255391696531,2.500054083745389,-398.9279445370683)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-20.73255391696531,2.500054083745389,-398.9279445370683)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.608638429192419e-06,0.9999999999965813,1.809257210114205e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -2.608638429192419e-06 -0.9999999999965813 -1.809257210114205e-07
+G4WT4 > Global Normal: -2.608638429192419e-06 -0.9999999999965813 -1.809257210114205e-07
+G4WT4 > Old Momentum: 0.6515271710241928 0.4316145062179964 -0.6238760000508174
+G4WT4 > Old Position: -20.73255391696531 2.500054083745389 -398.9279445370683
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515249191635394 -0.4316176796592959 -0.6238761562317231
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515249191635393,-0.4316176796592958,-0.623876156231723)
+G4WT4 >  New Polarization:       (-0.4098459866291748,-0.8922940083852828,0.1893083987668884)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   148    -20.7      2.5     -399   2.6e-06        0     6.55       736       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-20.73255391696531,2.500054083745389,-398.9279445370683)
+G4WT4 >   Direction   =                         (0.6515249191635393,-0.4316176796592958,-0.623876156231723)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 149
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   149    -20.7      2.5     -399   2.6e-06        0        0       736    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-20.73255391696531,2.500054083745389,-398.9279445370683)
+G4WT4 >   Direction   =                         (0.6515249191635393,-0.4316176796592958,-0.623876156231723)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-2.671707753337096e-06,-0.9999999999964245,-1.150611937408065e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436990140327  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 150
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436990140327
+G4WT4 >  Old Momentum Direction: (0.6515249191635393,-0.4316176796592958,-0.623876156231723)
+G4WT4 >  Old Polarization:       (-0.4098459866291748,-0.8922940083852828,0.1893083987668884)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.608638429192419e-06,-0.9999999999965813,-1.809257210114205e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-13.18504825339301,-2.499964773413274,-406.1551567035222)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-13.18504825339301,-2.499964773413274,-406.1551567035222)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-2.671707753337096e-06,-0.9999999999964245,-1.150611937408065e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-13.18504825339301,-2.499964773413274,-406.1551567035222)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-13.18504825339301,-2.499964773413274,-406.1551567035222)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.671707753337096e-06,-0.9999999999964245,-1.150611937408065e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 2.671707753337096e-06 0.9999999999964245 1.150611937408065e-07
+G4WT4 > Global Normal: 2.671707753337096e-06 0.9999999999964245 1.150611937408065e-07
+G4WT4 > Old Momentum: 0.6515249191635393 -0.4316176796592958 -0.623876156231723
+G4WT4 > Old Position: -13.18504825339301 -2.499964773413274 -406.1551567035222
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515272254672241 0.4316143418526375 -0.6238760569072161
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.651527225467224,0.4316143418526374,-0.623876056907216)
+G4WT4 >  New Polarization:       (0.409841218725799,-0.8922961547858205,-0.1893086041039628)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   150    -13.2     -2.5     -406   2.6e-06        0     11.6       747       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-13.18504825339301,-2.499964773413274,-406.1551567035222)
+G4WT4 >   Direction   =                         (0.651527225467224,0.4316143418526374,-0.623876056907216)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 151
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   151    -13.2     -2.5     -406   2.6e-06        0        0       747    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-13.18504825339301,-2.499964773413274,-406.1551567035222)
+G4WT4 >   Direction   =                         (0.651527225467224,0.4316143418526374,-0.623876056907216)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (2.734777067195842e-06,0.9999999999962593,4.919666647019031e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436990140344  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 152
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436990140344
+G4WT4 >  Old Momentum Direction: (0.651527225467224,0.4316143418526374,-0.623876056907216)
+G4WT4 >  Old Polarization:       (0.409841218725799,-0.8922961547858205,-0.1893086041039628)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.671707753337096e-06,0.9999999999964245,1.150611937408065e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-5.637515872745605,2.500015417358474,-413.3823677193644)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-5.637515872745605,2.500015417358474,-413.3823677193644)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (2.734777067195842e-06,0.9999999999962593,4.919666647019031e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-5.637515872745605,2.500015417358474,-413.3823677193644)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-5.637515872745605,2.500015417358474,-413.3823677193644)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.734777067195842e-06,0.9999999999962593,4.919666647019031e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -2.734777067195842e-06 -0.9999999999962593 -4.919666647019031e-08
+G4WT4 > Global Normal: -2.734777067195842e-06 -0.9999999999962593 -4.919666647019031e-08
+G4WT4 > Old Momentum: 0.651527225467224 0.4316143418526374 -0.623876056907216
+G4WT4 > Old Position: -5.637515872745605 2.500015417358474 -413.3823677193644
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515248647196383 -0.4316178440243644 -0.6238760993753619
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515248647196383,-0.4316178440243644,-0.6238760993753619)
+G4WT4 >  New Polarization:       (-0.4098460991818421,-0.8922939317504414,0.1893085163080795)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   152    -5.64      2.5     -413   2.6e-06        0     11.6       759       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-5.637515872745605,2.500015417358474,-413.3823677193644)
+G4WT4 >   Direction   =                         (0.6515248647196383,-0.4316178440243644,-0.6238760993753619)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 153
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   153    -5.64      2.5     -413   2.6e-06        0        0       759    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-5.637515872745605,2.500015417358474,-413.3823677193644)
+G4WT4 >   Direction   =                         (0.6515248647196383,-0.4316178440243644,-0.6238760993753619)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-2.79784638559271e-06,-0.9999999999960859,1.666786080042689e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436990140352  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 154
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436990140352
+G4WT4 >  Old Momentum Direction: (0.6515248647196383,-0.4316178440243644,-0.6238760993753619)
+G4WT4 >  Old Polarization:       (-0.4098460991818421,-0.8922939317504414,0.1893085163080795)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.734777067195842e-06,-0.9999999999962593,-4.919666647019031e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(1.909989160128574,-2.500005343866052,-420.6095792271734)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (1.909989160128574,-2.500005343866052,-420.6095792271734)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-2.79784638559271e-06,-0.9999999999960859,1.666786080042689e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (1.909989160128574,-2.500005343866052,-420.6095792271734)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (1.909989160128574,-2.500005343866052,-420.6095792271734)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.79784638559271e-06,-0.9999999999960859,1.666786080042689e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 2.79784638559271e-06 0.9999999999960859 -1.666786080042689e-08
+G4WT4 > Global Normal: 2.79784638559271e-06 0.9999999999960859 -1.666786080042689e-08
+G4WT4 > Old Momentum: 0.6515248647196383 -0.4316178440243644 -0.6238760993753619
+G4WT4 > Old Position: 1.909989160128574 -2.500005343866052 -420.6095792271734
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515272799102296 0.4316141774872712 -0.6238761137635931
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515272799102296,0.4316141774872712,-0.6238761137635931)
+G4WT4 >  New Polarization:       (0.4098411061727044,-0.8922962314200619,-0.1893084865627791)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   154     1.91     -2.5     -421   2.6e-06        0     11.6       770       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (1.909989160128574,-2.500005343866052,-420.6095792271734)
+G4WT4 >   Direction   =                         (0.6515272799102296,0.4316141774872712,-0.6238761137635931)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 155
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   155     1.91     -2.5     -421   2.6e-06        0        0       770    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (1.909989160128574,-2.500005343866052,-420.6095792271734)
+G4WT4 >   Direction   =                         (0.6515272799102296,0.4316141774872712,-0.6238761137635931)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (2.860915705199176e-06,0.9999999999959042,-8.25323880710438e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.5843699014035  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 156
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.5843699014035
+G4WT4 >  Old Momentum Direction: (0.6515272799102296,0.4316141774872712,-0.6238761137635931)
+G4WT4 >  Old Polarization:       (0.4098411061727044,-0.8922962314200619,-0.1893084865627791)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.79784638559271e-06,0.9999999999960859,-1.666786080042689e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(9.45752217146393,2.49997294283652,-427.8367909016609)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (9.45752217146393,2.49997294283652,-427.8367909016609)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (2.860915705199176e-06,0.9999999999959042,-8.25323880710438e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (9.45752217146393,2.49997294283652,-427.8367909016609)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (9.45752217146393,2.49997294283652,-427.8367909016609)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.860915705199176e-06,0.9999999999959042,-8.25323880710438e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -2.860915705199176e-06 -0.9999999999959042 8.25323880710438e-08
+G4WT4 > Global Normal: -2.860915705199176e-06 -0.9999999999959042 8.25323880710438e-08
+G4WT4 > Old Momentum: 0.6515272799102296 0.4316141774872712 -0.6238761137635931
+G4WT4 > Old Position: 9.45752217146393 2.49997294283652 -427.8367909016609
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515248102757119 -0.431618008389426 -0.6238760425189793
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515248102757119,-0.431618008389426,-0.6238760425189793)
+G4WT4 >  New Polarization:       (-0.4098462117345103,-0.8922938551155654,0.1893086338492607)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   156     9.46      2.5     -428   2.6e-06        0     11.6       782       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (9.45752217146393,2.49997294283652,-427.8367909016609)
+G4WT4 >   Direction   =                         (0.6515248102757119,-0.431618008389426,-0.6238760425189793)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 157
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   157     9.46      2.5     -428   2.6e-06        0        0       782    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (9.45752217146393,2.49997294283652,-427.8367909016609)
+G4WT4 >   Direction   =                         (0.6515248102757119,-0.431618008389426,-0.6238760425189793)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-2.923985017848233e-06,-0.9999999999957142,1.483969153416591e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436990140338  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 158
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436990140338
+G4WT4 >  Old Momentum Direction: (0.6515248102757119,-0.431618008389426,-0.6238760425189793)
+G4WT4 >  Old Polarization:       (-0.4098462117345103,-0.8922938551155654,0.1893086338492607)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.860915705199176e-06,-0.9999999999959042,8.25323880710438e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(17.00502657363943,-2.500049722453617,-435.0640017508244)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (17.00502657363943,-2.500049722453617,-435.0640017508244)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-2.923985017848233e-06,-0.9999999999957142,1.483969153416591e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (17.00502657363943,-2.500049722453617,-435.0640017508244)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (17.00502657363943,-2.500049722453617,-435.0640017508244)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.923985017848233e-06,-0.9999999999957142,1.483969153416591e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 2.923985017848233e-06 0.9999999999957142 -1.483969153416591e-07
+G4WT4 > Global Normal: 2.923985017848233e-06 0.9999999999957142 -1.483969153416591e-07
+G4WT4 > Old Momentum: 0.6515248102757119 -0.431618008389426 -0.6238760425189793
+G4WT4 > Old Position: 17.00502657363943 -2.500049722453617 -435.0640017508244
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515273343532096 0.4316140131218983 -0.6238761706199485
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515273343532096,0.4316140131218983,-0.6238761706199485)
+G4WT4 >  New Polarization:       (0.4098409936196101,-0.8922963080542686,-0.1893083690215853)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   158       17     -2.5     -435   2.6e-06        0     11.6       794       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (17.00502657363943,-2.500049722453617,-435.0640017508244)
+G4WT4 >   Direction   =                         (0.6515273343532096,0.4316140131218983,-0.6238761706199485)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 159
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   159       17     -2.5     -435   2.6e-06        0        0       794    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (17.00502657363943,-2.500049722453617,-435.0640017508244)
+G4WT4 >   Direction   =                         (0.6515273343532096,0.4316140131218983,-0.6238761706199485)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (2.987054343202408e-06,0.9999999999955159,-2.142614426122715e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436990140315  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 160
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436990140315
+G4WT4 >  Old Momentum Direction: (0.6515273343532096,0.4316140131218983,-0.6238761706199485)
+G4WT4 >  Old Polarization:       (0.4098409936196101,-0.8922963080542686,-0.1893083690215853)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.923985017848233e-06,0.9999999999957142,-1.483969153416591e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(24.55256021566218,2.499926660179526,-442.2912140839568)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (24.55256021566218,2.499926660179526,-442.2912140839568)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (2.987054343202408e-06,0.9999999999955159,-2.142614426122715e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (24.55256021566218,2.499926660179526,-442.2912140839568)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (24.55256021566218,2.499926660179526,-442.2912140839568)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(2.987054343202408e-06,0.9999999999955159,-2.142614426122715e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -2.987054343202408e-06 -0.9999999999955159 2.142614426122715e-07
+G4WT4 > Global Normal: -2.987054343202408e-06 -0.9999999999955159 2.142614426122715e-07
+G4WT4 > Old Momentum: 0.6515273343532096 0.4316140131218983 -0.6238761706199485
+G4WT4 > Old Position: 24.55256021566218 2.499926660179526 -442.2912140839568
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515247558317596 -0.4316181727544809 -0.6238759856625751
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515247558317595,-0.4316181727544808,-0.623875985662575)
+G4WT4 >  New Polarization:       (-0.4098463242871788,-0.8922937784806552,0.1893087513904316)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   160     24.6      2.5     -442   2.6e-06        0     11.6       805       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (24.55256021566218,2.499926660179526,-442.2912140839568)
+G4WT4 >   Direction   =                         (0.6515247558317595,-0.4316181727544808,-0.623875985662575)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 161
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   161     24.6      2.5     -442   2.6e-06        0        0       805    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (24.55256021566218,2.499926660179526,-442.2912140839568)
+G4WT4 >   Direction   =                         (0.6515247558317595,-0.4316181727544808,-0.623875985662575)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (0.9999999999955275,-2.990793345331666e-06,1.922986200259651e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0.6867680324852553  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 162
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=0.6867680324852553
+G4WT4 >  Old Momentum Direction: (0.6515247558317595,-0.4316181727544808,-0.623875985662575)
+G4WT4 >  Old Polarization:       (-0.4098463242871788,-0.8922937784806552,0.1893087513904316)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.987054343202408e-06,-0.9999999999955159,2.142614426122715e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(25.00000659034019,2.20350509689205,-442.7196721671451)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (25.00000659034019,2.20350509689205,-442.7196721671451)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (0.9999999999955275,-2.990793345331666e-06,1.922986200259651e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (25.00000659034019,2.20350509689205,-442.7196721671451)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (25.00000659034019,2.20350509689205,-442.7196721671451)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(0.9999999999955275,-2.990793345331666e-06,1.922986200259651e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -0.9999999999955275 2.990793345331666e-06 -1.922986200259651e-08
+G4WT4 > Global Normal: -0.9999999999955275 2.990793345331666e-06 -1.922986200259651e-08
+G4WT4 > Old Momentum: 0.6515247558317595 -0.4316181727544808 -0.623875985662575
+G4WT4 > Old Position: 25.00000659034019 2.20350509689205 -442.7196721671451
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515273135875229 -0.431614275595023 -0.6238760107200865
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515273135875229,-0.431614275595023,-0.6238760107200865)
+G4WT4 >  New Polarization:       (-0.4098409796664947,0.8922962299959891,-0.1893087671529053)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   162       25      2.2     -443   2.6e-06        0    0.687       806       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (25.00000659034019,2.20350509689205,-442.7196721671451)
+G4WT4 >   Direction   =                         (-0.6515273135875229,-0.431614275595023,-0.6238760107200865)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 163
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   163       25      2.2     -443   2.6e-06        0        0       806    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (25.00000659034019,2.20350509689205,-442.7196721671451)
+G4WT4 >   Direction   =                         (-0.6515273135875229,-0.431614275595023,-0.6238760107200865)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-3.050123641859523e-06,-0.9999999999953363,1.562063590844434e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 10.89759991695465  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 164
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=10.89759991695465
+G4WT4 >  Old Momentum Direction: (-0.6515273135875229,-0.431614275595023,-0.6238760107200865)
+G4WT4 >  Old Polarization:       (-0.4098409796664947,0.8922962299959891,-0.1893087671529053)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-0.9999999999955275,2.990793345331666e-06,-1.922986200259651e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(17.89992259189511,-2.500054596988715,-449.5184233297583)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (17.89992259189511,-2.500054596988715,-449.5184233297583)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-3.050123641859523e-06,-0.9999999999953363,1.562063590844434e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (17.89992259189511,-2.500054596988715,-449.5184233297583)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (17.89992259189511,-2.500054596988715,-449.5184233297583)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.050123641859523e-06,-0.9999999999953363,1.562063590844434e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 3.050123641859523e-06 0.9999999999953363 -1.562063590844434e-07
+G4WT4 > Global Normal: 3.050123641859523e-06 0.9999999999953363 -1.562063590844434e-07
+G4WT4 > Old Momentum: -0.6515273135875229 -0.431614275595023 -0.6238760107200865
+G4WT4 > Old Position: 17.89992259189511 -2.500054596988715 -449.5184233297583
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515246806221825 0.4316180551578959 -0.623876145562466
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515246806221824,0.4316180551578958,-0.6238761455624658)
+G4WT4 >  New Polarization:       (0.4098464228867025,0.8922937889904865,0.1893084883885959)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   164     17.9     -2.5     -450   2.6e-06        0     10.9       817       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (17.89992259189511,-2.500054596988715,-449.5184233297583)
+G4WT4 >   Direction   =                         (-0.6515246806221824,0.4316180551578958,-0.6238761455624658)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 165
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   165     17.9     -2.5     -450   2.6e-06        0        0       817    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (17.89992259189511,-2.500054596988715,-449.5184233297583)
+G4WT4 >   Direction   =                         (-0.6515246806221824,0.4316180551578958,-0.6238761455624658)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (3.113192954095648e-06,0.9999999999951499,-9.034184771916267e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436795719244  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 166
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436795719244
+G4WT4 >  Old Momentum Direction: (-0.6515246806221824,0.4316180551578958,-0.6238761455624658)
+G4WT4 >  Old Polarization:       (0.4098464228867025,0.8922937889904865,0.1893084883885959)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.050123641859523e-06,0.9999999999953363,-1.562063590844434e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(10.35242095837547,2.499967770928131,-456.7456341596689)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (10.35242095837547,2.499967770928131,-456.7456341596689)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (3.113192954095648e-06,0.9999999999951499,-9.034184771916267e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (10.35242095837547,2.499967770928131,-456.7456341596689)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (10.35242095837547,2.499967770928131,-456.7456341596689)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.113192954095648e-06,0.9999999999951499,-9.034184771916267e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -3.113192954095648e-06 -0.9999999999951499 9.034184771916267e-08
+G4WT4 > Global Normal: -3.113192954095648e-06 -0.9999999999951499 9.034184771916267e-08
+G4WT4 > Old Momentum: -0.6515246806221824 0.4316180551578958 -0.6238761455624658
+G4WT4 > Old Position: 10.35242095837547 2.499967770928131 -456.7456341596689
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515273680304805 -0.4316141112296794 -0.623876067576477
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515273680304805,-0.4316141112296794,-0.623876067576477)
+G4WT4 >  New Polarization:       (-0.409840867113391,0.8922963066302105,-0.1893086496117627)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   166     10.4      2.5     -457   2.6e-06        0     11.6       828       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (10.35242095837547,2.499967770928131,-456.7456341596689)
+G4WT4 >   Direction   =                         (-0.6515273680304805,-0.4316141112296794,-0.623876067576477)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 167
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   167     10.4      2.5     -457   2.6e-06        0        0       828    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (10.35242095837547,2.499967770928131,-456.7456341596689)
+G4WT4 >   Direction   =                         (-0.6515273680304805,-0.4316141112296794,-0.623876067576477)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-3.176262258692868e-06,-0.9999999999949554,2.447733635388023e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436795719257  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 168
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436795719257
+G4WT4 >  Old Momentum Direction: (-0.6515273680304805,-0.4316141112296794,-0.623876067576477)
+G4WT4 >  Old Polarization:       (-0.409840867113391,0.8922963066302105,-0.1893086496117627)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.113192954095648e-06,-0.9999999999951499,9.034184771916267e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(2.804888192929157,-2.500008909073117,-463.9728440861612)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (2.804888192929157,-2.500008909073117,-463.9728440861612)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-3.176262258692868e-06,-0.9999999999949554,2.447733635388023e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (2.804888192929157,-2.500008909073117,-463.9728440861612)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (2.804888192929157,-2.500008909073117,-463.9728440861612)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.176262258692868e-06,-0.9999999999949554,2.447733635388023e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 3.176262258692868e-06 0.9999999999949554 -2.447733635388023e-08
+G4WT4 > Global Normal: 3.176262258692868e-06 0.9999999999949554 -2.447733635388023e-08
+G4WT4 > Old Momentum: -0.6515273680304805 -0.4316141112296794 -0.623876067576477
+G4WT4 > Old Position: 2.804888192929157 -2.500008909073117 -463.9728440861612
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515246261782078 0.4316182195229006 -0.6238760887061051
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515246261782078,0.4316182195229006,-0.6238760887061051)
+G4WT4 >  New Polarization:       (0.4098465354393156,0.8922937123555919,0.1893086059297525)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   168      2.8     -2.5     -464   2.6e-06        0     11.6       840       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (2.804888192929157,-2.500008909073117,-463.9728440861612)
+G4WT4 >   Direction   =                         (-0.6515246261782078,0.4316182195229006,-0.6238760887061051)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 169
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   169      2.8     -2.5     -464   2.6e-06        0        0       840    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (2.804888192929157,-2.500008909073117,-463.9728440861612)
+G4WT4 >   Direction   =                         (-0.6515246261782078,0.4316182195229006,-0.6238760887061051)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (3.23933156518118e-06,0.9999999999947526,4.138717501140265e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.5843679571926  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 170
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.5843679571926
+G4WT4 >  Old Momentum Direction: (-0.6515246261782078,0.4316182195229006,-0.6238760887061051)
+G4WT4 >  Old Polarization:       (0.4098465354393156,0.8922937123555919,0.1893086059297525)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.176262258692868e-06,0.9999999999949554,-2.447733635388023e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-4.74261280989156,2.500015362908493,-471.2000542574268)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-4.74261280989156,2.500015362908493,-471.2000542574268)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (3.23933156518118e-06,0.9999999999947526,4.138717501140265e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-4.74261280989156,2.500015362908493,-471.2000542574268)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-4.74261280989156,2.500015362908493,-471.2000542574268)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.23933156518118e-06,0.9999999999947526,4.138717501140265e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -3.23933156518118e-06 -0.9999999999947526 -4.138717501140265e-08
+G4WT4 > Global Normal: -3.23933156518118e-06 -0.9999999999947526 -4.138717501140265e-08
+G4WT4 > Old Momentum: -0.6515246261782078 0.4316182195229006 -0.6238760887061051
+G4WT4 > Old Position: -4.74261280989156 2.500015362908493 -471.2000542574268
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515274224734126 -0.4316139468643293 -0.6238761244328459
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515274224734124,-0.4316139468643292,-0.6238761244328458)
+G4WT4 >  New Polarization:       (-0.4098407545602877,0.8922963832643978,-0.1893085320706098)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   170    -4.74      2.5     -471   2.6e-06        0     11.6       851       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-4.74261280989156,2.500015362908493,-471.2000542574268)
+G4WT4 >   Direction   =                         (-0.6515274224734124,-0.4316139468643292,-0.6238761244328458)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 171
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   171    -4.74      2.5     -471   2.6e-06        0        0       851    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-4.74261280989156,2.500015362908493,-471.2000542574268)
+G4WT4 >   Direction   =                         (-0.6515274224734124,-0.4316139468643292,-0.6238761244328458)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-3.302400875526107e-06,-0.9999999999945413,-1.072516863766846e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436795719253  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 172
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436795719253
+G4WT4 >  Old Momentum Direction: (-0.6515274224734124,-0.4316139468643292,-0.6238761244328458)
+G4WT4 >  Old Polarization:       (-0.4098407545602877,0.8922963832643978,-0.1893085320706098)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.23933156518118e-06,-0.9999999999947526,-4.138717501140265e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-12.2901462060248,-2.49995941302404,-478.4272648425641)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-12.2901462060248,-2.49995941302404,-478.4272648425641)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-3.302400875526107e-06,-0.9999999999945413,-1.072516863766846e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-12.2901462060248,-2.49995941302404,-478.4272648425641)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-12.2901462060248,-2.49995941302404,-478.4272648425641)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.302400875526107e-06,-0.9999999999945413,-1.072516863766846e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 3.302400875526107e-06 0.9999999999945413 1.072516863766846e-07
+G4WT4 > Global Normal: 3.302400875526107e-06 0.9999999999945413 1.072516863766846e-07
+G4WT4 > Old Momentum: -0.6515274224734124 -0.4316139468643292 -0.6238761244328458
+G4WT4 > Old Position: -12.2901462060248 -2.49995941302404 -478.4272648425641
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515245717342075 0.4316183838878986 -0.6238760318497226
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515245717342075,0.4316183838878986,-0.6238760318497226)
+G4WT4 >  New Polarization:       (0.4098466479919289,0.8922936357206628,0.1893087234708989)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   172    -12.3     -2.5     -478   2.6e-06        0     11.6       863       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-12.2901462060248,-2.49995941302404,-478.4272648425641)
+G4WT4 >   Direction   =                         (-0.6515245717342075,0.4316183838878986,-0.6238760318497226)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 173
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   173    -12.3     -2.5     -478   2.6e-06        0        0       863    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-12.2901462060248,-2.49995941302404,-478.4272648425641)
+G4WT4 >   Direction   =                         (-0.6515245717342075,0.4316183838878986,-0.6238760318497226)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (3.365470176266599e-06,0.999999999994322,1.731161977419645e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436795719236  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 174
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436795719236
+G4WT4 >  Old Momentum Direction: (-0.6515245717342075,0.4316183838878986,-0.6238760318497226)
+G4WT4 >  Old Polarization:       (0.4098466479919289,0.8922936357206628,0.1893087234708989)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.302400875526107e-06,0.9999999999945413,1.072516863766846e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-19.83764657814603,2.500066763022084,-485.6544743551843)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-19.83764657814603,2.500066763022084,-485.6544743551843)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (3.365470176266599e-06,0.999999999994322,1.731161977419645e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-19.83764657814603,2.500066763022084,-485.6544743551843)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-19.83764657814603,2.500066763022084,-485.6544743551843)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.365470176266599e-06,0.999999999994322,1.731161977419645e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -3.365470176266599e-06 -0.999999999994322 -1.731161977419645e-07
+G4WT4 > Global Normal: -3.365470176266599e-06 -0.999999999994322 -1.731161977419645e-07
+G4WT4 > Old Momentum: -0.6515245717342075 0.4316183838878986 -0.6238760318497226
+G4WT4 > Old Position: -19.83764657814603 2.500066763022084 -485.6544743551843
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515274769163187 -0.4316137824989721 -0.6238761812891931
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515274769163187,-0.4316137824989721,-0.6238761812891931)
+G4WT4 >  New Polarization:       (-0.4098406420071851,0.8922964598985506,-0.1893084145294469)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   174    -19.8      2.5     -486   2.6e-06        0     11.6       875       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-19.83764657814603,2.500066763022084,-485.6544743551843)
+G4WT4 >   Direction   =                         (-0.6515274769163187,-0.4316137824989721,-0.6238761812891931)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 175
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   175    -19.8      2.5     -486   2.6e-06        0        0       875    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-19.83764657814603,2.500066763022084,-485.6544743551843)
+G4WT4 >   Direction   =                         (-0.6515274769163187,-0.4316137824989721,-0.6238761812891931)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-0.9999999999941906,3.408608278940844e-06,8.027607660431306e-09)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 7.923467144789606  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 176
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=7.923467144789606
+G4WT4 >  Old Momentum Direction: (-0.6515274769163187,-0.4316137824989721,-0.6238761812891931)
+G4WT4 >  Old Polarization:       (-0.4098406420071851,0.8922964598985506,-0.1893084145294469)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.365470176266599e-06,-0.999999999994322,-1.731161977419645e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-25.00000313542015,-0.9198108618468881,-490.597736780046)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-25.00000313542015,-0.9198108618468881,-490.597736780046)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-0.9999999999941906,3.408608278940844e-06,8.027607660431306e-09)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-25.00000313542015,-0.9198108618468881,-490.597736780046)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-25.00000313542015,-0.9198108618468881,-490.597736780046)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-0.9999999999941906,3.408608278940844e-06,8.027607660431306e-09)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 0.9999999999941906 -3.408608278940844e-06 -8.027607660431306e-09
+G4WT4 > Global Normal: 0.9999999999941906 -3.408608278940844e-06 -8.027607660431306e-09
+G4WT4 > Old Momentum: -0.6515274769163187 -0.4316137824989721 -0.6238761812891931
+G4WT4 > Old Position: -25.00000313542015 -0.9198108618468881 -490.597736780046
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515245244800879 -0.431618224092812 -0.6238761917495833
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515245244800878,-0.4316182240928119,-0.6238761917495832)
+G4WT4 >  New Polarization:       (-0.409846721936475,-0.8922936659054157,0.1893084211095754)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   176      -25    -0.92     -491   2.6e-06        0     7.92       883       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-25.00000313542015,-0.9198108618468881,-490.597736780046)
+G4WT4 >   Direction   =                         (0.6515245244800878,-0.4316182240928119,-0.6238761917495832)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 177
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   177      -25    -0.92     -491   2.6e-06        0        0       883    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-25.00000313542015,-0.9198108618468881,-490.597736780046)
+G4WT4 >   Direction   =                         (0.6515245244800878,-0.4316182240928119,-0.6238761917495832)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-3.428539493892749e-06,-0.9999999999941031,-1.973516020892045e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 3.660901032687909  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 178
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=3.660901032687909
+G4WT4 >  Old Momentum Direction: (0.6515245244800878,-0.4316182240928119,-0.6238761917495832)
+G4WT4 >  Old Polarization:       (-0.409846721936475,-0.8922936659054157,0.1893084211095754)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(0.9999999999941906,-3.408608278940844e-06,-8.027607660431306e-09)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-22.6148363309295,-2.499922464155184,-492.8816857746915)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-22.6148363309295,-2.499922464155184,-492.8816857746915)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-3.428539493892749e-06,-0.9999999999941031,-1.973516020892045e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-22.6148363309295,-2.499922464155184,-492.8816857746915)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-22.6148363309295,-2.499922464155184,-492.8816857746915)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.428539493892749e-06,-0.9999999999941031,-1.973516020892045e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 3.428539493892749e-06 0.9999999999941031 1.973516020892045e-07
+G4WT4 > Global Normal: 3.428539493892749e-06 0.9999999999941031 1.973516020892045e-07
+G4WT4 > Old Momentum: 0.6515245244800878 -0.4316182240928119 -0.6238761917495832
+G4WT4 > Old Position: -22.6148363309295 -2.499922464155184 -492.8816857746915
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.65152748410587 0.4316140027734359 -0.6238760213893203
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515274841058701,0.431614002773436,-0.6238760213893204)
+G4WT4 >  New Polarization:       (0.4098406033989484,-0.8922964015150734,-0.1893087733012843)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   178    -22.6     -2.5     -493   2.6e-06        0     3.66       886       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-22.6148363309295,-2.499922464155184,-492.8816857746915)
+G4WT4 >   Direction   =                         (0.6515274841058701,0.431614002773436,-0.6238760213893204)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 179
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   179    -22.6     -2.5     -493   2.6e-06        0        0       886    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-22.6148363309295,-2.499922464155184,-492.8816857746915)
+G4WT4 >   Direction   =                         (0.6515274841058701,0.431614002773436,-0.6238760213893204)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (3.491608789157068e-06,0.9999999999938957,1.314870973636904e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436714557135  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 180
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436714557135
+G4WT4 >  Old Momentum Direction: (0.6515274841058701,0.431614002773436,-0.6238760213893204)
+G4WT4 >  Old Polarization:       (0.4098406033989484,-0.8922964015150734,-0.1893087733012843)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.428539493892749e-06,0.9999999999941031,1.973516020892045e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-15.0673027496167,2.500052609141949,-500.1088946597837)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-15.0673027496167,2.500052609141949,-500.1088946597837)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (3.491608789157068e-06,0.9999999999938957,1.314870973636904e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-15.0673027496167,2.500052609141949,-500.1088946597837)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-15.0673027496167,2.500052609141949,-500.1088946597837)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.491608789157068e-06,0.9999999999938957,1.314870973636904e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -3.491608789157068e-06 -0.9999999999938957 -1.314870973636904e-07
+G4WT4 > Global Normal: -3.491608789157068e-06 -0.9999999999938957 -1.314870973636904e-07
+G4WT4 > Old Momentum: 0.6515274841058701 0.431614002773436 -0.6238760213893204
+G4WT4 > Old Position: -15.0673027496167 2.500052609141949 -500.1088946597837
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515244700360658 -0.4316183884577826 -0.6238761348932419
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515244700360657,-0.4316183884577825,-0.6238761348932418)
+G4WT4 >  New Polarization:       (-0.4098468344890453,-0.8922935892705022,0.1893085386507264)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   180    -15.1      2.5     -500   2.6e-06        0     11.6       898       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-15.0673027496167,2.500052609141949,-500.1088946597837)
+G4WT4 >   Direction   =                         (0.6515244700360657,-0.4316183884577825,-0.6238761348932418)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 181
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   181    -15.1      2.5     -500   2.6e-06        0        0       898    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-15.0673027496167,2.500052609141949,-500.1088946597837)
+G4WT4 >   Direction   =                         (0.6515244700360657,-0.4316183884577825,-0.6238761348932418)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-3.554678096140704e-06,-0.9999999999936801,-6.562259263817361e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436714557156  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 182
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436714557156
+G4WT4 >  Old Momentum Direction: (0.6515244700360657,-0.4316183884577825,-0.6238761348932418)
+G4WT4 >  Old Polarization:       (-0.4098468344890453,-0.8922935892705022,0.1893085386507264)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.491608789157068e-06,-0.9999999999938957,-1.314870973636904e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-7.519804084394975,-2.499973269532929,-507.3361048597471)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-7.519804084394975,-2.499973269532929,-507.3361048597471)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-3.554678096140704e-06,-0.9999999999936801,-6.562259263817361e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-7.519804084394975,-2.499973269532929,-507.3361048597471)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-7.519804084394975,-2.499973269532929,-507.3361048597471)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.554678096140704e-06,-0.9999999999936801,-6.562259263817361e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 3.554678096140704e-06 0.9999999999936801 6.562259263817361e-08
+G4WT4 > Global Normal: 3.554678096140704e-06 0.9999999999936801 6.562259263817361e-08
+G4WT4 > Old Momentum: 0.6515244700360657 -0.4316183884577825 -0.6238761348932418
+G4WT4 > Old Position: -7.519804084394975 -2.499973269532929 -507.3361048597471
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515275385487544 0.4316138384080848 -0.623876078245705
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515275385487544,0.4316138384080848,-0.623876078245705)
+G4WT4 >  New Polarization:       (0.4098404908458219,-0.8922964781492413,-0.1893086557601534)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   182    -7.52     -2.5     -507   2.6e-06        0     11.6       909       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-7.519804084394975,-2.499973269532929,-507.3361048597471)
+G4WT4 >   Direction   =                         (0.6515275385487544,0.4316138384080848,-0.623876078245705)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 183
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   183    -7.52     -2.5     -507   2.6e-06        0        0       909    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-7.519804084394975,-2.499973269532929,-507.3361048597471)
+G4WT4 >   Direction   =                         (0.6515275385487544,0.4316138384080848,-0.623876078245705)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (3.61774739715273e-06,0.9999999999934559,-2.419120873444659e-10)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436714557166  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 184
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436714557166
+G4WT4 >  Old Momentum Direction: (0.6515275385487544,0.4316138384080848,-0.623876078245705)
+G4WT4 >  Old Polarization:       (0.4098404908458219,-0.8922964781492413,-0.1893086557601534)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.554678096140704e-06,0.9999999999936801,6.562259263817361e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(0.02773012760438753,2.499999899695763,-514.5633144034848)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (0.02773012760438753,2.499999899695763,-514.5633144034848)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (3.61774739715273e-06,0.9999999999934559,-2.419120873444659e-10)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (0.02773012760438753,2.499999899695763,-514.5633144034848)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (0.02773012760438753,2.499999899695763,-514.5633144034848)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.61774739715273e-06,0.9999999999934559,-2.419120873444659e-10)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -3.61774739715273e-06 -0.9999999999934559 2.419120873444659e-10
+G4WT4 > Global Normal: -3.61774739715273e-06 -0.9999999999934559 2.419120873444659e-10
+G4WT4 > Old Momentum: 0.6515275385487544 0.4316138384080848 -0.623876078245705
+G4WT4 > Old Position: 0.02773012760438753 2.499999899695763 -514.5633144034848
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515244155920179 -0.4316185528227466 -0.6238760780368786
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515244155920179,-0.4316185528227466,-0.6238760780368786)
+G4WT4 >  New Polarization:       (-0.4098469470416162,-0.8922935126355542,0.1893086561918673)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   184   0.0277      2.5     -515   2.6e-06        0     11.6       921       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (0.02773012760438753,2.499999899695763,-514.5633144034848)
+G4WT4 >   Direction   =                         (0.6515244155920179,-0.4316185528227466,-0.6238760780368786)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 185
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   185   0.0277      2.5     -515   2.6e-06        0        0       921    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (0.02773012760438753,2.499999899695763,-514.5633144034848)
+G4WT4 >   Direction   =                         (0.6515244155920179,-0.4316185528227466,-0.6238760780368786)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-3.680816698388545e-06,-0.9999999999932236,6.610641681286256e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436714557166  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 186
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436714557166
+G4WT4 >  Old Momentum Direction: (0.6515244155920179,-0.4316185528227466,-0.6238760780368786)
+G4WT4 >  Old Polarization:       (-0.4098469470416162,-0.8922935126355542,0.1893086561918673)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.61774739715273e-06,-0.9999999999934559,2.419120873444659e-10)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(7.575228162126337,-2.500027883043249,-521.7905239448033)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (7.575228162126337,-2.500027883043249,-521.7905239448033)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-3.680816698388545e-06,-0.9999999999932236,6.610641681286256e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (7.575228162126337,-2.500027883043249,-521.7905239448033)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (7.575228162126337,-2.500027883043249,-521.7905239448033)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.680816698388545e-06,-0.9999999999932236,6.610641681286256e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 3.680816698388545e-06 0.9999999999932236 -6.610641681286256e-08
+G4WT4 > Global Normal: 3.680816698388545e-06 0.9999999999932236 -6.610641681286256e-08
+G4WT4 > Old Momentum: 0.6515244155920179 -0.4316185528227466 -0.6238760780368786
+G4WT4 > Old Position: 7.575228162126337 -2.500027883043249 -521.7905239448033
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515275929916131 0.4316136740427267 -0.623876135102068
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515275929916131,0.4316136740427267,-0.623876135102068)
+G4WT4 >  New Polarization:       (0.4098403782926962,-0.892296554783375,-0.1893085382190124)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   186     7.58     -2.5     -522   2.6e-06        0     11.6       933       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (7.575228162126337,-2.500027883043249,-521.7905239448033)
+G4WT4 >   Direction   =                         (0.6515275929916131,0.4316136740427267,-0.623876135102068)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 187
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   187     7.58     -2.5     -522   2.6e-06        0        0       933    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (7.575228162126337,-2.500027883043249,-521.7905239448033)
+G4WT4 >   Direction   =                         (0.6515275929916131,0.4316136740427267,-0.623876135102068)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (3.743886005148271e-06,0.9999999999929829,-1.319709215383794e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436714557156  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 188
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436714557156
+G4WT4 >  Old Momentum Direction: (0.6515275929916131,0.4316136740427267,-0.623876135102068)
+G4WT4 >  Old Polarization:       (0.4098403782926962,-0.892296554783375,-0.1893085382190124)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.680816698388545e-06,0.9999999999932236,-6.610641681286256e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(15.1227630048117,2.499943382116747,-529.0177341471859)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (15.1227630048117,2.499943382116747,-529.0177341471859)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (3.743886005148271e-06,0.9999999999929829,-1.319709215383794e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (15.1227630048117,2.499943382116747,-529.0177341471859)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (15.1227630048117,2.499943382116747,-529.0177341471859)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.743886005148271e-06,0.9999999999929829,-1.319709215383794e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -3.743886005148271e-06 -0.9999999999929829 1.319709215383794e-07
+G4WT4 > Global Normal: -3.743886005148271e-06 -0.9999999999929829 1.319709215383794e-07
+G4WT4 > Old Momentum: 0.6515275929916131 0.4316136740427267 -0.623876135102068
+G4WT4 > Old Position: 15.1227630048117 2.499943382116747 -529.0177341471859
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515243611479443 -0.4316187171877037 -0.6238760211804938
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515243611479444,-0.4316187171877038,-0.6238760211804939)
+G4WT4 >  New Polarization:       (-0.4098470595941877,-0.8922934360005721,0.1893087737329981)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   188     15.1      2.5     -529   2.6e-06        0     11.6       944       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (15.1227630048117,2.499943382116747,-529.0177341471859)
+G4WT4 >   Direction   =                         (0.6515243611479444,-0.4316187171877038,-0.6238760211804939)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 189
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   189     15.1      2.5     -529   2.6e-06        0        0       944    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (15.1227630048117,2.499943382116747,-529.0177341471859)
+G4WT4 >   Direction   =                         (0.6515243611479444,-0.4316187171877038,-0.6238760211804939)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-3.806955300636262e-06,-0.9999999999927341,1.978354262638937e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436714557136  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 190
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436714557136
+G4WT4 >  Old Momentum Direction: (0.6515243611479444,-0.4316187171877038,-0.6238760211804939)
+G4WT4 >  Old Polarization:       (-0.4098470595941877,-0.8922934360005721,0.1893087737329981)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.743886005148271e-06,-0.9999999999929829,1.319709215383794e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(22.67026040863332,-2.500086304686146,-536.2449430298591)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (22.67026040863332,-2.500086304686146,-536.2449430298591)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-3.806955300636262e-06,-0.9999999999927341,1.978354262638937e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (22.67026040863332,-2.500086304686146,-536.2449430298591)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (22.67026040863332,-2.500086304686146,-536.2449430298591)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.806955300636262e-06,-0.9999999999927341,1.978354262638937e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 3.806955300636262e-06 0.9999999999927341 -1.978354262638937e-07
+G4WT4 > Global Normal: 3.806955300636262e-06 0.9999999999927341 -1.978354262638937e-07
+G4WT4 > Old Momentum: 0.6515243611479444 -0.4316187171877038 -0.6238760211804939
+G4WT4 > Old Position: 22.67026040863332 -2.500086304686146 -536.2449430298591
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: 0.6515276474344462 0.4316135096773621 -0.6238761919584095
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (0.6515276474344461,0.431613509677362,-0.6238761919584094)
+G4WT4 >  New Polarization:       (0.4098402657395708,-0.8922966314174744,-0.1893084206778613)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   190     22.7     -2.5     -536   2.6e-06        0     11.6       956       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (22.67026040863332,-2.500086304686146,-536.2449430298591)
+G4WT4 >   Direction   =                         (0.6515276474344461,0.431613509677362,-0.6238761919584094)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 191
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   191     22.7     -2.5     -536   2.6e-06        0        0       956    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (22.67026040863332,-2.500086304686146,-536.2449430298591)
+G4WT4 >   Direction   =                         (0.6515276474344461,0.431613509677362,-0.6238761919584094)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (0.9999999999926791,-3.826423224086933e-06,-8.348126445554235e-09)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 3.575805170979527  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 192
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=3.575805170979527
+G4WT4 >  Old Momentum Direction: (0.6515276474344461,0.431613509677362,-0.6238761919584094)
+G4WT4 >  Old Polarization:       (0.4098402657395708,-0.8922966314174744,-0.1893084206778613)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.806955300636262e-06,0.9999999999927341,-1.978354262638937e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(24.99999633936554,-0.9567204849172133,-538.475802743115)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (24.99999633936554,-0.9567204849172133,-538.475802743115)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (0.9999999999926791,-3.826423224086933e-06,-8.348126445554235e-09)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (24.99999633936554,-0.9567204849172133,-538.475802743115)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (24.99999633936554,-0.9567204849172133,-538.475802743115)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(0.9999999999926791,-3.826423224086933e-06,-8.348126445554235e-09)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -0.9999999999926791 3.826423224086933e-06 8.348126445554235e-09
+G4WT4 > Global Normal: -0.9999999999926791 3.826423224086933e-06 8.348126445554235e-09
+G4WT4 > Old Momentum: 0.6515276474344461 0.431613509677362 -0.6238761919584094
+G4WT4 > Old Position: 24.99999633936554 -0.9567204849172133 -538.475802743115
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515243547598472 0.4316184957058053 -0.6238761810803665
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515243547598473,0.4316184957058055,-0.6238761810803666)
+G4WT4 >  New Polarization:       (0.4098470974974168,0.8922934949467112,0.1893084138350075)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   192       25   -0.957     -538   2.6e-06        0     3.58       959       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (24.99999633936554,-0.9567204849172133,-538.475802743115)
+G4WT4 >   Direction   =                         (-0.6515243547598473,0.4316184957058055,-0.6238761810803666)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 193
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   193       25   -0.957     -538   2.6e-06        0        0       959    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (24.99999633936554,-0.9567204849172133,-538.475802743115)
+G4WT4 >   Direction   =                         (-0.6515243547598473,0.4316184957058055,-0.6238761810803666)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (3.870024618122889e-06,0.9999999999924966,-1.726323733849745e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 8.00856302878182  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 194
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=8.00856302878182
+G4WT4 >  Old Momentum Direction: (-0.6515243547598473,0.4316184957058055,-0.6238761810803666)
+G4WT4 >  Old Polarization:       (0.4098470974974168,0.8922934949467112,0.1893084138350075)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-0.9999999999926791,3.826423224086933e-06,8.348126445554235e-09)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(19.7822224794849,2.499923442330725,-543.4721544614528)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (19.7822224794849,2.499923442330725,-543.4721544614528)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (3.870024618122889e-06,0.9999999999924966,-1.726323733849745e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (19.7822224794849,2.499923442330725,-543.4721544614528)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (19.7822224794849,2.499923442330725,-543.4721544614528)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.870024618122889e-06,0.9999999999924966,-1.726323733849745e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -3.870024618122889e-06 -0.9999999999924966 1.726323733849745e-07
+G4WT4 > Global Normal: -3.870024618122889e-06 -0.9999999999924966 1.726323733849745e-07
+G4WT4 > Old Momentum: -0.6515243547598473 0.4316184957058055 -0.6238761810803666
+G4WT4 > Old Position: 19.7822224794849 2.499923442330725 -543.4721544614528
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.651527695489573 -0.4316136682647181 -0.6238760320585494
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.651527695489573,-0.4316136682647181,-0.6238760320585494)
+G4WT4 >  New Polarization:       (-0.4098401910898092,0.8922966017951226,-0.1893087219130315)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   194     19.8      2.5     -543   2.6e-06        0     8.01       967       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (19.7822224794849,2.499923442330725,-543.4721544614528)
+G4WT4 >   Direction   =                         (-0.651527695489573,-0.4316136682647181,-0.6238760320585494)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 195
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   195     19.8      2.5     -543   2.6e-06        0        0       967    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (19.7822224794849,2.499923442330725,-543.4721544614528)
+G4WT4 >   Direction   =                         (-0.651527695489573,-0.4316136682647181,-0.6238760320585494)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-3.933093919305787e-06,-0.9999999999922597,1.067678617545883e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436798959801  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 196
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436798959801
+G4WT4 >  Old Momentum Direction: (-0.651527695489573,-0.4316136682647181,-0.6238760320585494)
+G4WT4 >  Old Polarization:       (-0.4098401910898092,0.8922966017951226,-0.1893087219130315)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.870024618122889e-06,-0.9999999999924966,1.726323733849745e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(12.23468589951893,-2.500048120188052,-550.6993639967093)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (12.23468589951893,-2.500048120188052,-550.6993639967093)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-3.933093919305787e-06,-0.9999999999922597,1.067678617545883e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (12.23468589951893,-2.500048120188052,-550.6993639967093)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (12.23468589951893,-2.500048120188052,-550.6993639967093)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.933093919305787e-06,-0.9999999999922597,1.067678617545883e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 3.933093919305787e-06 0.9999999999922597 -1.067678617545883e-07
+G4WT4 > Global Normal: 3.933093919305787e-06 0.9999999999922597 -1.067678617545883e-07
+G4WT4 > Old Momentum: -0.651527695489573 -0.4316136682647181 -0.6238760320585494
+G4WT4 > Old Position: 12.23468589951893 -2.500048120188052 -550.6993639967093
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515243003157515 0.4316186600707699 -0.6238761242240193
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515243003157515,0.4316186600707699,-0.6238761242240193)
+G4WT4 >  New Polarization:       (0.4098472100499657,0.8922934183117439,0.1893085313761709)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   196     12.2     -2.5     -551   2.6e-06        0     11.6       979       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (12.23468589951893,-2.500048120188052,-550.6993639967093)
+G4WT4 >   Direction   =                         (-0.6515243003157515,0.4316186600707699,-0.6238761242240193)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 197
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   197     12.2     -2.5     -551   2.6e-06        0        0       979    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (12.23468589951893,-2.500048120188052,-550.6993639967093)
+G4WT4 >   Direction   =                         (-0.6515243003157515,0.4316186600707699,-0.6238761242240193)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (3.996163229560978e-06,0.9999999999920146,-4.090335012419998e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436798959817  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 198
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436798959817
+G4WT4 >  Old Momentum Direction: (-0.6515243003157515,0.4316186600707699,-0.6238761242240193)
+G4WT4 >  Old Polarization:       (0.4098472100499657,0.8922934183117439,0.1893085313761709)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.933093919305787e-06,0.9999999999922597,-1.067678617545883e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(4.687188650495792,2.499981269249027,-557.9265745996446)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (4.687188650495792,2.499981269249027,-557.9265745996446)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (3.996163229560978e-06,0.9999999999920146,-4.090335012419998e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (4.687188650495792,2.499981269249027,-557.9265745996446)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (4.687188650495792,2.499981269249027,-557.9265745996446)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(3.996163229560978e-06,0.9999999999920146,-4.090335012419998e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -3.996163229560978e-06 -0.9999999999920146 4.090335012419998e-08
+G4WT4 > Global Normal: -3.996163229560978e-06 -0.9999999999920146 4.090335012419998e-08
+G4WT4 > Old Momentum: -0.6515243003157515 0.4316186600707699 -0.6238761242240193
+G4WT4 > Old Position: 4.687188650495792 2.499981269249027 -557.9265745996446
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515277499323837 -0.4316135038993263 -0.6238760889149318
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515277499323836,-0.4316135038993262,-0.6238760889149317)
+G4WT4 >  New Polarization:       (-0.409840078536641,0.892296678429237,-0.1893086043718844)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   198     4.69      2.5     -558   2.6e-06        0     11.6       990       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (4.687188650495792,2.499981269249027,-557.9265745996446)
+G4WT4 >   Direction   =                         (-0.6515277499323836,-0.4316135038993262,-0.6238760889149317)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 199
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   199     4.69      2.5     -558   2.6e-06        0        0       990    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (4.687188650495792,2.499981269249027,-557.9265745996446)
+G4WT4 >   Direction   =                         (-0.6515277499323836,-0.4316135038993262,-0.6238760889149317)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-4.059232536491577e-06,-0.999999999991761,-2.496116150618908e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436798959823  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 200
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436798959823
+G4WT4 >  Old Momentum Direction: (-0.6515277499323836,-0.4316135038993262,-0.6238760889149317)
+G4WT4 >  Old Polarization:       (-0.409840078536641,0.892296678429237,-0.1893086043718844)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-3.996163229560978e-06,-0.9999999999920146,4.090335012419998e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-2.860348560155871,-2.499988389200657,-565.1537847935465)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-2.860348560155871,-2.499988389200657,-565.1537847935465)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-4.059232536491577e-06,-0.999999999991761,-2.496116150618908e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-2.860348560155871,-2.499988389200657,-565.1537847935465)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-2.860348560155871,-2.499988389200657,-565.1537847935465)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-4.059232536491577e-06,-0.999999999991761,-2.496116150618908e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 4.059232536491577e-06 0.999999999991761 2.496116150618908e-08
+G4WT4 > Global Normal: 4.059232536491577e-06 0.999999999991761 2.496116150618908e-08
+G4WT4 > Old Momentum: -0.6515277499323836 -0.4316135038993262 -0.6238760889149317
+G4WT4 > Old Position: -2.860348560155871 -2.499988389200657 -565.1537847935465
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515242458716298 0.4316188244357275 -0.6238760673676502
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515242458716298,0.4316188244357275,-0.6238760673676502)
+G4WT4 >  New Polarization:       (0.409847322602515,0.8922933416767422,0.1893086489173241)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   200    -2.86     -2.5     -565   2.6e-06        0     11.6     1e+03       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-2.860348560155871,-2.499988389200657,-565.1537847935465)
+G4WT4 >   Direction   =                         (-0.6515242458716298,0.4316188244357275,-0.6238760673676502)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 201
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   201    -2.86     -2.5     -565   2.6e-06        0        0     1e+03    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-2.860348560155871,-2.499988389200657,-565.1537847935465)
+G4WT4 >   Direction   =                         (-0.6515242458716298,0.4316188244357275,-0.6238760673676502)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (4.122301840998938e-06,0.9999999999914992,9.08256731365776e-08)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436798959818  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 202
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436798959818
+G4WT4 >  Old Momentum Direction: (-0.6515242458716298,0.4316188244357275,-0.6238760673676502)
+G4WT4 >  Old Polarization:       (0.409847322602515,0.8922933416767422,0.1893086489173241)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(4.059232536491577e-06,0.999999999991761,2.496116150618908e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-10.40784517847828,2.500042904300583,-572.3809947378367)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-10.40784517847828,2.500042904300583,-572.3809947378367)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (4.122301840998938e-06,0.9999999999914992,9.08256731365776e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-10.40784517847828,2.500042904300583,-572.3809947378367)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-10.40784517847828,2.500042904300583,-572.3809947378367)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(4.122301840998938e-06,0.9999999999914992,9.08256731365776e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -4.122301840998938e-06 -0.9999999999914992 -9.08256731365776e-08
+G4WT4 > Global Normal: -4.122301840998938e-06 -0.9999999999914992 -9.08256731365776e-08
+G4WT4 > Old Momentum: -0.6515242458716298 0.4316188244357275 -0.6238760673676502
+G4WT4 > Old Position: -10.40784517847828 2.500042904300583 -572.3809947378367
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515278043751686 -0.4316133395339272 -0.6238761457712926
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515278043751686,-0.4316133395339272,-0.6238761457712926)
+G4WT4 >  New Polarization:       (-0.4098399659834736,0.8922967550633174,-0.1893084868307272)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   202    -10.4      2.5     -572   2.6e-06        0     11.6  1.01e+03       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-10.40784517847828,2.500042904300583,-572.3809947378367)
+G4WT4 >   Direction   =                         (-0.6515278043751686,-0.4316133395339272,-0.6238761457712926)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 203
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   203    -10.4      2.5     -572   2.6e-06        0        0  1.01e+03    rect_mid Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-10.40784517847828,2.500042904300583,-572.3809947378367)
+G4WT4 >   Direction   =                         (-0.6515278043751686,-0.4316133395339272,-0.6238761457712926)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-4.185371153677229e-06,-0.9999999999912291,-1.566901847669643e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 11.58436798959804  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 204
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=11.58436798959804
+G4WT4 >  Old Momentum Direction: (-0.6515278043751686,-0.4316133395339272,-0.6238761457712926)
+G4WT4 >  Old Polarization:       (-0.4098399659834736,0.8922967550633174,-0.1893084868307272)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-4.122301840998938e-06,-0.9999999999914992,-9.08256731365776e-08)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-17.95538301981507,-2.499924850079754,-579.6082055903835)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-17.95538301981507,-2.499924850079754,-579.6082055903835)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-4.185371153677229e-06,-0.9999999999912291,-1.566901847669643e-07)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-17.95538301981507,-2.499924850079754,-579.6082055903835)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-17.95538301981507,-2.499924850079754,-579.6082055903835)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-4.185371153677229e-06,-0.9999999999912291,-1.566901847669643e-07)
+G4WT4 > ========================** After  **==================================
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: 4.185371153677229e-06 0.9999999999912291 1.566901847669643e-07
+G4WT4 > Global Normal: 4.185371153677229e-06 0.9999999999912291 1.566901847669643e-07
+G4WT4 > Old Momentum: -0.6515278043751686 -0.4316133395339272 -0.6238761457712926
+G4WT4 > Old Position: -17.95538301981507 -2.499924850079754 -579.6082055903835
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515241914274826 0.4316189888006783 -0.6238760105112595
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515241914274826,0.4316189888006783,-0.6238760105112595)
+G4WT4 >  New Polarization:       (0.4098474351550648,0.8922932650417061,0.1893087664584671)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   204      -18     -2.5     -580   2.6e-06        0     11.6  1.03e+03       World Transportation
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-17.95538301981507,-2.499924850079754,-579.6082055903835)
+G4WT4 >   Direction   =                         (-0.6515241914274826,0.4316189888006783,-0.6238760105112595)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 0  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 205
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  World
+G4WT4 >  thePostPV: rect_mid
+G4WT4 > G4OpBoundaryProcess: stepLength=0
+G4WT4 > G4OpBoundaryProcess: stepLength Bug Fix!!! stepLength=0  fCarTolerance=1e-09
+G4WT4 >  *** StepTooSmall ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep)
+G4WT4 >   205      -18     -2.5     -580   2.6e-06        0        0  1.03e+03    rect_mid Transportation
+
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = rect_mid - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-17.95538301981507,-2.499924850079754,-579.6082055903835)
+G4WT4 >   Direction   =                         (-0.6515241914274826,0.4316189888006783,-0.6238760105112595)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 0
+G4WT4 >  fExitNormal= (-4.244238157319473e-06,-0.9999999999909694,-2.18166156499286e-07)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 10.81250378116189  Safety = 0
+G4WT4 >  Photon at Boundary ... new version! Step number = 206
+G4WT4 > Roll-Your_Own G4OpBoundaryProcess::PostStepDoit() ... new version
+G4WT4 >  thePrePV:  rect_mid
+G4WT4 >  thePostPV: World
+G4WT4 > G4OpBoundaryProcess: stepLength=10.81250378116189
+G4WT4 >  Old Momentum Direction: (-0.6515241914274826,0.4316189888006783,-0.6238760105112595)
+G4WT4 >  Old Polarization:       (0.4098474351550648,0.8922932650417061,0.1893087664584671)
+G4WT4 > ========================** Before **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(4.185371153677229e-06,0.9999999999912291,1.566901847669643e-07)
+G4WT4 > ========================** Before **==================================
+G4WT4 > ===========================================================
+G4WT4 > G4OpBoundaryProcess: hNavId=0
+G4WT4 > G4OpBoundaryProcess: the global point=(-24.99999080314317,2.16695709834885,-586.3538673130126)
+G4WT4 > ===========================================================
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-24.99999080314317,2.16695709834885,-586.3538673130126)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExitNOrmalGlobalFrame = (-2.256716899337249e-06,-0.9999999999974527,-4.507622340256257e-08)
+G4WT4 > G4Navigator::GetGlobalExitNormal: usingStored = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fCalculatedExitNormal = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: fLastTriedStepComputation = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fExiting = 1
+G4WT4 > G4Navigator::GetGlobalExitNormal: IntersectPointGlobal = (-24.99999080314317,2.16695709834885,-586.3538673130126)
+G4WT4 > G4Navigator::GetGlobalExitNormal: fStepEndPoint = (-24.99999080314317,2.16695709834885,-586.3538673130126)
+G4WT4 > G4Navigator::GetGlobalExitNormal: (IntersectPointGlobal-fStepEndPoint).mag2() = 0
+G4WT4 > G4Navigator::GetGlobalExitNormal: fSqTol = 1e-18
+G4WT4 > ========================** After  **==================================
+G4WT4 > G4OpBoundaryProcess: fGlobalNormal=(-2.256716899337249e-06,-0.9999999999974527,-4.507622340256257e-08)
+G4WT4 > ========================** After  **==================================
+G4WT4 >  I am so confused!  G4OpBoundaryProcess/PostStepDoIt():  The Navigator reports that it returned an invalid normal
+G4WT4 >  OldMomentum: -0.6515241914274826 0.4316189888006783 -0.6238760105112595
+G4WT4 >  GlobalNormal: 2.256716899337249e-06 0.9999999999974527 4.507622340256257e-08
+G4WT4 > Here I am doing polished dielectric-dielectric
+G4WT4 > Facet Normal: -2.256716899337249e-06 -0.9999999999974527 -4.507622340256257e-08
+G4WT4 > Global Normal: -2.256716899337249e-06 -0.9999999999974527 -4.507622340256257e-08
+G4WT4 > Old Momentum: -0.6515241914274826 0.4316189888006783 -0.6238760105112595
+G4WT4 > Old Position: -24.99999080314317 2.16695709834885 -586.3538673130126
+G4WT4 > Here I am doing Total Internal Reflection: 
+G4WT4 > Here I am setting new momentum and polarization: 
+G4WT4 > New Momentum: -0.6515261395044518 -0.4316159919410254 -0.6238760494226323
+G4WT4 > End of Loop Checking
+G4WT4 >  New Momentum Direction: (-0.6515261395044517,-0.4316159919410253,-0.6238760494226322)
+G4WT4 >  New Polarization:       (-0.4098434078442709,0.8922951319185288,-0.1893086860159618)
+G4WT4 >  *** TotalInternalReflection ***
+G4WT4 > G4OpBoundaryProcess: ending and returning G4VDiscreteProcess::PostStepDoIt(aTrack,aStep) right at the end
+G4WT4 >   206      -25     2.17     -586   2.6e-06        0     10.8  1.04e+03       World Transportation
+
+G4WT4 > *** G4Navigator::ComputeStep: ***
+G4WT4 >     Volume = World - Proposed step length = 1.797693134862316e+308
+G4WT4 >   Called with the arguments: 
+G4WT4 >   Globalpoint =                         (-24.99999080314317,2.16695709834885,-586.3538673130126)
+G4WT4 >   Direction   =                         (-0.6515261395044517,-0.4316159919410253,-0.6238760494226322)
+G4WT4 >  At G4Nav CompStep End - if(exiting) - fExiting= 1 fValidExitNormal = 1
+G4WT4 >  fExitNormal= (0,0,-1)
+G4WT4 >     ----- Upon exiting :
+G4WT4 >   Returned step= 14287.52737172095  Safety = 0
+G4WT4 >   207 -9.33e+03 -6.16e+03 -9.5e+03   2.6e-06        0 1.43e+04  1.53e+04  OutOfWorld Transportation
+
+G4WT4 > SCORING1: PostVolume == nullptr:  calling fStopAndKill
+G4WT4 > 0x0
+G4WT4 > 
+G4WT4 >  Histogram statistics for the local thread:
+G4WT4 > 
+G4WT4 > 
+G4WT4 > 
+G4WT4 > Photons that reached the end: 0
+G4WT4 > 
+G4WT4 > Photons in middle: 1
+G4WT4 > 
+G4WT4 > Efficiency: 0
+G4WT4 > Efficiency for Not Trapped: 0

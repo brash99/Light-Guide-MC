@@ -6,7 +6,7 @@
 #
 
 #/control/verbose 2
-/tracking/verbose 2
+#/tracking/verbose 2
 #/process/optical/verbose 2
 
 #/run/verbose 2
@@ -117,5 +117,5 @@
 /analysis/h1/set 27 100 1 10
 
 
-/run/beamOn 24
+/run/beamOn 240
 /vis/scene/add/trajectories rich

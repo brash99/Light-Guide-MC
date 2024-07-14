@@ -11,7 +11,7 @@ cmake -DGeant4_DIR=$G4INSTALL/../../../lib/cmake/Geant4/ .
 #
 
 # Set the number of threads to 1
-#export G4FORCENUMBEROFTHREADS=1
+export G4FORCENUMBEROFTHREADS=1
 
 # Copy the twisted geometry file to the source directory
 cp NewAngeloGeometries/Twist/DetectorConstruction.cc src/.
