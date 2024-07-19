@@ -1,1 +1,1 @@
-/Users/brash/geant4_workdir/bin/OpNovice2
+/home/brash/geant4_workdir/bin/OpNovice2

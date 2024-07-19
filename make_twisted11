@@ -6,7 +6,7 @@ cd ~/Light-Guide-MC
 #  Remake from scratch
 rm CMakeCache.txt
 rm -rf CMakeFiles
-cmake -DGeant4_DIR=$G4INSTALL/../../../lib/cmake/Geant4/ .
+cmake -DCMAKE_INSTALL_PREFIX=$G4WORKDIR -DGeant4_DIR=$G4INSTALL/../../../lib/cmake/Geant4/ .
 #
 #
 
@@ -16,6 +16,7 @@ export G4FORCENUMBEROFTHREADS=1
 # Copy the twisted geometry file to the source directory
 cp NewAngeloGeometries/Twist/DetectorConstruction.cc src/.
 #cp src/G4OpBoundaryProcess.cc.11 src/G4OpBoundaryProcess.cc
-make clean; make
+make clean; make; make install
+cp $G4WORKDIR/bin/OpNovice2 $G4WORKDIR/bin/$G4SYSTEM/.
 ./OpNovice2 vis.mac > tempoutput_twisted_juniper11
 grep Photons tempoutput_twisted_juniper11

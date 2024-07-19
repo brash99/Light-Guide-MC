@@ -117,5 +117,5 @@
 /analysis/h1/set 27 100 1 10
 
 
-/run/beamOn 240
+/run/beamOn 24
 /vis/scene/add/trajectories rich
